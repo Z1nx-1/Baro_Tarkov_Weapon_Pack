@@ -93,17 +93,47 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/Ak74-mag.png" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/Ak74-mag.png" depth="0.54" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="smground" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="5.45x39mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
-        <SpawnItem identifiers="smground" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="5.45x39mm" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <!--Magazines can be combined to raise condition.-->
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  
+    <Item name="5.45x39mm" identifier="5.45x39mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="4" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
+        <Affliction identifier="gunshotwound" strength="35" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="stun" strength="0.4" probability="0.1" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <!-- smg rounds should not exist outside magazines -->
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  
+  
   <Item name="Glock-17" identifier="Glock_17" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.06" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
