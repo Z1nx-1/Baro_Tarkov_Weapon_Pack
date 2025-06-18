@@ -1,0 +1,4 @@
+<contentpackage name="Tarkov Weapon Pack" modversion="0.1.0" gameversion="1.9.7.0" corepackage="false">
+	<Item file="%ModDir%/rifles/rifles.xml" />
+	<!--<Item file="%ModDir%/sidearms/sidearms.xml" /> -->
+</contentpackage>
