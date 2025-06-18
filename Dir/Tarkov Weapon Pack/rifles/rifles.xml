@@ -30,12 +30,12 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot3.ogg" type="OnUse" range="3000" />
+	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot5.ogg" type="OnUse" range="3000" />
+	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot6.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
@@ -162,9 +162,7 @@
     <RangedWeapon reload="0.3" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="64,9" spread="0.1" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.75" DualWieldAccuracyPenalty="8">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/Revolver2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/Revolver3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/sidearms/sidearm_audio/GLOCK17_shot.ogg" type="OnUse" range="3000"/>
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse" target="This">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
