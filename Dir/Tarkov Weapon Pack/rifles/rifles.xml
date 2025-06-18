@@ -33,9 +33,9 @@
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot2.ogg" type="OnUse" range="3000" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot3.ogg" type="OnUse" range="3000" />
-	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot4.ogg" type="OnUse" range="3000" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot5.ogg" type="OnUse" range="3000" />
-	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot6.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot6.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
@@ -104,8 +104,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  
-    <Item name="5.45x39mm" identifier="5.45x39mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.45x39mm" identifier="5.45x39mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -113,7 +112,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="4" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
-        <Affliction identifier="gunshotwound" strength="35" />
+        <Affliction identifier="gunshotwound" strength="14" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="stun" strength="0.4" probability="0.1" />
       </Attack>
@@ -132,9 +131,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
- 
- 
-   <Item name="M4A1" identifier="M4A1" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.05" impactsoundtag="impact_metal_light">
+  <Item name="M4A1" identifier="M4A1" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.05" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
@@ -167,9 +164,9 @@
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot2.ogg" type="OnUse" range="3000" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot3.ogg" type="OnUse" range="3000" />
-	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot4.ogg" type="OnUse" range="3000" />
       <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot5.ogg" type="OnUse" range="3000" />
-	  <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot6.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/rifles/rifle_audio/AK74_shot6.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="This">
         <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
@@ -192,7 +189,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  
   <Item name="M4A1 Magazine" identifier="M4A1 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
@@ -239,6 +235,31 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  
-
+  <Item name="5.56x45mm" identifier="5.56x45mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.01">
+    <InventoryIcon texture="%ModDir%/rifles/rifle_textures/5.45x39mm.png" sourcerect="3,-1,1191,265" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/rifles/rifle_textures/5.45x39mm.png" sourcerect="0,2,1194,262" depth="0.55" origin="0.49832895,0.4586806" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="4" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
+        <Affliction identifier="gunshotwound" strength="14" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="stun" strength="0.4" probability="0.1" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <!-- smg rounds should not exist outside magazines -->
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
 </Items>
