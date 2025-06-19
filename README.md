@@ -8,7 +8,6 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 * RPD
 * Ash-12
 * Vector
-* P90
 * F1 Frag grenade
 * M67 Frage grenade
 
