@@ -49,7 +49,7 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 
 * 12.7x55MM
 
+### ToDO
 
-
-### Upcoming
-* More ammo varients
+* Balance AP ammo damage
+* Balance/update AP ammo fabrication/decontruct
