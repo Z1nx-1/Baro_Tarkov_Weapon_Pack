@@ -21,14 +21,15 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 * 9x19MM 
 * 23x75 Cartridge
 * 12.7x55MM
+* Vector
+* F1 Frag grenade
+* M67 Frage grenade
 
 
 
 ### Upcoming
 
-* Vector
-* F1 Frag grenade
-* M67 Frage grenade
+
 
 
 * More ammo varients
