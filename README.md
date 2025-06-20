@@ -1,5 +1,4 @@
 # Description
-More actions
 
 This is a mod which brings Escape from Tarkov's weapons and items into Barotrauma!
 
