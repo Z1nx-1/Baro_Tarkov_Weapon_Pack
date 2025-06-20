@@ -13,6 +13,7 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 * GLOCK 17
 * ASH-12
 * RPD
+* Vector
 
 **AMMO**
 * 5.45x39mm
@@ -25,8 +26,6 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 
 
 ### Upcoming
-
-* Vector
 * F1 Frag grenade
 * M67 Frage grenade
 
