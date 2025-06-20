@@ -2,7 +2,8 @@
 
 This is a mod which brings Escape from Tarkov's weapons and items into Barotrauma!
 
-In no way do I claim any of the texture, models and audio to my work, all credit are to BattleState Games.
+In no way do I claim any of the texture, models and audio as my work, all credit are to BattleState Games & Daedalic Entertainment!
+Will take down if requested.
 
 
 
@@ -51,5 +52,3 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 
 ### Credits
 
-All **textures**, mages of **models** and **audio** are not mine, credits go to both Battlestate Games and Daedalic Entertainment!
-Will take down if requested.
