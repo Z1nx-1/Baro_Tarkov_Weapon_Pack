@@ -562,8 +562,8 @@
   <Item name="23x75 Flashbang" identifier="23x75 Flashbang" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,KS-23MAmmo,handheldammo" Scale="0.05" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
-    <InventoryIcon texture="%ModDir%/rifles/rifle_textures/23x75.png" sourcerect="0,0,358,130" origin="0.4486071,0.49415794" />
-    <Sprite texture="%ModDir%/rifles/rifle_textures/23x75.png" sourcerect="0,0,358,130" depth="0.55" origin="0.4515463,0.4948579" />
+    <InventoryIcon texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" origin="0.4486071,0.49415794" />
+    <Sprite texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" depth="0.55" origin="0.4515463,0.4948579" />
     <Body width="23" height="10" density="15" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <!--When fired, spawns 8 projectiles simultaneously.-->
@@ -578,10 +578,8 @@
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="250" force="0.1" smoke="false" playtinnitus="true">
-          <Affliction identifier="stun" strength="4" />
           <Affliction identifier="blind" strength="15" />
           <Affliction identifier="sensoryoverload" strength="15" />
-          <Affliction identifier="stun" strength="10" />
           <Affliction identifier="blind" strength="25" />
           <Affliction identifier="sensoryoverload" strength="30" />
           <Affliction identifier="blind_hard" strength="10" />
