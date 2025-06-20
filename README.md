@@ -50,5 +50,3 @@ Will take down if requested.
 
 * 12.7x55MM
 
-### Credits
-
