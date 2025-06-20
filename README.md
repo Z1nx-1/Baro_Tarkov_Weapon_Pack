@@ -49,7 +49,7 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 
 * 12.7x55MM
 
-### ToDO
+### Credits
 
-* Balance AP ammo damage
-* Balance/update AP ammo fabrication/decontruct
+All **textures**, mages of **models** and **audio** are not mine, credits go to both Battlestate Games and Daedalic Entertainment!
+Will take down if requested.
