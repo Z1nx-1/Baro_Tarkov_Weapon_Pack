@@ -11,20 +11,21 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 * M4A1
 * KS-23
 * GLOCK 17
+* ASH-12
+* RPD
 
 **AMMO**
 * 5.45x39mm
 * 7.62x39mm
 * 5.56x45mm
-*9x19MM 
-*23x75
+* 9x19MM 
+* 23x75 Cartridge
+* 12.7x55MM
 
 
 
 ### Upcoming
 
-* RPD
-* Ash-12
 * Vector
 * F1 Frag grenade
 * M67 Frage grenade
