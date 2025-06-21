@@ -24,7 +24,7 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/Ak74.png" sourcerect="-9,4,3217,1078" depth="0.55" origin="0.5,0.5" scale="5" />
-    <Sprite texture="%ModDir%/rifles/rifle_textures/Ak74-empty.png" sourcerect="-9,4,3217,1078" depth="0.55" origin="0.5,0.3" />
+    <Sprite texture="%ModDir%/rifles/rifle_textures/Ak74-empty.png" sourcerect="-9,4,3217,1078" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-475,-100" handle2="2000,200" holdangle="-35" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.15" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="1200,100" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">

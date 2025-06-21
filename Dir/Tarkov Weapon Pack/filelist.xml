@@ -3,4 +3,5 @@
 	<Item file="%ModDir%/sidearms/sidearms.xml" />
 	<Item file="%ModDir%/throwables/throwables.xml" />
 	<Item file="%ModDir%/rifles/ap_ammo.xml" />
+	<Item file="%ModDir%/attire/attire.xml" />
 </contentpackage>
