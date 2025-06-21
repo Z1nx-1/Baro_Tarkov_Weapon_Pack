@@ -55,3 +55,9 @@ Will take down if requested.
 * 6B47 + EMR helmets
 * 6B13 + EMR + KILLA body armours
 * Maska-1SCh helmet (KILLA)
+
+**Rigs**
+
+* 6h112 (EMR)
+* AVS
+* Commando
