@@ -31,7 +31,6 @@ Will take down if requested.
 
 * F1 Frag grenade
 
-
 * M67 Frage grenade
 
 
@@ -50,3 +49,9 @@ Will take down if requested.
 
 * 12.7x55MM
 
+**ARMOUR**
+
+* Paca soft armour
+* 6B47 + EMR helmets
+* 6B13 + EMR + KILLA body armours
+* Maska-1SCh helmet (KILLA)
