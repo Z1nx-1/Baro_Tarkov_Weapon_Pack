@@ -2,7 +2,8 @@
 
 This is a mod which brings Escape from Tarkov's weapons and items into Barotrauma!
 
-In no way do I claim any of the texture, models and audio to my work, all credit are to BattleState Games.
+In no way do I claim any of the texture, models and audio as my work, all credit are to BattleState Games & Daedalic Entertainment!
+Will take down if requested.
 
 
 
@@ -49,7 +50,3 @@ In no way do I claim any of the texture, models and audio to my work, all credit
 
 * 12.7x55MM
 
-### ToDO
-
-* Balance AP ammo damage
-* Balance/update AP ammo fabrication/decontruct
