@@ -5,7 +5,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer secondary="armcab,weaponholder" />
-    <Price baseprice="650" minleveldifficulty="30">
+    <Price baseprice="450" minleveldifficulty="30">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -13,10 +13,10 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       <RequiredItem identifier="steel" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
@@ -60,11 +60,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="Ak-74 Magazine" identifier="AK74 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.04" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AK74Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="150" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
@@ -78,7 +73,7 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" amount="2"/>
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="50" />
@@ -136,7 +131,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer secondary="armcab,weaponholder" />
-    <Price baseprice="390" minleveldifficulty="30">
+    <Price baseprice="450" minleveldifficulty="30">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -146,8 +141,8 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
     <Deconstruct time="10">
@@ -191,12 +186,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="M4A1 Magazine" identifier="M4A1 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
@@ -210,7 +199,7 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="50" />
@@ -268,7 +257,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer secondary="armcab,weaponholder" />
-    <Price baseprice="390" minleveldifficulty="40">
+    <Price baseprice="500" minleveldifficulty="40">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -323,12 +312,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="AKM Magazine" identifier="AKM Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AKMAmmo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
@@ -401,13 +384,13 @@
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.2" />
     <PreferredContainer secondary="wreckweaponholder" amount="1" spawnprobability="0.03" />
     <PreferredContainer secondary="armcab" />
-    <Price baseprice="650" minleveldifficulty="40">
+    <Price baseprice="650" minleveldifficulty="50">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
     </Price>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -457,14 +440,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="23x75 Shrap-10" identifier="23x75 Shrap-10" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,KS-23MAmmo,handheldammo" Scale="0.05" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="shotgun" amount="6" spawnprobability="1" />
-    <PreferredContainer primary="autoshotgun" amount="8" spawnprobability="1" />
-    <PreferredContainer primary="shotgununique" amount="2" spawnprobability="1" />
-    <PreferredContainer primary="armcab" minamount="6" maxamount="12" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
-    <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true" />
     <Price baseprice="120" minleveldifficulty="60">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
@@ -484,7 +459,9 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="plastic" />
+	  
     </Fabricate>
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" origin="0.4486071,0.49415794" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" depth="0.55" origin="0.4515463,0.4948579" />
@@ -510,14 +487,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="23x75 Shrap-25" identifier="23x75 Shrap-25" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,KS-23MAmmo,handheldammo" Scale="0.05" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="shotgun" amount="6" spawnprobability="1" />
-    <PreferredContainer primary="autoshotgun" amount="8" spawnprobability="1" />
-    <PreferredContainer primary="shotgununique" amount="2" spawnprobability="1" />
-    <PreferredContainer primary="armcab" minamount="6" maxamount="12" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
-    <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true" />
     <Price baseprice="120" minleveldifficulty="60">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
@@ -560,7 +529,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="23x75 Flashbang" identifier="23x75 Flashbang" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,KS-23MAmmo,handheldammo" Scale="0.05" impactsoundtag="impact_metal_light">
-    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.6" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" origin="0.4486071,0.49415794" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/23x75 Shrap-10.png" sourcerect="0,0,358,130" depth="0.55" origin="0.4515463,0.4948579" />
@@ -569,7 +538,7 @@
     <!--When fired, spawns 8 projectiles simultaneously.-->
     <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="15">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-      <Attack structuredamage="1" targetforce="4" itemdamage="2" severlimbsprobability="0.5">
+      <Attack structuredamage="0.2" targetforce="4" itemdamage="2" severlimbsprobability="0.5">
         <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.7" scalemax="1" />
         <Affliction identifier="gunshotwound" strength="12" />
         <Affliction identifier="bleeding" strength="6" />
@@ -649,10 +618,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="P90 mag" identifier="P90 mag" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,P90Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
     <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
@@ -731,8 +696,8 @@
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.4" minavailable="1" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="65" />
@@ -781,11 +746,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="ASH-12 Magazine" identifier="ASH-12 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,ASH-12Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="150" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
@@ -806,7 +766,6 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />      
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />      
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
 	  
@@ -898,7 +857,7 @@
       <StatusEffect type="Always" target="Character" SpeedMultiplier="0.75" setvalue="true" />
     </Holdable>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="HMG Worn" texture="%ModDir%/rifles/rifle_textures/RPD-empty.png" canbehiddenbyotherwearables="false" rotation="90" sourcerect="-9,4,3217,1078" depth="0.55" limb="Torso" depthlimb="LeftArm" scale="0.5" origin="0.5,0.8" />
+      <sprite name="RPD Worn" texture="%ModDir%/rifles/rifle_textures/RPD-empty.png" canbehiddenbyotherwearables="false" rotation="90" sourcerect="-9,4,3217,1078" depth="0.55" limb="Torso" depthlimb="LeftArm" scale="0.04" origin="0.5,0.8" />
     </Wearable>
     <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="1300,100" spread="4" unskilledspread="50" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -956,12 +915,6 @@
     <SkillRequirementHint identifier="weapons" level="90" />
   </Item>
   <Item name="RPD Drum" identifier="RPD Drum" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,RPDAmmo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
@@ -1068,11 +1021,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="Vector mag" identifier="Vector mag" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,VectorAmmo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />

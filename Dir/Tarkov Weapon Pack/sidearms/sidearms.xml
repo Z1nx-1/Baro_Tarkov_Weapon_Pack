@@ -52,7 +52,7 @@
     <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   
-  <Item name="Glock-17 Magazine" identifier="Glock17-Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.06" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Glockammo,handheldammo" impactsoundtag="impact_metal_light">
+  <Item name="Glock-17 Magazine" identifier="Glock-17 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.06" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Glockammo,handheldammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
@@ -79,7 +79,7 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="smgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="Glock-17 Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -150,7 +150,7 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="smgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="Glock-17 Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />

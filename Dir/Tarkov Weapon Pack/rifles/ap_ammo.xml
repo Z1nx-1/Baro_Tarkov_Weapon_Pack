@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="Ak-74 Magazine (AP)" identifier="AK74 Magazine (AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.04" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AK74Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
     <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="55" />
@@ -15,7 +11,7 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
@@ -73,12 +69,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="M4A1 Magazine (AP)" identifier="M4A1 Magazine (AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -88,7 +78,7 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
@@ -146,12 +136,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="AKM Magazine (AP)" identifier="AKM Magazine (AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AKMAmmo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -221,11 +205,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="P90 mag (AP)" identifier="P90 mag(AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,P90Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -235,7 +214,7 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="plastic" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
@@ -294,11 +273,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="ASH-12 Magazine (AP)" identifier="ASH-12 Magazine (AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,ASH-12Ammo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -308,9 +282,6 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
@@ -379,10 +350,6 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="Vector mag (AP)" identifier="Vector mag (AP)" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.05" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,VectorAmmo,handheldammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
-    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="secarmcab" />
     <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="40" />
@@ -393,7 +360,7 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="plastic" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
