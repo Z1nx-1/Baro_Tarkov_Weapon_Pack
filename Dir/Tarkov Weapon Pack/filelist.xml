@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Weapon Pack" modversion="1.2.1" corepackage="False" steamworkshopid="3507999416" gameversion="1.9.7.0">
+<contentpackage name="Tarkov Weapon Pack" modversion="1.2.3" corepackage="False" steamworkshopid="3507999416" gameversion="1.9.7.0">
   <Item file="%ModDir%/rifles/rifles.xml" />
   <Item file="%ModDir%/sidearms/sidearms.xml" />
   <Item file="%ModDir%/throwables/throwables.xml" />
   <Item file="%ModDir%/rifles/ap_ammo.xml" />
   <Item file="%ModDir%/attire/attire.xml" />
+  <Jobs file="%ModDir%/bosses/boss jobs/bossjobs.xml"/>
 </contentpackage>
