@@ -13,11 +13,11 @@ Will take down if requested.
 
 **WEAPONS** 
 
-* AK74
+* AK74 + 2 varients
 
 * AKM
 
-* M4A1
+* M4A1 + 1 varient
 
 * KS-23
 
@@ -29,7 +29,7 @@ Will take down if requested.
 
 * Vector
 
-* AS-VAL
+* AS-VAL + 1 varient
 
 * F1 Frag grenade
 
@@ -53,15 +53,32 @@ Will take down if requested.
 
 * 9x39MM
 
-**ARMOUR**
+
+**Helmets**
+
+* 6B47 + EMR helmets
+* Maska-1SCh helmet (KILLA)
+* Bastion + green varient
+
+
+**Body armour**
 
 * Paca soft armour
-* 6B47 + EMR helmets
 * 6B13 + EMR + KILLA body armours
-* Maska-1SCh helmet (KILLA)
+* Slick plate carrier
+
 
 **Rigs**
 
-* 6h112 (EMR)
-* AVS
-* Commando
+* 6h112 (EMR) scout rig
+* Commando tactical rig
+* AVS plate carrier rig
+* ARSS plate carrier rig
+* MMAC plate carrier rig
+
+**Backpacks**
+
+* Berkut
+* Beta2
+* TriZip
+* Raid backpack
