@@ -29,6 +29,8 @@ Will take down if requested.
 
 * Vector
 
+* AS-VAL
+
 * F1 Frag grenade
 
 * M67 Frage grenade
@@ -48,6 +50,8 @@ Will take down if requested.
 * 23x75 Cartridge
 
 * 12.7x55MM
+
+* 9x39MM
 
 **ARMOUR**
 
