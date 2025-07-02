@@ -574,7 +574,6 @@
     </Wearable>
   </Item>
   <Item name="IFAK medical pouch" identifier="IFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="125">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
@@ -602,7 +601,6 @@
     </ItemContainer>
   </Item>
   <Item name="AFAK medical pouch" identifier="AFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
@@ -632,7 +630,6 @@
     </ItemContainer>
   </Item>
   <Item name="GRIZZLY medical pouch" identifier="GRIZZLY medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="500">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
