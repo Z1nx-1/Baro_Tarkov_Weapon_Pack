@@ -6,5 +6,6 @@
   <Item file="%ModDir%/throwables/throwables.xml" />
   <Item file="%ModDir%/rifles/ap_ammo.xml" />
   <Item file="%ModDir%/attire/attire.xml" />
+  <Item file="%ModDir%/medical/medical.xml" />
   <Jobs file="%ModDir%/bosses/boss jobs/bossjobs.xml"/>
 </contentpackage>

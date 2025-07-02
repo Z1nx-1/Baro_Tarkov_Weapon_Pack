@@ -96,7 +96,7 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
       <sprite name="Bastion helmet Wearable" texture="%ModDir%/attire/attire_textures/BastionBLUFOR.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.032" hidewearablesoftype="Hair" sourcerect="1147,80,1077,870" origin="0.52 ,0.60" />
     </Wearable>
-  </Item>  
+  </Item>
   <Item name="Bastion helmet (Green)" identifier="Bastion helmet (Green)" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.06">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
@@ -572,5 +572,95 @@
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Slick Body Armor" texture="%ModDir%/attire/attire_textures/Slick Body Armour.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.035" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="886,222,1584,1757" />
     </Wearable>
+  </Item>
+  <Item name="IFAK medical pouch" identifier="IFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator, medicalfabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="medical" level="30" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/IFAK.png" sourcerect="1435,118,737,810" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/IFAK.png" sourcerect="1435,118,737,810" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="IFAK medical pouch" texture="%ModDir%/attire/attire_textures/IFAK.png" limb="Torso" hidelimb="false" sourcerect="1435,118,737,810" inherittexturescale="false" scale="0.035" origin="0.5,-0.5" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="8" maxstacksize="32" depth="0.5">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="AFAK medical pouch" identifier="AFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" requiresrecipe="false">
+      <RequiredSkill identifier="medical" level="50" />
+      <Item identifier="organicfiber" amount="4" />
+	  <Item identifier="antibleeding1" amount="4" />
+	  <Item identifier="morphine" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AFAK.png" sourcerect="1435,118,737,810" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/AFAK.png" sourcerect="1435,118,737,810" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="AFAK medical pouch" texture="%ModDir%/attire/attire_textures/AFAK.png" limb="Torso" hidelimb="false" sourcerect="1435,118,737,810" inherittexturescale="false" scale="0.035" origin="0.5,-0.5" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="12" maxstacksize="32" depth="0.5">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="GRIZZLY medical pouch" identifier="GRIZZLY medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="500">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="ballisticfiber" amount="8" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="false">
+      <RequiredSkill identifier="medical" level="60" />
+      <Item identifier="organicfiber" amount="10" />
+	  <Item identifier="antibleeding1" amount="8" />
+	  <Item identifier="antibloodloss2" amount="4" />
+	  <Item identifier="morphine" amount="4" />
+
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/GRIZZLY.png" sourcerect="1188,105,1212,856" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/GRIZZLY.png" sourcerect="1188,105,1212,856" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="GRIZZLY medical pouch" texture="%ModDir%/attire/attire_textures/GRIZZLY.png" limb="Torso" hidelimb="false" sourcerect="1188,105,1212,856" inherittexturescale="false" scale="0.035" origin="0.5,-0.5" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="16" maxstacksize="32" depth="0.5">
+      <Containable items="chem,medical" />
+    </ItemContainer>
   </Item>
 </Items>
