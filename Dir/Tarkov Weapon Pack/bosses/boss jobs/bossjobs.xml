@@ -44,7 +44,7 @@
     <JobiconSmall>
       <sprite texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" origin="0.5,0.5" />
     </JobiconSmall>
-    <ItemSet commonness="1">
+    <ItemSet commonness="0.45">
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" showpreview="false" />
       <Item identifier="crewchiefclothes" equip="true" />
@@ -57,6 +57,52 @@
       <Item identifier="bandage" amount="3" />
       <Item identifier="meth" amount="1" />
       <Item identifier="Glock-17 Magazine" amount="2" />
+    </ItemSet>    
+	
+	<ItemSet commonness="0.25">
+      <Item identifier="idcard" equip="true" />
+      <Item identifier="headset" equip="true" showpreview="false" />
+      <Item identifier="crewchiefclothes" equip="true" />
+      <Item identifier="Paca soft armor" equip="true" />
+      <Item identifier="DIY rig" equip="true" />
+      <Item identifier="Boss cap" equip="true" />
+      <Item identifier="Makarov" equip="true">
+        <Item identifier="Makarov Magazine" />
+      </Item>
+      <Item identifier="bandage" amount="3" />
+      <Item identifier="meth" amount="1" />
+      <Item identifier="Makarov Magazine" amount="2" />
+    </ItemSet>    
+	
+	<ItemSet commonness="0.25">
+      <Item identifier="idcard" equip="true" />
+      <Item identifier="headset" equip="true" showpreview="false" />
+      <Item identifier="crewchiefclothes" equip="true" />
+      <Item identifier="Paca soft armor" equip="true" />
+      <Item identifier="Scav rig" equip="true" />
+      <Item identifier="6B47 helmet" equip="true" />
+      <Item identifier="Rhino" equip="true">
+        <Item identifier=".357 round" amount="6" />
+      </Item>
+      <Item identifier="bandage" amount="3" />
+      <Item identifier="meth" amount="1" />
+      <Item identifier=".357 round" amount="12" />
+    </ItemSet>	
+	
+	<ItemSet commonness="0.05">
+      <Item identifier="idcard" equip="true" />
+      <Item identifier="headset" equip="true" showpreview="false" />
+      <Item identifier="crewchiefclothes" equip="true" />
+      <Item identifier="6B13 (EMR)" equip="true" />
+      <Item identifier="6h112 (EMR)" equip="true" >
+        <Item identifier="23x75 Shrap-25" amount="12" />
+	  </Item>
+      <Item identifier="Altyn" equip="true" />
+      <Item identifier="KS-23M" equip="true">
+        <Item identifier="23x75 Shrap-25" amount="3" />
+      </Item>
+      <Item identifier="bandage" amount="3" />
+      <Item identifier="meth" amount="1" />
     </ItemSet>
   </Job>
 </Jobs>
