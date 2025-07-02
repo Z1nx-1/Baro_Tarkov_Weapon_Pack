@@ -31,6 +31,12 @@ Will take down if requested.
 
 * AS-VAL + 1 varient
 
+* Makarov
+
+* TT
+
+* Rhino revolver
+
 * F1 Frag grenade
 
 * M67 Frage grenade
@@ -45,7 +51,11 @@ Will take down if requested.
 
 * 5.56x45mm
 
-* 9x19MM 
+* 9x19MM
+
+* 9x18MM
+
+* .357
 
 * 23x75 Cartridge
 
