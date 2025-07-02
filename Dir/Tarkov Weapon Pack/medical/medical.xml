@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+	<Price baseprice="1250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+    </Price>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
@@ -27,7 +35,15 @@
   </zagustin>  
   
   <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+     <Price baseprice="1425">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+    </Price>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
@@ -63,7 +79,15 @@
   </propital>  
   
   <propital name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+     <Price baseprice="2250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+    </Price>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
@@ -99,7 +123,15 @@
     <SkillRequirementHint identifier="medical" level="40" />
   </propital>  
   <propital name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Price baseprice="1150">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+    </Price>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
