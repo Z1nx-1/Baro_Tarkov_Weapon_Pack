@@ -343,7 +343,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <sprite name="ARSS plate carrier rig" texture="%ModDir%/attire/attire_textures/ARSS.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.042" inheritorigin="false" origin="0.55,0.5" inheritsourcerect="false" sourcerect="258,374,1713,1630" />
+      <sprite name="ARSS plate carrier rig" texture="%ModDir%/attire/attire_textures/ARSS.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.042" inheritorigin="false" origin="0.55,0.6" inheritsourcerect="false" sourcerect="258,374,1713,1630" />
     </Wearable>
   </Item>
   <Item name="6h112 (EMR)" identifier="6h112 (EMR)" category="Equipment" tags="tacticalrig,mediumitem,clothing,mobilecontainer" scale="0.075" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
