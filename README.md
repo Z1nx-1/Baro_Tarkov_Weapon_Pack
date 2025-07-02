@@ -82,3 +82,18 @@ Will take down if requested.
 * Beta2
 * TriZip
 * Raid backpack
+
+**Pouches**
+
+* IFAK Medical Pouch
+* AFAK Medical Pouch
+* GRIZZLY Medical Pouch
+
+**Combat Stimulants**
+
+* Zagustin Auto-Injector
+* Propital Auto-Injector
+* eTg Auto-Injector
+* SJ1 Auto-Injector
+
+
