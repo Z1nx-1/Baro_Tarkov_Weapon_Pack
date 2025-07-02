@@ -1,5 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Jobs>
-  <Job identifier="killa" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" idlebehavior="Patrol">
+  <Job identifier="killa job" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" idlebehavior="Patrol">
     <Skills>
       <Skill identifier="weapons" level="70,90" primary="true" />
       <Skill identifier="medical" level="25,35" />
@@ -7,20 +8,55 @@
       <Skill identifier="electrical" level="15,25" />
       <Skill identifier="helm" level="5,10" />
     </Skills>
-	<ItemSet commonness="1">
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="F1 Frag Grenade" amount="6"/>
-	  <Item identifier="headset" equip="true" showpreview="false"/>
-	  <Item identifier="securityuniform1" equip="true"/>
-	  <Item identifier="Maska-1SCh (Killa)" equip="true"/>
-	  <Item identifier="6B13 (Killa)" equip="true"/>
-	  <Item identifier="RPD" equip="true">
-	  	    <Item identifier="RPD Drum" />
-	  </Item>
-	  <Item identifier="bandage" amount="8"/>
-	  <Item identifier="morphine" amount="3"/>
-	  <Item identifier="meth" amount="2"/>
-	  <Item identifier="RPD Drum" amount="4"/>
+    <Jobicon>
+      <sprite texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" origin="0.5,0.5" />
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" origin="0.5,0.5" />
+    </JobiconSmall>
+    <ItemSet commonness="1">
+      <Item identifier="idcard" equip="true" />
+      <Item identifier="F1 Frag Grenade" amount="6" />
+      <Item identifier="headset" equip="true" showpreview="false" />
+      <Item identifier="securityuniform1" equip="true" />
+      <Item identifier="Maska-1SCh (Killa)" equip="true" />
+      <Item identifier="6B13 (Killa)" equip="true" />
+      <Item identifier="RPD" equip="true">
+        <Item identifier="RPD Drum" />
+      </Item>
+      <Item identifier="bandage" amount="8" />
+      <Item identifier="morphine" amount="3" />
+      <Item identifier="meth" amount="2" />
+      <Item identifier="RPD Drum" amount="4" />
+    </ItemSet>
+  </Job>
+  <Job identifier="Scav" faction="Jovian Scavs" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" idlebehavior="Patrol">
+    <Skills>
+      <Skill identifier="weapons" level="30,39" primary="true" />
+      <Skill identifier="medical" level="15,25" />
+      <Skill identifier="mechanical" level="15,25" />
+      <Skill identifier="electrical" level="15,25" />
+      <Skill identifier="helm" level="5,10" />
+    </Skills>
+	<Jobicon>
+      <sprite texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" origin="0.5,0.5" />
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" origin="0.5,0.5" />
+    </JobiconSmall>
+    <ItemSet commonness="1">
+      <Item identifier="idcard" equip="true" />
+      <Item identifier="headset" equip="true" showpreview="false" />
+      <Item identifier="crewchiefclothes" equip="true" />
+      <Item identifier="Paca soft armor" equip="true" />
+      <Item identifier="Scav rig" equip="true" />
+      <Item identifier="GP-5 gasmask" equip="true" />
+      <Item identifier="Glock_17" equip="true">
+        <Item identifier="Glock-17 Magazine" />
+      </Item>
+      <Item identifier="bandage" amount="3" />
+      <Item identifier="meth" amount="1" />
+      <Item identifier="Glock-17 Magazine" amount="2" />
     </ItemSet>
   </Job>
 </Jobs>

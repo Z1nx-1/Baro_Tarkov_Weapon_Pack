@@ -7,6 +7,9 @@
   <Item file="%ModDir%/rifles/ap_ammo.xml" />
   <Item file="%ModDir%/attire/attire.xml" />
   <Item file="%ModDir%/medical/medical.xml" />
+  <Text file="%ModDir%/factions/factioninfo.xml" />
+  <Factions file="%ModDir%/factions/factions.xml" />
+  <NPCSets file="%ModDir%/bosses/boss characters/bosscharacters.xml" />
   <Jobs file="%ModDir%/bosses/boss jobs/bossjobs.xml" />
   <Jobs file="%ModDir%/pmc/pmcjobs.xml" />
 </contentpackage>

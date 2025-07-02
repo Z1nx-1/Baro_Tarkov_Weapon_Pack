@@ -615,8 +615,8 @@
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <Item identifier="organicfiber" amount="4" />
-	  <Item identifier="antibleeding1" amount="4" />
-	  <Item identifier="morphine" amount="1" />
+      <Item identifier="antibleeding1" amount="4" />
+      <Item identifier="morphine" amount="1" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AFAK.png" sourcerect="1435,118,737,810" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/attire/attire_textures/AFAK.png" sourcerect="1435,118,737,810" depth="0.6" origin="0.5,0.5" />
@@ -644,10 +644,9 @@
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <Item identifier="organicfiber" amount="10" />
-	  <Item identifier="antibleeding1" amount="8" />
-	  <Item identifier="antibloodloss2" amount="4" />
-	  <Item identifier="morphine" amount="4" />
-
+      <Item identifier="antibleeding1" amount="8" />
+      <Item identifier="antibloodloss2" amount="4" />
+      <Item identifier="morphine" amount="4" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/attire/attire_textures/GRIZZLY.png" sourcerect="1188,105,1212,856" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/attire/attire_textures/GRIZZLY.png" sourcerect="1188,105,1212,856" depth="0.6" origin="0.5,0.5" />
@@ -659,5 +658,324 @@
     <ItemContainer capacity="16" maxstacksize="32" depth="0.5">
       <Containable items="chem,medical" />
     </ItemContainer>
+  </Item>
+  <Item name="GP-5 gasmask" identifier="GP-5 gasmask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-5.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-5.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.35,0.4" />
+      <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
+    </Wearable>
+  </Item>
+  <Item name="GP-7 gasmask" identifier="GP-7 gasmask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="GP-7 gasmask" texture="%ModDir%/attire/attire_textures/GP-7.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-7.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.5,0.45" />
+      <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
+    </Wearable>
+  </Item>
+  <Item name="Balaclava" identifier="Balaclava" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="Balaclava" texture="%ModDir%/attire/attire_textures/Balaclava.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="Balaclava" texture="%ModDir%/attire/attire_textures/Balaclava.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.487 ,0.42" />
+    </Wearable>
+  </Item>
+  <Item name="Boss cap" identifier="Boss cap" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="Boss cap" texture="%ModDir%/attire/attire_textures/Boss.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="Boss cap" texture="%ModDir%/attire/attire_textures/Boss.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.037" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.5,0.6" />
+    </Wearable>
+  </Item>
+  <Item name="Beanie" identifier="Beanie" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="Beanie" texture="%ModDir%/attire/attire_textures/Beanie.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="Beanie" texture="%ModDir%/attire/attire_textures/Beanie.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.43,0.61" />
+    </Wearable>
+  </Item>
+  <Item name="Comtac II" identifier="Comtac II" scale="0.10" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab" />
+    <Price baseprice="40">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantresearch" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" minavailable="6" />
+      <Price storeidentifier="merchantmine" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/ComtacII.png" sourcerect="457,336,475,374" origin="0.4673697,0.53876936" />
+    <Sprite name="Comtac II" texture="%ModDir%/attire/attire_textures/ComtacII.png" depth="0.6" sourcerect="457,336,475,374" origin="0.4673697,0.53876936" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5"></Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Comtac II Wearable" texture="%ModDir%/attire/attire_textures/ComtacII.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.18" hideotherwearables="false" sourcerect="457,336,475,374" origin="0.55,0.55" />
+    </Wearable>
+  </Item>
+  <Item name="Scav rig" identifier="Scav rig" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.08" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/Scav-vest.png" sourcerect="397,69,705,771" origin="0.45,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/Scav-vest.png" sourcerect="397,68,704,773" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Scav rig" texture="%ModDir%/attire/attire_textures/Scav-vest.png" limb="Torso" hidelimb="false" sourcerect="398,69,705,774" inherittexturescale="false" scale="0.08" origin="0.39,0.6" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretChargeSpeed" value="0.1" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="2" maxstacksize="16">
+      <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="handheldammo,grenade,handgrenade" />
+    </ItemContainer>
+  </Item>
+  <Item name="Security rig" identifier="Security rig" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.08" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/Security-vest.png" sourcerect="397,69,705,771" origin="0.45,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/Security-vest.png" sourcerect="397,68,704,773" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Security rig" texture="%ModDir%/attire/attire_textures/Security-vest.png" limb="Torso" hidelimb="false" sourcerect="398,69,705,774" inherittexturescale="false" scale="0.08" origin="0.39,0.6" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretChargeSpeed" value="0.1" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="2" maxstacksize="16">
+      <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="handheldammo,grenade,handgrenade" />
+    </ItemContainer>
+  </Item>
+  <Item name="DIY rig" identifier="DIY rig" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.08" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/DIYRIG.png" sourcerect="397,69,705,771" origin="0.45,0.5" />
+    <Sprite texture="%ModDir%/attire/attire_textures/DIYRIG.png" sourcerect="397,68,704,773" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="DIY rig" texture="%ModDir%/attire/attire_textures/DIYRIG.png" limb="Torso" hidelimb="false" sourcerect="398,69,705,774" inherittexturescale="false" scale="0.08" origin="0.32,0.55" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretAttackSpeed" value="0.1" />
+      <StatValue stattype="TurretChargeSpeed" value="0.1" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="2" maxstacksize="16">
+      <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="handheldammo,grenade,handgrenade" />
+    </ItemContainer>
+  </Item>
+  <Item name="Scav Backpack" identifier="Scav Backpack" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.075" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="190">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="30" />
+      <Item identifier="organicfiber" amount="4" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/ScavBp.png" sourcerect="398,-17,725,1083" origin="0.49590665,0.4975322" />
+    <Sprite texture="%ModDir%/attire/attire_textures/ScavBp.png" sourcerect="403,-15,715,1072" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Scav Backpack" texture="%ModDir%/attire/attire_textures/ScavBp.png" limb="Torso" hidelimb="false" sourcerect="401,-17,717,1079" inherittexturescale="false" scale="0.08" origin="0.8,0.45" />
+      <StatValue stattype="MovementSpeed" value="-0.12" />
+      <StatValue stattype="PropulsionSpeed" value="-0.12" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="8" maxstacksize="32" depth="0.5">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+  <Item name="Altyn" identifier="Altyn" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.035">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Sprite name="Altyn" texture="%ModDir%/attire/attire_textures/Altyn.png" sourcerect="1010,98,1403,884" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="2" />
+      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.40" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.28" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="Altyn" texture="%ModDir%/attire/attire_textures/Altyn.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.065" hidewearablesoftype="Hair" sourcerect="1008,101,1406,881" origin="0.4,0.5" />
+    </Wearable>
   </Item>
 </Items>
