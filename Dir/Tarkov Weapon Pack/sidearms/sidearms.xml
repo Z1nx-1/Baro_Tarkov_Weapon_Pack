@@ -252,7 +252,7 @@
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer secondary="secarmcab" />
     <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
-    <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
+    <Price baseprice="85" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -335,9 +335,9 @@
       <Item identifier="steel" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel"  />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/TT.png" sourcerect="1286,304,582,393" origin="0.50343645,0.49872774" />
     <Sprite texture="%ModDir%/sidearms/sidearm_textures/TT.png" sourcerect="1285,319,587,390" depth="0.55" origin="0.4,0.52" />
@@ -376,7 +376,7 @@
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer secondary="secarmcab" />
     <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
-    <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
+    <Price baseprice="85" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -385,18 +385,18 @@
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem identifier="steel" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="false" displayname="recycleitem">
-      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="Glock-17 Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="TT Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -447,7 +447,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="150">
+    <Price baseprice="175">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" minavailable="1" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -459,7 +459,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="plastic" />

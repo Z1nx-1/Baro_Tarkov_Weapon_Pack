@@ -9,6 +9,13 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
     </Price>
+	 <Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1" >
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredItem identifier="antibleeding3" amount="2" />
+      <RequiredItem identifier="antibleeding2" amount="2" />
+      <RequiredItem identifier="ethanol" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
@@ -43,8 +50,18 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
     </Price>
+	<Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1" >
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="pomegrenadeextract" amount="2" />
+      <RequiredItem identifier="tonicliquid" amount="2" />
+      <RequiredItem identifier="antidama1" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <SuitableTreatment type="bleeding" suitability="100" />
+    <SuitableTreatment type="damage" suitability="20" />
+    <SuitableTreatment type="burn" suitability="20" />
+    <SuitableTreatment type="blunttrauma" suitability="20" />
+    <SuitableTreatment type="gunshotwound" suitability="20" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
@@ -62,9 +79,21 @@
         <ReduceAffliction type="lacerations" amount="5" />
         <ReduceAffliction type="blunttrauma" amount="5" />
         <ReduceAffliction type="gunshotwound" amount="5" />
+      </StatusEffect>      
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
+        <ReduceAffliction type="damage" amount="3" />
+        <ReduceAffliction type="burn" amount="3" />
+        <ReduceAffliction type="lacerations" amount="3" />
+        <ReduceAffliction type="blunttrauma" amount="3" />
+        <ReduceAffliction type="gunshotwound" amount="3" />
       </StatusEffect>
-	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="15">
+	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="7">
+	    <Affliction identifier="nausea" amount="3" />
+		<Affliction identifier="concussion" amount="3" />
+	  </StatusEffect>	  
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
 	    <Affliction identifier="nausea" amount="5" />
+		<Affliction identifier="concussion" amount="5" />
 	  </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character"/>
@@ -87,8 +116,19 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
     </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1" >
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredItem identifier="pomegrenadeextract" />
+      <RequiredItem identifier="tonicliquid" amount="2" />
+      <RequiredItem identifier="antidama2" amount="1" />
+      <RequiredItem identifier="propital auto-injector" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <SuitableTreatment type="bleeding" suitability="100" />
+    <SuitableTreatment type="damage" suitability="50" />
+    <SuitableTreatment type="burn" suitability="50" />
+    <SuitableTreatment type="blunttrauma" suitability="50" />
+    <SuitableTreatment type="gunshotwound" suitability="50" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
@@ -106,8 +146,20 @@
         <ReduceAffliction type="lacerations" amount="25" />
         <ReduceAffliction type="blunttrauma" amount="25" />
         <ReduceAffliction type="gunshotwound" amount="25" />
+      </StatusEffect>      
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="7">
+        <ReduceAffliction type="damage" amount="15" />
+        <ReduceAffliction type="burn" amount="15" />
+        <ReduceAffliction type="lacerations" amount="15" />
+        <ReduceAffliction type="blunttrauma" amount="15" />
+        <ReduceAffliction type="gunshotwound" amount="15" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="12">
+	    <Affliction identifier="concussion" amount="6" />
+	    <Affliction identifier="nausea" amount="6" />
+	  </StatusEffect>      
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="16">
+	    <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
 	    <Affliction identifier="concussion" amount="6" />
 	    <Affliction identifier="nausea" amount="6" />
 	  </StatusEffect>
@@ -131,8 +183,14 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
     </Price>
+	<Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="1" >
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="meth" amount="2" />
+      <RequiredItem identifier="steroids" amount="2" />
+      <RequiredItem identifier="antinarc" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <SuitableTreatment type="bleeding" suitability="100" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
     <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
