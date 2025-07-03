@@ -66,7 +66,7 @@
     <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="medical" level="65" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
         <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
         <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
@@ -104,7 +104,7 @@
         <Remove />
       </StatusEffect>
     </MeleeWeapon>
-    <SkillRequirementHint identifier="medical" level="40" />
+    <SkillRequirementHint identifier="medical" level="65" />
   </propital>  
   
   <propital name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
@@ -133,7 +133,7 @@
     <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="medical" level="80" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
         <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
         <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
@@ -172,7 +172,7 @@
         <Remove />
       </StatusEffect>
     </MeleeWeapon>
-    <SkillRequirementHint identifier="medical" level="40" />
+    <SkillRequirementHint identifier="medical" level="80" />
   </propital>  
   <propital name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
@@ -195,7 +195,7 @@
     <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="medical" level="65" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
         <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
         <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
@@ -204,6 +204,19 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="1">
 	    <Affliction identifier="haste" amount="250" />
+	  </StatusEffect>      
+	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="30">
+		 <Affliction identifier="organdamage" amount="1" />
+		 <Affliction identifier="chemaddiction" amount="0.5" />
+        <ReduceAffliction identifier="chemwithdrawal" amount="3" />
+	  </StatusEffect>
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="1">
+	    <Affliction identifier="haste" amount="250" />
+	  </StatusEffect>	  
+	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
+		 <Affliction identifier="organdamage" amount="1" />
+		 <Affliction identifier="chemaddiction" amount="0.5" />
+        <ReduceAffliction identifier="chemwithdrawal" amount="3" />
 	  </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character"/>
@@ -214,6 +227,6 @@
         <Remove />
       </StatusEffect>
     </MeleeWeapon>
-    <SkillRequirementHint identifier="medical" level="40" />
+    <SkillRequirementHint identifier="medical" level="65" />
   </propital>
 </Items>
