@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction name="Pain" identifier="pain" description="Your body aches in pain" type="debuff" limbspecific="false" indicatorlimb="Head" activationthreshold="0.1" treatmentthreshold="1" maxstrength="30" affectmachines="false">
+    <Effect minstrength="10" maxstrength="30" minchromaticaberration="3" maxchromaticaberration="3" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
+    <Effect minstrength="30" maxstrength="50" minchromaticaberration="3" maxchromaticaberration="3" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  
+  <Affliction name="Painkiller" identifier="painkiller" description="Your body feels relieved" type="resistance" isbuff="true" limbspecific="false" indicatorlimb="Head" activationthreshold="0.1" treatmentthreshold="1" maxstrength="100" affectmachines="false" >
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-1">
+	  <StatusEffect target="Character" type="OnActive">
+        <Affliction identifier="pain" amount="-100" />
+      </StatusEffect>
+    </Effect>
+	<icon texture="%ModDir%/medical/medical_textures/PainkillersIcon.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0.1" scale="0.1" />
+  </Affliction>
+  
+  
+  
+</Afflictions>

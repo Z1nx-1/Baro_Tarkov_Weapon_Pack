@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-	<Price baseprice="1250">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+    <Price baseprice="1250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
     </Price>
-	 <Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1" >
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredItem identifier="antibleeding3" amount="2" />
       <RequiredItem identifier="antibleeding2" amount="2" />
       <RequiredItem identifier="ethanol" amount="1" />
     </Fabricate>
     <Deconstruct time="5" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
-    <Sprite texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="40" />
@@ -39,31 +39,30 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
-  </zagustin>  
-  
+  </zagustin>
   <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-     <Price baseprice="1425">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+    <Price baseprice="1425">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
     </Price>
-	<Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1" >
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20" amount="1">
       <RequiredSkill identifier="medical" level="65" />
       <RequiredItem identifier="pomegrenadeextract" amount="2" />
       <RequiredItem identifier="tonicliquid" amount="2" />
       <RequiredItem identifier="antidama1" amount="1" />
     </Fabricate>
     <Deconstruct time="5" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="damage" suitability="20" />
     <SuitableTreatment type="burn" suitability="20" />
     <SuitableTreatment type="blunttrauma" suitability="20" />
     <SuitableTreatment type="gunshotwound" suitability="20" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
-    <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
@@ -79,24 +78,24 @@
         <ReduceAffliction type="lacerations" amount="5" />
         <ReduceAffliction type="blunttrauma" amount="5" />
         <ReduceAffliction type="gunshotwound" amount="5" />
-      </StatusEffect>      
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
         <ReduceAffliction type="damage" amount="3" />
         <ReduceAffliction type="burn" amount="3" />
         <ReduceAffliction type="lacerations" amount="3" />
         <ReduceAffliction type="blunttrauma" amount="3" />
         <ReduceAffliction type="gunshotwound" amount="3" />
       </StatusEffect>
-	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="7">
-	    <Affliction identifier="nausea" amount="3" />
-		<Affliction identifier="concussion" amount="3" />
-	  </StatusEffect>	  
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
-	    <Affliction identifier="nausea" amount="5" />
-		<Affliction identifier="concussion" amount="5" />
-	  </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="7">
+        <Affliction identifier="nausea" amount="3" />
+        <Affliction identifier="concussion" amount="3" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
+        <Affliction identifier="nausea" amount="5" />
+        <Affliction identifier="concussion" amount="5" />
+      </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -105,18 +104,17 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
-  </propital>  
-  
+  </propital>
   <propital name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-     <Price baseprice="2250">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+    <Price baseprice="2250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1" >
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredItem identifier="pomegrenadeextract" />
       <RequiredItem identifier="tonicliquid" amount="2" />
@@ -124,13 +122,13 @@
       <RequiredItem identifier="propital auto-injector" amount="2" />
     </Fabricate>
     <Deconstruct time="5" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="damage" suitability="50" />
     <SuitableTreatment type="burn" suitability="50" />
     <SuitableTreatment type="blunttrauma" suitability="50" />
     <SuitableTreatment type="gunshotwound" suitability="50" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
-    <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="80" />
@@ -146,8 +144,8 @@
         <ReduceAffliction type="lacerations" amount="25" />
         <ReduceAffliction type="blunttrauma" amount="25" />
         <ReduceAffliction type="gunshotwound" amount="25" />
-      </StatusEffect>      
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="7">
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="7">
         <ReduceAffliction type="damage" amount="15" />
         <ReduceAffliction type="burn" amount="15" />
         <ReduceAffliction type="lacerations" amount="15" />
@@ -155,16 +153,16 @@
         <ReduceAffliction type="gunshotwound" amount="15" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="12">
-	    <Affliction identifier="concussion" amount="6" />
-	    <Affliction identifier="nausea" amount="6" />
-	  </StatusEffect>      
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="16">
-	    <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
-	    <Affliction identifier="concussion" amount="6" />
-	    <Affliction identifier="nausea" amount="6" />
-	  </StatusEffect>
+        <Affliction identifier="concussion" amount="6" />
+        <Affliction identifier="nausea" amount="6" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="16">
+        <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
+        <Affliction identifier="concussion" amount="6" />
+        <Affliction identifier="nausea" amount="6" />
+      </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -173,26 +171,26 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="80" />
-  </propital>  
+  </propital>
   <propital name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false"/>
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
     </Price>
-	<Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="1" >
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="1">
       <RequiredSkill identifier="medical" level="65" />
       <RequiredItem identifier="meth" amount="2" />
       <RequiredItem identifier="steroids" amount="2" />
       <RequiredItem identifier="antinarc" amount="1" />
     </Fabricate>
     <Deconstruct time="5" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,446,676,190" origin="0.5,0.5"  />
-    <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5"  />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
@@ -203,23 +201,23 @@
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="1">
-	    <Affliction identifier="haste" amount="250" />
-	  </StatusEffect>      
-	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="30">
-		 <Affliction identifier="organdamage" amount="1" />
-		 <Affliction identifier="chemaddiction" amount="0.5" />
+        <Affliction identifier="haste" amount="250" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="30">
+        <Affliction identifier="organdamage" amount="1" />
+        <Affliction identifier="chemaddiction" amount="0.5" />
         <ReduceAffliction identifier="chemwithdrawal" amount="3" />
-	  </StatusEffect>
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="1">
-	    <Affliction identifier="haste" amount="250" />
-	  </StatusEffect>	  
-	  <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
-		 <Affliction identifier="organdamage" amount="1" />
-		 <Affliction identifier="chemaddiction" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="1">
+        <Affliction identifier="haste" amount="250" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
+        <Affliction identifier="organdamage" amount="1" />
+        <Affliction identifier="chemaddiction" amount="0.5" />
         <ReduceAffliction identifier="chemwithdrawal" amount="3" />
-	  </StatusEffect>
+      </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -229,4 +227,50 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </propital>
+  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
+    <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" minamount="1" maxamount="2" spawnprobability="0.8" />
+    <PreferredContainer secondary="outpostmedcab" minamount="1" maxamount="3" spawnprobability="0.5" />
+    <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.2" />
+    <PreferredContainer secondary="researchcontainer" spawnprobability="0.02" />
+    <PreferredContainer primary="medcab" secondary="medcontainer" />
+    <Price baseprice="75" minavailable="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantmedical" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
+      <RequiredSkill identifier="medical" level="15" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="2" />
+    <SuitableTreatment identifier="pain" suitability="0.1" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" depth="0.6" origin="0.5,0.5"  />
+    <Body width="25" height="40" density="10.05" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="15" />
+      <StatusEffect type="OnUse" target="This" Condition="-25">
+        <Sound file="%ModDir%/medical/medical_audio/Painkillers.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="2">
+		<Affliction identifier="painkiller" amount="100" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="2">
+		<Affliction identifier="painkiller" amount="100"/>
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="15" />
+  </Painkiller>
 </Items>
+

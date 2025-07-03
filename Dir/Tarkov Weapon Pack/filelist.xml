@@ -12,5 +12,7 @@
   <NPCSets file="%ModDir%/bosses/boss characters/bosscharacters.xml" />
   <Jobs file="%ModDir%/bosses/boss jobs/bossjobs.xml" />
   <Jobs file="%ModDir%/pmc/pmcjobs.xml" />
+  <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
+  <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <!--<Jobs file="%ModDir%/overrides/joboverrides.xml" />  DEV NOT WORKING--> 
 </contentpackage>
