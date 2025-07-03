@@ -676,7 +676,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="12">
-      <RequiredItem identifier="silicon" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-5.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
@@ -703,7 +703,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="12">
-      <RequiredItem identifier="silicon" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Sprite name="GP-7 gasmask" texture="%ModDir%/attire/attire_textures/GP-7.png" sourcerect="1045,27,1282,1036" depth="0.6" origin="0.5,0.5" />
