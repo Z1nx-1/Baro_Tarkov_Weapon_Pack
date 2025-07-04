@@ -306,9 +306,11 @@
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="15">
         <ReduceAffliction identifier="gasdamage" amount="3" />
+		<ReduceAffliction identifier="radiationsickness" amount="3.0" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="15">
         <ReduceAffliction identifier="gasdamage" amount="3" />
+		<ReduceAffliction identifier="radiationsickness" amount="3" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
