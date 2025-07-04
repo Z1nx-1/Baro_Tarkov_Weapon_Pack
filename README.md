@@ -99,12 +99,23 @@ Will take down if requested.
 * AFAK Medical Pouch
 * GRIZZLY Medical Pouch
 
+**Medications**
+
+* Painkillers
+* AI-2 Medkit
+
 **Combat Stimulants**
 
 * Zagustin Auto-Injector
 * Propital Auto-Injector
 * eTg Auto-Injector
 * SJ1 Auto-Injector
+* SJ6 Auto-Injector
 
+
+**Afflictions**
+
+* Gas Damage
+* Pain
 
 .
