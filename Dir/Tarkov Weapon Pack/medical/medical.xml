@@ -252,7 +252,7 @@
     <Deconstruct time="2" />
     <SuitableTreatment identifier="pain" suitability="0.1" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" depth="0.6" origin="0.5,0.5"  />
+    <Sprite texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="15" />
@@ -260,10 +260,10 @@
         <Sound file="%ModDir%/medical/medical_audio/Painkillers.ogg" range="5000" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="2">
-		<Affliction identifier="painkiller" amount="100" />
+        <Affliction identifier="painkiller" amount="100" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="2">
-		<Affliction identifier="painkiller" amount="100"/>
+        <Affliction identifier="painkiller" amount="100" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -272,5 +272,49 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </Painkiller>
+  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.04" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
+    <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" minamount="1" maxamount="2" spawnprobability="0.8" />
+    <PreferredContainer secondary="outpostmedcab" minamount="1" maxamount="3" spawnprobability="0.5" />
+    <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.2" />
+    <PreferredContainer secondary="researchcontainer" spawnprobability="0.02" />
+    <PreferredContainer primary="medcab" secondary="medcontainer" />
+    <Price baseprice="75" minavailable="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantmedical" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
+      <RequiredSkill identifier="medical" level="15" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="2" />
+    <SuitableTreatment identifier="gasdamage" suitability="0.1" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/AI-2.png" sourcerect="1594,332,426,401" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/AI-2.png" sourcerect="1594,332,425,400" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="10.05" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="15" />
+      <StatusEffect type="OnUse" target="This" Condition="-45">
+        <Sound file="%ModDir%/medical/medical_audio/Painkillers.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="15">
+        <ReduceAffliction identifier="gasdamage" amount="3" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="15">
+        <ReduceAffliction identifier="gasdamage" amount="3" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="15" />
+  </AI-2>
 </Items>
-

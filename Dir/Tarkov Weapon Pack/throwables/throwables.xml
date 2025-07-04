@@ -145,6 +145,104 @@
     </Quality>
   </Item>
   
+  
+  
+  
+  
+  
+  
+  
+  <Item name="Gas grenade" identifier="Gas grenade" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,handgrenade" Scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.75" notcampaign="true" notpvp="true"/>
+    <PreferredContainer primary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.05"/>
+    <PreferredContainer secondary="armcab"/>
+    <Price baseprice="80" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" mindifficulty="60" sold="true" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" mindifficulty="60" sold="true" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" />
+    </Price>
+    <Deconstruct time="5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="2" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="iron" amount="2" />
+      <RequiredItem identifier="sulphuricacid" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="576,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="79,414,26,54" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite texture="Content/Items/Weapons/weapons_new.png" name="Gas grenade" sourcerect="487,186,24,54" depth="0.55" origin="0.5,0.5185185" maxcondition="99.9" />
+    <Body width="26" height="54" density="30" />
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/StunGrenade.ogg" />
+        <Explosion range="500" ballastfloradamage="0" itemdamage="0" force="0.5" sparks="false" shockwave="false" flames="false" smoke="false" flash="true">
+          <Affliction identifier="gasdamage" strength="1" />
+          <Affliction identifier="gasdamage" strength="1" probability="0.2" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <SpawnItem identifier="gasmistemitter" count="20" aimspread="720" impulse="30" rotationtype="Collider" rotation="0" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This" Condition="0" setvalue="true" comparison="OR">
+        <Conditional HasTag="detonator" targetcontainer="true" />
+        <Conditional HasTag="railgunammo" targetcontainer="true" />
+        <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Use />
+      </StatusEffect>
+    </Throwable>
+	
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" DontCleanUp="true" comparison="AND" condition="-1">
+        <Conditional HasTag="neq detonator" targetcontainer="true" />
+        <Conditional HasTag="neq railgunammo" targetcontainer="true" />
+        <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-30">
+        <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
+      </StatusEffect>
+    </ItemComponent>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1"/>
+      <QualityStat stattype="ExplosionDamage" value="0.1"/>
+    </Quality>
+  </Item>
+  
+  <Item name="Gas Emitter" identifier="gasmistemitter" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="10" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
+    <Body radius="50" density="15" gravityscale="0.1" lineardamping="0.5" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="30">
+        <ParticleEmitter particle="gasmistgrenade" particlespersecond="5" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="0" velocitymax="25" copyentityangle="false"/>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="200" delay="0.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="gasdamage" strength="0.3"/>
+        <Affliction identifier="slow" strength="50" MultiplyByMaxVitality="true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  
+  
+  
+  
   <Override>
     <Item name="fraggrenade" identifier="fraggrenade" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,handgrenade" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.75" notcampaign="true" notpvp="true" />

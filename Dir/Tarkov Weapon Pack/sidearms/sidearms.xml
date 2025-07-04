@@ -522,6 +522,7 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="10" targetforce="10" itemdamage="10" severlimbsprobability="0.2" penetration="0.1">
         <Affliction identifier="gunshotwound" strength="29.5" />
+        <Affliction identifier="gasdamage" strength="29.5" />
         <Affliction identifier="bleeding" strength="18.2" />
         <Affliction identifier="stun" strength="0.3" />
       </Attack>

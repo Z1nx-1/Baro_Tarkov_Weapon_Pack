@@ -684,6 +684,12 @@
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-5.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.35,0.4" />
       <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
+	  <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0"/>
+	    <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
     </Wearable>
   </Item>
   <Item name="GP-7 gasmask" identifier="GP-7 gasmask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
@@ -711,6 +717,12 @@
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-7.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.5,0.45" />
       <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
+	  <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0"/>
+	    <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+		<sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
     </Wearable>
   </Item>
   <Item name="Balaclava" identifier="Balaclava" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
@@ -973,4 +985,7 @@
       <sprite name="Altyn" texture="%ModDir%/attire/attire_textures/Altyn.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.065" hidewearablesoftype="Hair" sourcerect="1008,101,1406,881" origin="0.4,0.5" />
     </Wearable>
   </Item>
+  
+  
+ 
 </Items>

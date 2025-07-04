@@ -14,5 +14,6 @@
   <Jobs file="%ModDir%/pmc/pmcjobs.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
+  <Particles file="%ModDir%/particles/particles.xml" />
   <!--<Jobs file="%ModDir%/overrides/joboverrides.xml" />  DEV NOT WORKING--> 
 </contentpackage>
