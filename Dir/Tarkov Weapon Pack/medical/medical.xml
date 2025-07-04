@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -40,7 +40,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </zagustin>
-  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1425">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -105,7 +105,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </propital>
-  <propital name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -171,8 +171,8 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="80" />
-  </propital>
-  <propital name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  </eTg>
+  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -226,8 +226,65 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
-  </propital>
-  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  </SJ6>  
+  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="1150">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="1">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="meth" amount="1" />
+      <RequiredItem identifier="steroids" amount="3" />
+      <RequiredItem identifier="antinarc" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ1.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/SJ1.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="10.05" />
+    <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="65" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="2">
+		<Affliction identifier="strengthen" amount="175" />
+        <Affliction identifier="haste" amount="125" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="30">
+        <Affliction identifier="organdamage" amount="0.5" />
+        <Affliction identifier="chemaddiction" amount="0.5" />
+        <ReduceAffliction identifier="chemwithdrawal" amount="3" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="1">
+		<Affliction identifier="strengthen" amount="175" />
+        <Affliction identifier="haste" amount="125" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
+        <Affliction identifier="organdamage" amount="0.5" />
+        <Affliction identifier="chemaddiction" amount="0.5" />
+        <ReduceAffliction identifier="chemwithdrawal" amount="3" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="65" />
+  </SJ1>
+  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -272,7 +329,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </Painkiller>
-  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.04" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The AI-2 is an old soviet medkit consisting of gas damage and minor radiation treatment." scale="0.04" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
-  <Affliction name="Pain" identifier="pain" description="Your body aches in pain" type="debuff" limbspecific="false" indicatorlimb="Head" activationthreshold="0.1" treatmentthreshold="1" maxstrength="30" affectmachines="false">
-    <Effect minstrength="10" maxstrength="30" minchromaticaberration="3" maxchromaticaberration="3" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
-    <Effect minstrength="30" maxstrength="50" minchromaticaberration="3" maxchromaticaberration="3" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
+  <Affliction name="Pain" identifier="pain" description="Your body aches in pain" type="debuff" limbspecific="false" indicatorlimb="Head" activationthreshold="0.1" treatmentthreshold="1" maxstrength="130" affectmachines="false">
+    <Effect minstrength="10" maxstrength="40" minchromaticaberration="0.1" maxchromaticaberration="1" minscreenblur="0.01" maxscreenblur="0.03"></Effect>
+    <Effect minstrength="40" maxstrength="70" minchromaticaberration="1" maxchromaticaberration="1.5" minscreenblur="0.03" maxscreenblur="0.07"></Effect>
+    <Effect minstrength="70" maxstrength="100" minchromaticaberration="1.5" maxchromaticaberration="3" minscreenblur="0.1" maxscreenblur="0.1"></Effect>
+    <Effect minstrength="100" maxstrength="130" minchromaticaberration="3" maxchromaticaberration="5" minscreenblur="0.1" maxscreenblur="0.2"></Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="139,60,42,255" origin="0,0" />
   </Affliction>
   
