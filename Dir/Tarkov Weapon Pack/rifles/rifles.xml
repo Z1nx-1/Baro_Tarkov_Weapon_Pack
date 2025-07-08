@@ -5,7 +5,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer secondary="armcab,weaponholder" />
-    <Price baseprice="450" minleveldifficulty="30">
+    <Price baseprice="420" minleveldifficulty="30">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -359,7 +359,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="4" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
-        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="gunshotwound" strength="16.6" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="stun" strength="0.4" probability="0.1" />
       </Attack>

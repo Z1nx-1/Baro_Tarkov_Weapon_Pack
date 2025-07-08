@@ -24,8 +24,8 @@
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="40" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
         <ReduceAffliction type="bleeding" amount="10" />
@@ -67,8 +67,8 @@
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
@@ -133,8 +133,8 @@
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="80" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
@@ -195,8 +195,8 @@
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
@@ -250,8 +250,8 @@
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
