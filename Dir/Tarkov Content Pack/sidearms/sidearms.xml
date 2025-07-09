@@ -86,7 +86,7 @@
     <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/Glock_17-mag.png" sourcerect="1475,310,313,366" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/sidearms/sidearm_textures/Glock_17-mag.png" depth="0.54" sourcerect="1476,310,312,366" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="revolverround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-5.9" disabledeltatime="true">
@@ -156,7 +156,7 @@
     <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/Glock_17-magAP.png" sourcerect="1475,310,313,366" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/sidearms/sidearm_textures/Glock_17-magAP.png" depth="0.54" sourcerect="1476,310,312,366" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="revolverround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mm (AP)" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9mm (AP)" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-5.9" disabledeltatime="true">
@@ -280,7 +280,7 @@
     <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/Makarov-mag.png" sourcerect="1460,409,313,366" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/sidearms/sidearm_textures/Makarov-mag.png" depth="0.54" sourcerect="1461,409,312,366" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="revolverround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9x18mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9x18mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">
@@ -404,7 +404,7 @@
     <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/TT-mag.png" sourcerect="1460,409,313,366" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/sidearms/sidearm_textures/TT-mag.png" depth="0.54" sourcerect="1461,409,312,366" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="revolverround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762x25" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="762x25" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">

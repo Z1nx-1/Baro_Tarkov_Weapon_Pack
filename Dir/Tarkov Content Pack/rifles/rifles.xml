@@ -214,11 +214,11 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/M4A1-mag.png" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/M4A1-mag.png" depth="0.54" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="5.45x39mm" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.56x45mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="5.56x45mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
-        <SpawnItem identifiers="5.45x39mm" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="5.56x45mm" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <!--Magazines can be combined to raise condition.-->
@@ -340,7 +340,7 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/AKM-mag.png" sourcerect="1489,383,433,615" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/AKM-mag.png" depth="0.54" sourcerect="1494,381,433,615" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="7.62x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="7.62x39mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
@@ -647,7 +647,7 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/P90-mag.png" sourcerect="918,146,1528,715" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/P90-mag.png" depth="0.54" sourcerect="945,180,1566,643" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.7x28" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="5.7x28" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
@@ -789,7 +789,7 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/Ash-12-mag.png" sourcerect="1367,233,433,615" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/Ash-12-mag.png" depth="0.54" sourcerect="1365,233,433,615" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="12.7x55mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="12.7x55mm" />
       <StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
         <SpawnItem identifiers="12.7x55mm" spawnposition="ThisInventory" />
@@ -1042,7 +1042,7 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/Vector-mag.png" sourcerect="918,146,1528,715" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/Vector-mag.png" depth="0.54" sourcerect="945,180,1566,643" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mmVB" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9mmVB" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-3.1" disabledeltatime="true">
@@ -1170,7 +1170,7 @@
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/AS-VAL-mag.png" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/AS-VAL-mag.png" depth="0.54" sourcerect="1437,264,433,615" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.45x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9x39mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
