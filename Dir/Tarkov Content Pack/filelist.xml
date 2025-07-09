@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Weapon Pack" modversion="1.2.5" corepackage="False" steamworkshopid="3507999416" gameversion="1.9.8.0">
+<contentpackage name="Tarkov Content Pack" modversion="1.2.5" corepackage="False" steamworkshopid="3507999416" gameversion="1.9.8.0">
   <Item file="%ModDir%/rifles/rifles.xml" />
   <Item file="%ModDir%/rifles/modded_rifles.xml" />
   <Item file="%ModDir%/sidearms/sidearms.xml" />
