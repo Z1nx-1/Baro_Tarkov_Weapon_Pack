@@ -615,6 +615,7 @@
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <Item identifier="organicfiber" amount="4" />
+      <Item identifier="plastic" />
       <Item identifier="antibleeding1" amount="4" />
       <Item identifier="morphine" amount="1" />
     </Fabricate>
@@ -644,6 +645,7 @@
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <Item identifier="organicfiber" amount="10" />
+      <Item identifier="ballisticfiber" amount="5" />
       <Item identifier="antibleeding1" amount="8" />
       <Item identifier="antibloodloss2" amount="4" />
       <Item identifier="morphine" amount="4" />

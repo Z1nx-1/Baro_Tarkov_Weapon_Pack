@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -29,9 +29,13 @@
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
         <ReduceAffliction type="bleeding" amount="10" />
+        <ReduceAffliction type="infection" amount="10" />
+        <ReduceAffliction type="burn" amount="10" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
         <ReduceAffliction type="bleeding" amount="10" />
+        <ReduceAffliction type="infection" amount="10" />
+        <ReduceAffliction type="burn" amount="10" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -40,7 +44,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </zagustin>
-  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1425">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -53,12 +57,11 @@
       <RequiredSkill identifier="medical" level="65" />
       <RequiredItem identifier="pomegrenadeextract" amount="2" />
       <RequiredItem identifier="tonicliquid" amount="2" />
-      <RequiredItem identifier="antidama1" amount="1" />
+      <RequiredItem identifier="antidama1" amount="2" />
     </Fabricate>
     <Deconstruct time="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="damage" suitability="20" />
-    <SuitableTreatment type="burn" suitability="20" />
     <SuitableTreatment type="blunttrauma" suitability="20" />
     <SuitableTreatment type="gunshotwound" suitability="20" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
@@ -74,14 +77,12 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="40">
         <ReduceAffliction type="damage" amount="5" />
-        <ReduceAffliction type="burn" amount="5" />
         <ReduceAffliction type="lacerations" amount="5" />
         <ReduceAffliction type="blunttrauma" amount="5" />
         <ReduceAffliction type="gunshotwound" amount="5" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
         <ReduceAffliction type="damage" amount="3" />
-        <ReduceAffliction type="burn" amount="3" />
         <ReduceAffliction type="lacerations" amount="3" />
         <ReduceAffliction type="blunttrauma" amount="3" />
         <ReduceAffliction type="gunshotwound" amount="3" />
@@ -105,7 +106,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </propital>
-  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -116,9 +117,7 @@
     </Price>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1">
       <RequiredSkill identifier="medical" level="80" />
-      <RequiredItem identifier="pomegrenadeextract" />
-      <RequiredItem identifier="tonicliquid" amount="2" />
-      <RequiredItem identifier="antidama2" amount="1" />
+      <RequiredItem identifier="antidama2" amount="2" />
       <RequiredItem identifier="propital auto-injector" amount="2" />
     </Fabricate>
     <Deconstruct time="5" />
@@ -172,7 +171,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="80" />
   </eTg>
-  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -227,7 +226,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </SJ6>  
-  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Terragroup laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -303,7 +302,7 @@
     </Price>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
       <RequiredSkill identifier="medical" level="15" />
-      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="opium" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Deconstruct time="2" />
@@ -349,6 +348,7 @@
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
       <RequiredSkill identifier="medical" level="15" />
       <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="stabilozine" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Deconstruct time="2" />
