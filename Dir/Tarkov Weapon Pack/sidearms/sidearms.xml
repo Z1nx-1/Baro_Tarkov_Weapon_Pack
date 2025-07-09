@@ -514,8 +514,8 @@
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/.357.png" sourcerect="0,0,467,159" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/sidearms/sidearm_textures/.357.png" sourcerect="0,0,467,158" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/357.png" sourcerect="0,0,467,159" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/sidearms/sidearm_textures/357.png" sourcerect="0,0,467,158" depth="0.55" origin="0.5,0.5" />
     <Body width="29" height="10" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
