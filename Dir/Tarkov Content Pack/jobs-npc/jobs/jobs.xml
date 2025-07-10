@@ -241,5 +241,83 @@
 	  <Item identifier="painkillers" amount="1"/>
 
     </ItemSet>
+  </Job>  
+  
+  <Job identifier="OS2" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" idlebehavior="Patrol">
+    <Skills>
+      <Skill identifier="weapons" level="40" primary="true" />
+      <Skill identifier="medical" level="25" />
+      <Skill identifier="mechanical" level="15" />
+      <Skill identifier="electrical" level="15" />
+      <Skill identifier="helm" level="5" />
+    </Skills>
+	<ItemSet commonness="0.5">
+	  <Item identifier="idcard" equip="true"/>
+	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
+	  <Item identifier="securityseparatistsuniform1" equip="true"/>
+	  <Item identifier="Paca soft armor" equip="true"/>
+	  <Item identifier="6B47 helmet" equip="true"/>
+	  <Item identifier="Makarov" equip="true">
+	  	    <Item identifier="Makarov Magazine" />
+	  </Item>
+	  <Item identifier="Makarov Magazine" amount="2"/>
+	  <Item identifier="handcuffs"/>
+	  <Item identifier="bandage" amount="3"/>
+	  <Item identifier="painkillers" amount="1"/>
+    </ItemSet>	
+	
+	<ItemSet commonness="0.5">
+	  <Item identifier="idcard" equip="true"/>
+	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
+	  <Item identifier="securityseparatistsuniform1" equip="true"/>
+	  <Item identifier="Paca soft armor" equip="true"/>
+	  <Item identifier="6B47 helmet" equip="true"/>
+	  <Item identifier="Rhino" equip="true">
+	  	    <Item identifier=".357 round" amount="6"/>
+	  </Item>
+	  <Item identifier=".357 round" amount="6"/>
+	  <Item identifier="handcuffs"/>
+	  <Item identifier="bandage" amount="3"/>
+	  <Item identifier="painkillers" amount="1"/>
+			
+    </ItemSet>	
+	
+	<ItemSet commonness="0.5">
+	  <Item identifier="idcard" equip="true"/>
+	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
+	  <Item identifier="securityseparatistsuniform1" equip="true"/>
+	  <Item identifier="AVS plate carrier rig" equip="true">
+	    <Item identifier="AKM Magazine" amount="2"/>
+	  </Item>
+	  <Item identifier="6B47 helmet (EMR)" equip="true"/>
+	  <Item identifier="AKM" equip="true">
+	  	    <Item identifier="AKM Magazine"/>
+	  </Item>
+	  <Item identifier="handcuffs"/>
+	  <Item identifier="bandage" amount="3"/>
+	  <Item identifier="painkillers" amount="1"/>
+			
+    </ItemSet>	
+	
+	<ItemSet commonness="0.5">
+	  <Item identifier="idcard" equip="true"/>
+	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
+	  <Item identifier="securityseparatistsuniform1" equip="true"/>
+	  <Item identifier="MMAC plate carrier rig" equip="true">
+	    <Item identifier="AS-VAL Magazine" amount="2"/>
+	  </Item>
+	  <Item identifier="Scav Backpack" equip="true">
+	    <Item identifier="Zagustin auto-injector" amount="1"/>
+	    <Item identifier="Propital auto-injector" amount="1"/>
+	  </Item>
+	  <Item identifier="Bastion helmet (Green)" equip="true"/>
+	  <Item identifier="AS-VAL Customized" equip="true">
+	  	    <Item identifier="AS-VAL Magazine"/>
+	  </Item>
+	  <Item identifier="handcuffs"/>
+	  <Item identifier="bandage" amount="3"/>
+	  <Item identifier="painkillers" amount="1"/>
+			
+    </ItemSet>
   </Job>
 </Jobs>
