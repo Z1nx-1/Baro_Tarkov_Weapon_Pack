@@ -13,5 +13,5 @@
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
-  <Npcsets file="%ModDir%/overrides/joboverrides.xml" />
+  <Npcsets file="%ModDir%/overrides/npcoverrides.xml" />
 </contentpackage>
