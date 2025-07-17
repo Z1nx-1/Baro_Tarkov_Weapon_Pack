@@ -574,7 +574,7 @@
     </Wearable>
   </Item>
   <Item name="IFAK medical pouch" identifier="IFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <Price baseprice="125">
+    <Price baseprice="250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
@@ -601,13 +601,13 @@
     </ItemContainer>
   </Item>
   <Item name="AFAK medical pouch" identifier="AFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <Price baseprice="250">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" />
+    <Price baseprice="750">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="3"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="3"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" maxavailable="3"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" maxavailable="3"/>
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" maxavailable="3"/>
     </Price>
     <Deconstruct time="10">
       <Item identifier="ballisticfiber" amount="2" />
@@ -631,13 +631,13 @@
     </ItemContainer>
   </Item>
   <Item name="GRIZZLY medical pouch" identifier="GRIZZLY medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
-    <Price baseprice="500">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" />
+    <Price baseprice="1750">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="2"/>
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="1" maxavailable="5"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1" maxavailable="2"/>
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="1" maxavailable="2"/>
     </Price>
     <Deconstruct time="30">
       <Item identifier="ballisticfiber" amount="8" />
