@@ -46,6 +46,8 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  
+  
   <Item name="Cultist Knife" identifier="CultistKnife" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <!-- Make a new affliction which adds unknown toxin once hit from the cultist knife. -->
     <InventoryIcon texture="%ModDir%/melee/melee_textures/CultistKnife.png" sourcerect="1448,347,1027,384" origin="0.5,0.5" />
@@ -56,6 +58,7 @@
         <Affliction identifier="lacerations" strength="10" />
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="unknowntoxin" strength="1" />
         <StatusEffect type="OnUse" target="UseTarget">
           <Conditional entitytype="eq Character" />
           <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
@@ -73,6 +76,8 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  
+  
   <Item name="M-2 Tactical Sword" identifier="M-2TacticalSword" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <!-- Sword is still using the length of the diving knife, meaning that attacks have to be much closer even when the sprite clips the reciever. Once fixed, will be obtainable. -->
 	<InventoryIcon texture="%ModDir%/melee/melee_textures/M-2TacticalSword.png" sourcerect="984,343,1871,388" origin="0.5,0.5" />
