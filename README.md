@@ -130,5 +130,6 @@ Will take down if requested.
 
 * Gas Damage
 * Pain
+* Unknown Toxin
 
 .
