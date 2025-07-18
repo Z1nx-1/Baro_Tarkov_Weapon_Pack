@@ -21,6 +21,12 @@ Will take down if requested.
 
 * KS-23
 
+* Benelli M9 Super 90 Semi-Automatic Shotgun
+
+* MP-135 Semi-Automatic shotgun
+
+* MP-133 Pump-Action Shotgun
+
 * GLOCK 17
 
 * ASH-12
@@ -40,6 +46,12 @@ Will take down if requested.
 * F1 Frag grenade
 
 * M67 Frage grenade
+
+* 6Kh5 Bayonet
+
+* Cultist Knife
+
+* M-2 Tactical Sword
 
 
 
