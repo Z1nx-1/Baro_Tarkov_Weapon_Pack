@@ -284,7 +284,7 @@
     <SkillRequirementHint identifier="medical" level="65" />
   </SJ1>  
   
-  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2500">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
