@@ -282,7 +282,70 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
-  </SJ1>
+  </SJ1>  
+  
+  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="2500">
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" amount="1">
+      <RequiredSkill identifier="medical" level="90" />
+      <RequiredItem identifier="meth" amount="3" />
+      <RequiredItem identifier="steroids" amount="3" />
+      <RequiredItem identifier="antinarc" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/Obdolbos.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/Obdolbos.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="10.05" />
+    <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="75" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
+		<Affliction identifier="strengthen" amount="1000" />
+        <Affliction identifier="haste" amount="1000" />
+      </StatusEffect>      
+	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="120">
+		<Affliction identifier="pyromania" amount="1000" />
+		<Affliction identifier="stonewall" amount="1000" />
+		<Affliction identifier="inspiringtunes" amount="1000" />
+      </StatusEffect>	  
+	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" delay="10" duration="120">
+		<Affliction identifier="decrepify" amount="180" />
+		<Affliction identifier="hypersensitivity" amount="180" />
+		<ReduceAffliction identifier="strengthen" amount="1000" />
+		<ReduceAffliction identifier="haste" amount="1000" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
+		<Affliction identifier="pressure" amount="1000" />
+		<Affliction identifier="bleedingnonstop" amount="1000" />
+		<Affliction identifier="morbusinepoisoning" amount="1000" />
+		<Affliction identifier="sufforinpoisoning" amount="1000" />
+		<Affliction identifier="deliriuminepoisoning" amount="1000" />
+		<Affliction identifier="cyanidepoisoning" amount="1000" />
+      </StatusEffect>      
+      <StatusEffect type="OnSuccess" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="75" />
+  </Obdolbos>
   <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
