@@ -348,16 +348,14 @@
   </Obdolbos>  
   
   <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="400">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" sold="false" />
-      <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" sold="false" />
-    </Price>
     <Deconstruct time="5" />
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredItem identifier="antibiotics" amount="2" />
+      <RequiredItem identifier="ethanol" />
+      <RequiredItem identifier="antipsychosis" />
+    </Fabricate>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
     <InventoryIcon texture="%ModDir%/medical/medical_textures/Obdolbos2.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/medical/medical_textures/Obdolbos2.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />

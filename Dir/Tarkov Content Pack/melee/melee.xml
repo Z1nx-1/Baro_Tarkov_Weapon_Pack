@@ -50,7 +50,18 @@
   
   <Item name="Cultist Knife" identifier="CultistKnife" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <!-- Make a new affliction which adds unknown toxin once hit from the cultist knife. -->
-    <InventoryIcon texture="%ModDir%/melee/melee_textures/CultistKnife.png" sourcerect="1448,347,1027,384" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredItem identifier="hallucinogenicbufotoxin" />
+      <RequiredItem identifier="huskeggsbasic" />
+      <RequiredItem identifier="alienblood" amount="2" />
+      <RequiredItem identifier="iron" amount="2" />
+    </Fabricate>
+	<InventoryIcon texture="%ModDir%/melee/melee_textures/CultistKnife.png" sourcerect="1448,347,1027,384" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/melee/melee_textures/CultistKnife.png" sourcerect="1448,347,1028,383" depth="0.55" origin="0.44,0.32" />
     <Body width="65" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="65" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
