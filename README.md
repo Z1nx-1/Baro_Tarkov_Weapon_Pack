@@ -123,6 +123,7 @@ Will take down if requested.
 * eTg Auto-Injector
 * SJ1 Auto-Injector
 * SJ6 Auto-Injector
+* Uknown Toxin Antidote
 
 
 **Afflictions**
