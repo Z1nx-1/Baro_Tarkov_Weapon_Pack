@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <override>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                               Outpost NPCs                                -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
   <npcset identifier="outpostnpcs1">
     <npc identifier="captain" job="captain" commonness="1" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="admin,adminmodule">
@@ -289,61 +292,72 @@
     </npc>
     
     <npc identifier="securitynpccoalition" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
-
-	
-
-	
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityuniform1" equip="true"/>
-	  <Item identifier="Bastion helmet (Green)" equip="true"/>
-	  <Item identifier="Ak-74 customized" equip="true">
-	  	    <Item identifier="AK74 Magazine" />
-	  </Item>	  	    
-	  <Item identifier="ARSS plate carrier rig" equip="true">
-	    <Item identifier="AK74 Magazine" amount="3"/>
-	  </Item>
-	  <Item identifier="Berkut Backpack">
-	    <Item identifier="Zagustin auto-injector" amount="1"/>
-	    <Item identifier="Propital auto-injector" amount="1"/>
-	  </Item>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-    </ItemSet>
-	
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityuniform1" equip="true"/>
-	  <Item identifier="6B47 helmet (EMR)" equip="true"/>
-	  <Item identifier="AK-74" equip="true">
-	  	    <Item identifier="AK74 Magazine" />
-	  </Item>
-	  <Item identifier="AK74 Magazine" amount="2"/>
-	  <Item identifier="6B13 (EMR)" equip="true"/>
-	  <Item identifier="6h112 (EMR)" equip="true"/>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-    </ItemSet>	
-	
-    <ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityuniform1" equip="true"/>
-	  <Item identifier="6B47 helmet" equip="true"/>
-	  <Item identifier="Makarov" equip="true">
-	  	    <Item identifier="Makarov Magazine" />
-	  </Item>
-	  <Item identifier="Makarov Magazine" amount="2"/>
-	  <Item identifier="Paca soft armor" equip="true"/>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-    </ItemSet>	
-	
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="handcuffs"/>
+        <Item identifier="Ak-74 customized" equip="true"> 
+          <Item identifier="AK74 Magazine" infinite="true"/>
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="Beta2 Backpack" equip="true">AK
+          <Item identifier="antibleeding1" amount="2"/>
+          <Item identifier="antidama1"/>
+          <Item identifier="propital auto-injector"/>
+        </Item>
+        <Item identifier="ARSS plate carrier rig" equip="true">
+          <Item identifier="AK74 Magazine" amount="2"/>
+        </Item>
+        <Item identifier="Bastion helmet (Green)" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item> 
+      </ItemSet>
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="stungun">
+          <Item identifier="stungundart" infinite="true"/>
+        </Item>
+        <Item identifier="AK74" equip="true">
+          <Item identifier="AK74 Magazine" infinite="true"/>
+        </Item>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="handcuffs"/>
+        <Item identifier="antibleeding1"/>
+        <Item identifier="6h112 (EMR)" equip="true">
+          <Item identifier="AK74 Magazine" amount="2"/>
+        </Item>
+        <Item identifier="6B13 (EMR)" equip="true"/>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item> 
+      </ItemSet>
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="handcuffs"/>
+        <Item identifier="Rhino" equip="false">
+          <Item identifier=".357 round" amount="6" infinite="true"/>
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="antibleeding1"/>
+        <Item identifier="Paca soft armor" equip="true"/>
+        <Item identifier="6B47 helmet" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
     </npc>
 
     <npc identifier="armsdealer" job="watchman" spawnpointtags="shop" healthmultiplier="1.1" campaigninteractiontype="Store" behavior="StayInHull">
@@ -367,96 +381,70 @@
     </npc>
 
     <npc identifier="securitynpcseparatists" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
+      <ItemSet>
+        <Item identifier="securityseparatistsuniform1" equip="true" />
 
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityseparatistsuniform1" equip="true"/>
-	  <Item identifier="AVS plate carrier rig" equip="true">
-	    <Item identifier="AKM Magazine" amount="2"/>
-	  </Item>
-	  <Item identifier="6B47 helmet (EMR)" equip="true"/>
-	  <Item identifier="AKM" equip="true">
-	  	    <Item identifier="AKM Magazine"/>
-	  </Item>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-			
-    </ItemSet>	
-	
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityseparatistsuniform1" equip="true"/>
-	  <Item identifier="MMAC plate carrier rig" equip="true">
-	    <Item identifier="AS-VAL Magazine" amount="2"/>
-	  </Item>
-	  <Item identifier="Scav Backpack" equip="true">
-	    <Item identifier="Zagustin auto-injector" amount="1"/>
-	    <Item identifier="Propital auto-injector" amount="1"/>
-	  </Item>
-	  <Item identifier="Bastion helmet (Green)" equip="true"/>
-	  <Item identifier="AS-VAL Customized" equip="true">
-	  	    <Item identifier="AS-VAL Magazine"/>
-	  </Item>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-    </ItemSet>	
-	
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityuniform1" equip="true"/>
-	  <Item identifier="Bastion helmet (Green)" equip="true"/>
-	  <Item identifier="Ak-74 customized" equip="true">
-	  	    <Item identifier="AK74 Magazine" />
-	  </Item>	  	    
-	  <Item identifier="ARSS plate carrier rig" equip="true">
-	    <Item identifier="AK74 Magazine" amount="3"/>
-	  </Item>
-	  <Item identifier="Berkut Backpack">
-	    <Item identifier="Zagustin auto-injector" amount="1"/>
-	    <Item identifier="Propital auto-injector" amount="1"/>
-	  </Item>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-
-    </ItemSet>
-
-
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityseparatistsuniform1" equip="true"/>
-	  <Item identifier="Paca soft armor" equip="true"/>
-	  <Item identifier="6B47 helmet" equip="true"/>
-	  <Item identifier="Rhino" equip="true">
-	  	    <Item identifier=".357 round" amount="6"/>
-	  </Item>
-	  <Item identifier=".357 round" amount="6"/>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-			
-    </ItemSet>	
-	<ItemSet>
-	  <Item identifier="idcard" equip="true"/>
-	  <Item identifier="Comtac II" equip="true" showpreview="false"/>
-	  <Item identifier="securityseparatistsuniform1" equip="true"/>
-	  <Item identifier="Paca soft armor" equip="true"/>
-	  <Item identifier="6B47 helmet" equip="true"/>
-	  <Item identifier="Makarov" equip="true">
-	  	    <Item identifier="Makarov Magazine" />
-	  </Item>
-	  <Item identifier="Makarov Magazine" amount="2"/>
-	  <Item identifier="handcuffs"/>
-	  <Item identifier="antibleeding1" amount="3"/>
-	  <Item identifier="painkillers" amount="1"/>
-    </ItemSet>	
-	
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="KS-23M" equip="true">
+          <Item identifier="23x75 Shrap-25" amount="3"/>
+        </Item>
+        <Item identifier="23x75 Flashbang" amount="2"/>
+        <Item identifier="23x75 Shrap-25" amount="3"/>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="handcuffs"/>
+        <Item identifier="divingknife" />
+        <Item identifier="6B13 (EMR)" equip="true" />
+        <Item identifier="Altyn" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
+      <ItemSet>
+        <Item identifier="securityseparatistsuniform2" equip="true"/>
+        <Item identifier="piratebodyarmor" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="stungun">
+          <Item identifier="stungundart" infinite="true"/>
+        </Item>
+        <Item identifier="AK74" equip="true">
+          <Item identifier="AK74 Magazine" infinite="true"/>
+        </Item>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="handcuffs"/>
+        <Item identifier="antibleeding1"/>
+        <Item identifier="6h112 (EMR)" equip="true">
+          <Item identifier="AK74 Magazine" amount="2"/>
+        </Item>
+        <Item identifier="6B13 (EMR)" equip="true"/>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item> 
+      </ItemSet>
+      <ItemSet>
+        <Item identifier="securityseparatistsuniform3" equip="true"/>
+        <Item identifier="piratebodyarmor" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" infinite="true"/>
+        </Item>
+        <Item identifier="handcuffs"/>
+        <Item identifier="Rhino" equip="false">
+          <Item identifier=".357 round" amount="6" infinite="true"/>
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="antibleeding1"/>
+        <Item identifier="Paca soft armor" equip="true"/>
+        <Item identifier="6B47 helmet" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
     </npc>
 
     <npc identifier="cargomissiongiver" job="mechanic" moduleflags="none" behavior="Passive">
@@ -1108,6 +1096,12 @@
     </npc>
 
   </npcset>
+
+
+
+
+
+
 
 
 </override>

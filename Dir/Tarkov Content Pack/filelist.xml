@@ -11,6 +11,7 @@
   <Text file="%ModDir%/factions/factioninfo.xml" />
   <Factions file="%ModDir%/factions/factions.xml" />
   <Jobs file="%ModDir%/jobs-npc/jobs/jobs.xml" />
+  <NPCSets file="%ModDir%/overrides/npcoverrides.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
