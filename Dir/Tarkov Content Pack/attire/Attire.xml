@@ -602,12 +602,12 @@
   </Item>
   <Item name="AFAK medical pouch" identifier="AFAK medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
     <Price baseprice="750">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="3"/>
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="3"/>
-      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" maxavailable="3"/>
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" maxavailable="3"/>
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="5" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="2" maxavailable="3" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" maxavailable="3"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="2" maxavailable="3" />
     </Price>
     <Deconstruct time="10">
       <Item identifier="ballisticfiber" amount="2" />
@@ -632,12 +632,12 @@
   </Item>
   <Item name="GRIZZLY medical pouch" identifier="GRIZZLY medical pouch" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
     <Price baseprice="1750">
-      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="2"/>
+      <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" maxavailable="2" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="1" maxavailable="5"/>
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1" maxavailable="2"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.7" minavailable="1" maxavailable="5" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1" maxavailable="2" />
       <Price storeidentifier="merchantmine" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="1" maxavailable="2"/>
+      <Price storeidentifier="merchantarmory" multiplier="1.2" minavailable="1" maxavailable="2" />
     </Price>
     <Deconstruct time="30">
       <Item identifier="ballisticfiber" amount="8" />
@@ -686,12 +686,12 @@
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-5.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.35,0.4" />
       <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
-	  <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0"/>
-	    <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0" />
+      <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
     </Wearable>
   </Item>
   <Item name="GP-7 gasmask" identifier="GP-7 gasmask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
@@ -719,12 +719,12 @@
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <sprite name="GP-5 gasmask" texture="%ModDir%/attire/attire_textures/GP-7.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.033" hidewearablesoftype="Hair" sourcerect="1047,28,1281,1035" origin="0.5,0.45" />
       <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="1" />
-	  <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0"/>
-	    <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
-		<sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <damagemodifier afflictionidentifiers="gasdamage" armorsector="0.0,360.0" damagemultiplier="0" />
+      <sprite limb="Torso" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="LeftArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="RightArm" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
+      <sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/GP-5.png" scale="0" />
     </Wearable>
   </Item>
   <Item name="Balaclava" identifier="Balaclava" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.033">
@@ -987,7 +987,35 @@
       <sprite name="Altyn" texture="%ModDir%/attire/attire_textures/Altyn.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.065" hidewearablesoftype="Hair" sourcerect="1008,101,1406,881" origin="0.4,0.5" />
     </Wearable>
   </Item>
-  
-  
- 
+  <Item name="Death Knight Mask" identifier="DeathKnightMask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.06">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Sprite name="Death Knight Mask" texture="%ModDir%/attire/attire_textures/Death_Knife_Mask.png" sourcerect="1142,-4,1279,1075" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+      <sprite name="Death Knight Mask Wearable" texture="%ModDir%/attire/attire_textures/Death_Knife_Mask.png" limb="Head" hidelimb="true" inheritlimbdepth="false" depth="0.1"  inheritscale="false" ignorelimbscale="true" scale="0.035" hidewearablesoftype="Hair" sourcerect="1142,-4,1279,1075" origin="0.48,0.465" />
+    </Wearable>
+  </Item>
 </Items>
