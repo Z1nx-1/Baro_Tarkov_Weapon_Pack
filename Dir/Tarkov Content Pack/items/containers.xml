@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="Items Case" identifier="ItemsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="0.5" />
+    <!-- Tier 1 Item Case -->
+	<Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="metalcrate" />
+      <RequiredItem identifier="steel" amount="2"/>
+    </Fabricate>
+    <Deconstruct time="5" />
     <Sprite texture="%ModDir%/items/container_textures/Items_case.png" depth="0.54" sourcerect="996,73,1403,993" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -10,43 +15,13 @@
     </ItemContainer>
   </Item>
   
-  <Item name="Weapons Case" identifier="WeaponsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="0.5" />
-    <Sprite texture="%ModDir%/items/container_textures/Weapon_case.png" depth="0.54" sourcerect="165,5,3010,1061" origin="0.5,0.5" />
-    <Body width="150" height="75" density="25" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="12" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-      <Containable items="Weapon" />
-    </ItemContainer>
-  </Item>
-  <Item name="T H I C C Items Case" identifier="THICCItemsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="0.5" />
-    <Sprite texture="%ModDir%/items/container_textures/THICC_case.png" depth="0.54" sourcerect="193,80,3013,992" origin="0.5,0.5" />
-    <Body width="150" height="75" density="25" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="63" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-      <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
-    </ItemContainer>
-  </Item>
-  <Item name="T H I C C Weapons Case" identifier="THICCWeaponsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="0.5" />
-    <Sprite texture="%ModDir%/items/container_textures/THICC_Weaponn_case.png" depth="0.54" sourcerect="376,108,2613,884" origin="0.5,0.5" />
-    <Body width="150" height="75" density="25" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-      <Containable items="Weapon"/>
-    </ItemContainer>
-  </Item>
-  <Item name="Medicine Case" identifier="MedicineCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.03" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-    <Deconstruct time="0.5" />
-    <Sprite texture="%ModDir%/items/container_textures/Medicine_case.png" depth="0.54" sourcerect="449,77,2240,982" origin="0.5,0.5" />
-    <Body width="150" height="75" density="25" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-      <Containable items="medical"/>
-    </ItemContainer>
-  </Item>
-  <Item name="Lucky Scav Junkbox" identifier="Lucky_Scav_Junkbox" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+  
+  <Item name="Lucky Scav Junkbox" identifier="LuckyScavJunkbox" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+    <!-- Tier 2 Item Case -->
+	<Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredItem identifier="ItemsCase" amount="2"/>
+      <RequiredItem identifier="steel" amount="4"/>
+    </Fabricate>
     <Deconstruct time="0.5" />
     <Sprite texture="%ModDir%/items/container_textures/Lucky_Scav_Junkbox.png" depth="0.54" sourcerect="901,70,1404,938" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
@@ -55,6 +30,66 @@
       <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
     </ItemContainer>
   </Item>
+
+  <Item name="T H I C C Items Case" identifier="THICCItemsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+    <!-- Tier 3 Item Case -->
+	<Fabricate suitablefabricators="fabricator" requiredtime="120">
+      <RequiredItem identifier="LuckyScavJunkbox" amount="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="10"/>
+    </Fabricate>
+	<Deconstruct time="0.5" />
+    <Sprite texture="%ModDir%/items/container_textures/THICC_case.png" depth="0.54" sourcerect="193,80,3013,992" origin="0.5,0.5" />
+    <Body width="150" height="75" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="63" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="T H I C C Weapons Case" identifier="THICCWeaponsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+	<Fabricate suitablefabricators="fabricator" requiredtime="120">
+      <RequiredItem identifier="THICCItemsCase" />
+      <RequiredItem identifier="WeaponsCase" />
+    </Fabricate>
+	<Deconstruct time="0.5" />
+    <Sprite texture="%ModDir%/items/container_textures/THICC_Weaponn_case.png" depth="0.54" sourcerect="376,108,2613,884" origin="0.5,0.5" />
+    <Body width="150" height="75" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="Weapon"/>
+    </ItemContainer>
+  </Item>
+  <Item name="Medicine Case" identifier="MedicineCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.03" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+  	<Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="ItemsCase" />
+      <RequiredItem identifier="antidama1" amount="2"/>
+      <RequiredItem identifier="antibloodloss2" amount="2"/>
+      <RequiredItem identifier="antibleeding1" amount="4"/>
+    </Fabricate>
+    <Deconstruct time="0.5" />
+    <Sprite texture="%ModDir%/items/container_textures/Medicine_case.png" depth="0.54" sourcerect="449,77,2240,982" origin="0.5,0.5" />
+    <Body width="150" height="75" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="medical"/>
+    </ItemContainer>
+  </Item>
+  
+  
+  <Item name="Weapons Case" identifier="WeaponsCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.05" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+	<Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="ItemsCase" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+      <RequiredItem identifier="steel" amount="2"/>
+    </Fabricate>
+    <Deconstruct time="0.5" />
+    <Sprite texture="%ModDir%/items/container_textures/Weapon_case.png" depth="0.54" sourcerect="165,5,3010,1061" origin="0.5,0.5" />
+    <Body width="150" height="75" density="25" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="12" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="Weapon" />
+    </ItemContainer>
+  </Item>
+
   <Item name="Magazine Case" identifier="MagazineCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.03" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="0.5" />
     <Sprite texture="%ModDir%/items/container_textures/Magazine_case.png" depth="0.54" sourcerect="542,0,2230,1064" origin="0.5,0.5" />
