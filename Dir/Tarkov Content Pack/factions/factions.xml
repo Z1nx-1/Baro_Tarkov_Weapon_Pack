@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Factions>
-  <Faction identifier="scavs" initialreputation="-100" minreputation="-100" maxreputation="0" menuorder="4" controlledoutpostpercentage="60" startoutpost="false" opposingfaction="separatists, coalition, clowns, huskcult">
-    <Icon name="ScavIcon" texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="0,106,407,412" color="62,177,182,255" origin="0.5,0.5" />
-    <IconSmall name="CoalitionIconSmall" texture="%ModDir%/factions/faction_textures/ScavIcon.png" sourcerect="3,838,50,50" />
-    <Portrait name="CoalitionPortrait" texture="Content/UI/Server/PlaystyleSerious.png" sourcerect="0,0,1920,768" />
-  </Faction>
-</Factions>

@@ -9,9 +9,6 @@
   <Item file="%ModDir%/attire/attire.xml" />
   <Item file="%ModDir%/medical/medical.xml" />
   <Item file="%ModDir%/items/containers.xml" />
-  <Text file="%ModDir%/factions/factioninfo.xml" />
-  <Factions file="%ModDir%/factions/factions.xml" />
-  <NPCSets file="%ModDir%/overrides/npcoverride.xml"/>
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
