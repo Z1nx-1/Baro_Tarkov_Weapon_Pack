@@ -81,3 +81,19 @@ Easy way to work out protection/damage multipliers is by taking away from 100 to
 
 
 to get 62% damage reduction you would have to subtract 38 from 100.
+
+
+
+
+
+
+Sidearms:
+Tier one:
+* Makarov
+* TT
+
+Tier Two:
+* Glock-17
+
+Tier Three:
+* Rhino
