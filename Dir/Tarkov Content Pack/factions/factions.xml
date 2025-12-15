@@ -3,7 +3,7 @@
   <Factions>
     <Faction identifier="coalition" initialreputation="15" minreputation="-100" maxreputation="100" menuorder="0" controlledoutpostpercentage="60" startoutpost="true" opposingfaction="separatists">
       <Icon name="CoalitionIcon" texture="%ModDir%/factions/faction_textures/UsecLogoWhite.png" sourcerect="0,0,743,889" color="62,177,182,255" origin="0.5,0.5" />
-      <IconSmall name="CoalitionIconSmall" texture="%ModDir%/factions/faction_textures/UsecLogoWhite.png" sourcerect="3,838,50,50" />
+      <IconSmall name="CoalitionIconSmall" texture="%ModDir%/factions/faction_textures/Untitled.png" sourcerect="3,838,50,50" />
       <Portrait name="CoalitionPortrait" texture="%ModDir%/factions/faction_textures/UsecPortraitWhite.png" sourcerect="0,0,1920,768" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireablecoalitionsecurityofficer" minreputation="20" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireablecoalitionengineer" minreputation="20" />
@@ -17,7 +17,7 @@
     </Faction>
     <Faction identifier="separatists" initialreputation="-10" minreputation="-100" maxreputation="100" menuorder="1" controlledoutpostpercentage="40" opposingfaction="coalition">
       <Icon name="SeparatistIcon" texture="%ModDir%/factions/faction_textures/BearLogoWhite.png" sourcerect="0,0,279,333" color="215,156,85,255" origin="0.5,0.5" />
-      <IconSmall name="SeparatistIconSmall" texture="%ModDir%/factions/faction_textures/BearLogoWhite.png" sourcerect="58,837,50,50" />
+      <IconSmall name="SeparatistIconSmall" texture="%ModDir%/factions/faction_textures/Untitled.png" sourcerect="58,837,50,50" />
       <Portrait name="SeparatistPortrait" texture="%ModDir%/factions/faction_textures/Bearportrait.png" sourcerect="0,0,1920,768" color="215,156,85,255" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistsecurityofficer" minreputation="20" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistengineer" minreputation="20" />
@@ -56,4 +56,5 @@
     <IconSmall name="BearIconSmall" texture="%ModDir%/factions/faction_textures/BearLogoWhite.png" sourcerect="3,838,50,50" />
     <Portrait name="BearPortrait" texture="%ModDir%/factions/faction_textures/Bearportrait.png" sourcerect="0,0,1920,768" />
   </Faction>
+
 </Factions>   -->
