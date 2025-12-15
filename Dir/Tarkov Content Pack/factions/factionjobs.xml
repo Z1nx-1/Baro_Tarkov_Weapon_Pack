@@ -387,25 +387,28 @@
 		<npc identifier="securitynpcseparatists" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
 		  <ItemSet>
 			<Item identifier="securityseparatistsuniform1" equip="true" />
-			<Item identifier="piratebodyarmor" equip="true" />
+			<Item identifier="6B13 (EMR)" equip="true" />
 			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
 			<Item identifier="stunbaton">
 			  <Item identifier="batterycell" infinite="true"/>
 			</Item>
 			<Item identifier="handcuffs"/>
-			<Item identifier="smg">
-			  <Item identifier="smgmagazine" infinite="true"/>
+			<Item identifier="ASH-12">
+			  <Item identifier="ASH-12 Magazine" infinite="true"/>
 			</Item>
 			<Item identifier="divingknife" />
-			<Item identifier="ballistichelmet1" equip="true"/>
+			<Item identifier="Altyn" equip="true"/>
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
 		  <ItemSet>
 			<Item identifier="securityseparatistsuniform2" equip="true"/>
-			<Item identifier="piratebodyarmor" equip="true" />
+			<Item identifier="6B13 (EMR)" equip="true" />
 			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+			<Item identifier="AKM">
+			  <Item identifier="AKM Magazine" infinite="true"/>
+			</Item>
 			<Item identifier="stungun">
 			  <Item identifier="stungundart" infinite="true"/>
 			</Item>
@@ -415,25 +418,25 @@
 			<Item identifier="divingknife" />
 			<Item identifier="handcuffs"/>
 			<Item identifier="antibleeding1"/>
-			<Item identifier="piratebandana" equip="true" />
+			<Item identifier="6B47 helmet (EMR)" equip="true" />
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
 		  <ItemSet>
 			<Item identifier="securityseparatistsuniform3" equip="true"/>
-			<Item identifier="piratebodyarmor" equip="true" />
+			<Item identifier="TV-115PlateCarrier" equip="true" />
 			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
 			<Item identifier="stunbaton">
 			  <Item identifier="batterycell" infinite="true"/>
 			</Item>
 			<Item identifier="handcuffs"/>
-			<Item identifier="revolver" equip="false">
-			  <Item identifier="revolverround" amount="6" infinite="true"/>
+			<Item identifier="Rhino" equip="false">
+			  <Item identifier=".357 round" amount="6" infinite="true"/>
 			</Item>
 			<Item identifier="divingknife" />
 			<Item identifier="antibleeding1"/>
-			<Item identifier="ballistichelmet2" equip="true"/>
+			<Item identifier="6B47 helmet" equip="true"/>
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
