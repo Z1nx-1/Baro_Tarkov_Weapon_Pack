@@ -97,3 +97,44 @@ Tier Two:
 
 Tier Three:
 * Rhino
+
+
+Rifles:
+Tier one:
+* Kedr
+* P90
+* Vector
+
+Tier Two:
+* MP-133
+* MP-153
+
+Tier Three:
+* Ak74
+* AS-VAL
+* M4A1
+* Benelli M9
+
+Tier Four:
+* Ash-12
+* KS-23M
+* FN40Gl
+* M32A1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
