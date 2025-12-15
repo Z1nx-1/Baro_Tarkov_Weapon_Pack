@@ -72,3 +72,8 @@ Tier 4:
 * Slick
 * 6B13 (KILLA)
 
+
+Easy way to work out protection/damage multipliers is by taking away from 100 to get to teh desired amount, for example:
+
+
+to get 62% damage reduction you would have to subtract 38 from 100.

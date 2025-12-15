@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Items>
+<Items>	
   <Item name="Paca soft armor" identifier="Paca soft armor" category="Equipment" tags="smallitem,clothing" scale="0.06" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.9.3.0" scale="0.1" />
     <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
@@ -26,10 +26,10 @@
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatValue stattype="WalkingSpeed" value="-0.1" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.95" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Paca soft armor Wearable" texture="%ModDir%/attire/attire_textures/Paca.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.11" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="513,89,851,952" />
     </Wearable>
   </Item>
@@ -157,9 +157,9 @@
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatValue stattype="WalkingSpeed" value="-0.2" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="6B13 (EMR)" texture="%ModDir%/attire/attire_textures/6B13 (EMR).png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.06" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="513,89,851,952" />
     </Wearable>
   </Item>
@@ -261,9 +261,9 @@
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
       <StatValue stattype="WalkingSpeed" value="-0.3" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="AVS plate carrier rig" texture="%ModDir%/attire/attire_textures/AVS.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.085" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="336,36,851,952" />
     </Wearable>
@@ -300,9 +300,9 @@
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
       <StatValue stattype="WalkingSpeed" value="-0.2" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="MMAC plate carrier rig" texture="%ModDir%/attire/attire_textures/MMAC.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.040" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="700,320,1713,1630" />
     </Wearable>
@@ -340,9 +340,9 @@
       </ItemContainer>
       <StatValue stattype="WalkingSpeed" value="-0.2" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="ARSS plate carrier rig" texture="%ModDir%/attire/attire_textures/ARSS.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.042" inheritorigin="false" origin="0.55,0.6" inheritsourcerect="false" sourcerect="258,374,1713,1630" />
     </Wearable>
   </Item>
@@ -566,10 +566,10 @@
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatValue stattype="WalkingSpeed" value="-0.15" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.88" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.13" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.38" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Slick Body Armor" texture="%ModDir%/attire/attire_textures/Slick Body Armour.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.035" inheritorigin="false" origin="0.47,0.5" inheritsourcerect="false" sourcerect="886,222,1584,1757" />
     </Wearable>
   </Item>
@@ -1044,9 +1044,9 @@
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatValue stattype="WalkingSpeed" value="-0.2" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Trooper" texture="%ModDir%/attire/attire_textures/Trooper.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.055" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="1085,33,869,997" />
     </Wearable>
@@ -1078,9 +1078,9 @@
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatValue stattype="WalkingSpeed" value="-0.2" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Gen4" texture="%ModDir%/attire/attire_textures/Gen4.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.095" inheritorigin="false" origin="0.55,0.4" inheritsourcerect="false" sourcerect="1085,33,869,997" />
     </Wearable>
   </Item>
