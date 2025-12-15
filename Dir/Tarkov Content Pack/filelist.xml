@@ -12,4 +12,7 @@
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
+  <Factions file="%ModDir%/factions/factions.xml" />
+  <Text file="%ModDir%/factions/textsfactions.xml" />
+  <Jobs file="%ModDir%/factions/factionjobs.xml" />
 </contentpackage>
