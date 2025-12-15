@@ -1,0 +1,74 @@
+
+
+
+USEC:
+
+Tier one sec:
+
+Strike Ballistic helm + comtac II
+Trooper
+P90 + Mag
+
+Tier two sec:
+Bastion (Green) + Comatac II
+AVS
+Vector + mag
+
+
+Tier three sec:
+Bastion (Black)
+Slick
+Security rig
+Security uniform2
+M4A1 Customized + mag*2
+
+
+Tiered armour guide:
+
+Tier 1:
+50% of body armour
+35% Blunt force trauma
+35% Lacerations
+25% Bite Wounds
+25% Deep Tissue injury
+35% Gunshot wound
+5% burn
+40% Bleeding
+
+* Paca
+
+Tier 2:
+75% of body armour
+52% Blunt force Trauma
+52% Lacerations
+37% Bite Wounds
+37% Deep tissue injury
+52% Gunshot wound
+7% burn
+60% bleeding
+
+
+* AVS
+* MMAC
+* Trooper
+
+Tier 3:
+1:1 to body armour
+* 6B13 (EMR)
+* Gen4
+* ARSS
+
+Tier 4:
+25%+ increase to body armour
+87% Blunt force Trauma
+87% Lacerations
+62% Bite Wounds
+62% Deep tissue injury
+87% Gunshot wound
+12.5% burn
+85% bleeding
+
+
+* Slick
+* 6B13 (KILLA)
+
