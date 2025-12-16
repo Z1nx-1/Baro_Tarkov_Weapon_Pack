@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Whiskey name="Dan Jackiels Whiskey" identifier="Whiskey" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.04" impactsoundtag="impact_metal_light">
+	<PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
+    <PreferredContainer primary="medfabcab" secondary="medcab"/>
+    <Price baseprice="175" sold="false">
+      <Price storeidentifier="merchantclown" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="clowns" min="30"/>
+      </Price>
+      <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
+    </Price>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="180" fabricationlimitmin="2" fabricationlimitmax="6"/>
+	<Sprite texture="%ModDir%/items/consumable_textures/Dan_Jackiel_Whiskey.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <SuitableTreatment type="infection" suitability="30" />
+    <SuitableTreatment type="burn" suitability="-3" />
+    <Body width="27" height="66" density="20" />
+    <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-30.0" />
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="gte 100" />
+        <Sound file="Content/Items/Medical/ITEM_bottleOpen.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="lt 95" />
+        <Sound file="Content/Items/Medical/ITEM_drinkingLoop.ogg" range="250" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/ITEM_liquid.ogg" range="500" />
+      </StatusEffect>
+      <!-- When Rum is drunk -->
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" disabledeltatime="true" stackable="false">
+        <Conditional Condition="lte 1" />
+        <Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false" ConditionalComparison="And">
+        <Conditional Condition="lte 1" />
+        <Conditional huskinfection="lt 50.0" />
+        <ReduceAffliction identifier="huskinfection" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false">
+        <Conditional Condition="lte 1" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <ReduceAffliction identifier="hallucinating" amount="3" />
+        <Affliction identifier="drunk" amount="4" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <ParticleEmitter particle="juicedrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
+      </StatusEffect>
+      <!-- When Rum is used in Health GUI -->
+      <StatusEffect type="OnUse" target="This, Limb" duration="10">
+        <ReduceAffliction identifier="infection" amount="1.5" />
+        <Affliction identifier="burn" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Whiskey>
+  
+  <Vodka name="Tarkovskaya Vodka" identifier="Vodka" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.04" impactsoundtag="impact_metal_light">
+	<PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
+    <PreferredContainer primary="medfabcab" secondary="medcab"/>
+    <Price baseprice="160" sold="false">
+      <Price storeidentifier="merchantclown" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="clowns" min="30"/>
+      </Price>
+      <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
+    </Price>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="200" fabricationlimitmin="2" fabricationlimitmax="6"/>
+	<Sprite texture="%ModDir%/items/consumable_textures/Tarkovskaya_Vodka.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <SuitableTreatment type="infection" suitability="30" />
+    <SuitableTreatment type="burn" suitability="-3" />
+    <Body width="27" height="66" density="20" />
+    <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-30.0" />
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="gte 100" />
+        <Sound file="Content/Items/Medical/ITEM_bottleOpen.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="lt 95" />
+        <Sound file="Content/Items/Medical/ITEM_drinkingLoop.ogg" range="250" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/ITEM_liquid.ogg" range="500" />
+      </StatusEffect>
+      <!-- When Rum is drunk -->
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" disabledeltatime="true" stackable="false">
+        <Conditional Condition="lte 1" />
+        <Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false" ConditionalComparison="And">
+        <Conditional Condition="lte 1" />
+        <Conditional huskinfection="lt 50.0" />
+        <ReduceAffliction identifier="huskinfection" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false">
+        <Conditional Condition="lte 1" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <ReduceAffliction identifier="hallucinating" amount="3" />
+        <Affliction identifier="drunk" amount="6" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <ParticleEmitter particle="juicedrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
+      </StatusEffect>
+      <!-- When Rum is used in Health GUI -->
+      <StatusEffect type="OnUse" target="This, Limb" duration="10">
+        <ReduceAffliction identifier="infection" amount="1.5" />
+        <Affliction identifier="burn" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Vodka>
+  
+  <Moonshine name="Fierce Hatchling Moonshine" identifier="Moonshine" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.05" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
+    <PreferredContainer primary="medfabcab" secondary="medcab"/>
+    <Price baseprice="300" sold="false">
+      <Price storeidentifier="merchantclown" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="clowns" min="30"/>
+      </Price>
+      <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
+    </Price>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="500" fabricationlimitmin="2" fabricationlimitmax="6"/>   
+    <Sprite texture="%ModDir%/items/consumable_textures/Fierce_Hatchling_Moonshine.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <SuitableTreatment type="infection" suitability="30" />
+    <SuitableTreatment type="burn" suitability="-3" />
+    <Body width="27" height="66" density="20" />
+    <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="gte 100" />
+        <Sound file="Content/Items/Medical/ITEM_bottleOpen.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="lt 95" />
+        <Sound file="Content/Items/Medical/ITEM_drinkingLoop.ogg" range="250" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/ITEM_liquid.ogg" range="500" />
+      </StatusEffect>
+      <!-- When Rum is drunk -->
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" disabledeltatime="true" stackable="false">
+        <Conditional Condition="lte 1" />
+        <Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false" ConditionalComparison="And">
+        <Conditional Condition="lte 1" />
+        <Conditional huskinfection="lt 50.0" />
+        <ReduceAffliction identifier="huskinfection" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false">
+        <Conditional Condition="lte 1" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <ReduceAffliction identifier="hallucinating" amount="3" />
+        <Affliction identifier="drunk" amount="8" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <ParticleEmitter particle="juicedrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
+      </StatusEffect>
+      <!-- When Rum is used in Health GUI -->
+      <StatusEffect type="OnUse" target="This, Limb" duration="10">
+        <ReduceAffliction identifier="infection" amount="1.5" />
+        <Affliction identifier="burn" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Moonshine>  
+  <Pevko name="Pevko Light Beer" identifier="Pevko" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.05" impactsoundtag="impact_metal_light">
+	<PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true"/>
+    <PreferredContainer primary="medfabcab" secondary="medcab"/>
+    <Price baseprice="30" sold="false">
+      <Price storeidentifier="merchantclown" minavailable="0" maxavailable="3" sold="true">
+        <Reputation faction="clowns" min="30"/>
+      </Price>
+      <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
+    </Price>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="30" fabricationlimitmin="2" fabricationlimitmax="6"/>
+	<Sprite texture="%ModDir%/items/consumable_textures/Pevko_Light_Beer.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <SuitableTreatment type="infection" suitability="30" />
+    <SuitableTreatment type="burn" suitability="-3" />
+    <Body width="27" height="66" density="20" />
+    <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-30.0" />
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="gte 100" />
+        <Sound file="Content/Items/Medical/ITEM_bottleOpen.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <Conditional Condition="lt 95" />
+        <Sound file="Content/Items/Medical/ITEM_drinkingLoop.ogg" range="250" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/ITEM_liquid.ogg" range="500" />
+      </StatusEffect>
+      <!-- When Rum is drunk -->
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" disabledeltatime="true" stackable="false">
+        <Conditional Condition="lte 1" />
+        <Affliction identifier="psychosisresistance" amount="100" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false" ConditionalComparison="And">
+        <Conditional Condition="lte 1" />
+        <Conditional huskinfection="lt 50.0" />
+        <ReduceAffliction identifier="huskinfection" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This,UseTarget" duration="30" stackable="false">
+        <Conditional Condition="lte 1" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <ReduceAffliction identifier="hallucinating" amount="3" />
+        <Affliction identifier="drunk" amount="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This">
+        <ParticleEmitter particle="juicedrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
+      </StatusEffect>
+      <!-- When Rum is used in Health GUI -->
+      <StatusEffect type="OnUse" target="This, Limb" duration="10">
+        <ReduceAffliction identifier="infection" amount="1.5" />
+        <Affliction identifier="burn" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Pevko>
+  
+  
+</Items>

@@ -111,6 +111,7 @@ Tier Two:
 
 Tier Three:
 * Ak74
+* AKM
 * AS-VAL
 * M4A1
 * Benelli M9
@@ -120,7 +121,7 @@ Tier Four:
 * KS-23M
 * FN40Gl
 * M32A1
-
+* RPD
 
 
 

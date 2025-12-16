@@ -9,6 +9,7 @@
   <Item file="%ModDir%/attire/attire.xml" />
   <Item file="%ModDir%/medical/medical.xml" />
   <Item file="%ModDir%/items/containers.xml" />
+  <Item file="%ModDir%/items/consumables.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
