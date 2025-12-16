@@ -1,0 +1,34 @@
+
+<npcsets>
+
+  <npcset identifier="bosses">
+    <npc identifier="killa" job="securityofficer" moduleflags="none" behavior="Patrol">
+      <Character speciesname="human" gender="male" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="Crazy">
+        <job name="Assistant" identifier="assistant">
+          <skill identifier="electrical" level="5" />
+          <skill identifier="mechanical" level="5" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="60" />
+          <skill identifier="helm" level="5" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="commonerclothes2" equip="true"/>
+        <Item identifier="6B13 (Killa)" equip="true"/>
+        <Item identifier="Maska-1SCh (Killa)" equip="true"/>
+        <Item identifier="RPD" equip="true">
+          <Item identifier="RPD Drum" equip="true"/>
+		</Item>
+	  <Item identifier="Vodka" amount="2"/>
+	  <Item identifier="RPD Drum" amount="2"/>
+	  <Item identifier="SJ1 auto-injector" />
+	  <Item identifier="SJ6 auto-injector" />
+	  <Item identifier="Obdolbos auto-injector" />
+      </ItemSet>
+    </npc>
+
+  </npcset>
+  
+</npcsets>

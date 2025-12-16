@@ -17,4 +17,5 @@
   <Text file="%ModDir%/factions/textsfactions.xml" />
   <NPCSets file="%ModDir%/factions/factionjobs.xml" />
   <Jobs file="%ModDir%/jobs/jobs.xml" />
+  <NPCSets file="%ModDir%/npc/npcjobs.xml" />
 </contentpackage>
