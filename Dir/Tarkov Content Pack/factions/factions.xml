@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Override>
-  <Factions>
+<Factions>
+  <Override>
     <Faction identifier="coalition" initialreputation="15" minreputation="-100" maxreputation="100" menuorder="0" controlledoutpostpercentage="60" startoutpost="true" opposingfaction="separatists">
       <Icon name="CoalitionIcon" texture="%ModDir%/factions/faction_textures/UsecLogoWhite.png" sourcerect="0,0,743,889" color="62,177,182,255" origin="0.5,0.5" />
       <IconSmall name="CoalitionIconSmall" texture="%ModDir%/factions/faction_textures/Untitled.png" sourcerect="3,838,50,50" />
@@ -41,20 +41,10 @@
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclown" minreputation="20" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclownveteran" minreputation="50" />
     </Faction>
-  </Factions>
-</Override>
-<!--
-
-<Factions>
-  <Faction identifier="USEC" initialreputation="15" minreputation="-100" maxreputation="100" menuorder="4" controlledoutpostpercentage="60" startoutpost="False" opposingfaction="BEAR">
-    <Icon name="UsecIcon" texture="%ModDir%/factions/faction_textures/UsecLogoWhite.png" sourcerect="0,0,743,889" color="62,177,182,255" origin="0.5,0.5" />
-    <IconSmall name="UsecIconSmall" texture="%ModDir%/factions/faction_textures/UsecLogoWhite.png" sourcerect="3,838,50,50" />
-    <Portrait name="UsecPortrait" texture="%ModDir%/factions/faction_textures/UsecPortraitWhite.png" sourcerect="0,0,1920,768" />
+  </Override>
+  <Faction identifier="Scavs" initialreputation="-50" minreputation="-100" maxreputation="100" menuorder="2" controlledoutpostpercentage="40" opposingfaction="coalition, separatists">
+    <Icon name="ScavIcon" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="26,111,357,390" color="215,156,85,255" origin="0.5,0.5" />
+    <IconSmall name="ScavIconSmall" texture="%ModDir%/factions/faction_textures/Untitled.png" sourcerect="58,837,50,50" />
+    <Portrait name="ScavPortrait" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="0,0,1920,768" color="215,156,85,255" />
   </Faction>
-  <Faction identifier="BEAR" initialreputation="15" minreputation="-100" maxreputation="100" menuorder="5" controlledoutpostpercentage="60" startoutpost="False" opposingfaction="USEC">
-    <Icon name="BearIcon" texture="%ModDir%/factions/faction_textures/BearLogoWhite.png" sourcerect="0,0,279,333" color="62,177,182,255" origin="0.5,0.5" />
-    <IconSmall name="BearIconSmall" texture="%ModDir%/factions/faction_textures/BearLogoWhite.png" sourcerect="3,838,50,50" />
-    <Portrait name="BearPortrait" texture="%ModDir%/factions/faction_textures/Bearportrait.png" sourcerect="0,0,1920,768" />
-  </Faction>
-
-</Factions>   -->
+</Factions>

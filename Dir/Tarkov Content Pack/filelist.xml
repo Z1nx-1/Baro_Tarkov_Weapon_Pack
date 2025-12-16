@@ -18,4 +18,5 @@
   <NPCSets file="%ModDir%/factions/factionjobs.xml" />
   <Jobs file="%ModDir%/jobs/jobs.xml" />
   <NPCSets file="%ModDir%/npc/npcjobs.xml" />
+  <OutpostConfig file="%ModDir%/factions/factionmap.xml" />
 </contentpackage>
