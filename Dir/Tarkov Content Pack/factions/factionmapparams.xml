@@ -1,0 +1,12 @@
+<MapGenerationParameters
+    identifier="default"
+    override="true">
+
+  <FactionSpawn
+      faction="scavs"
+      min="3"
+      max="6"
+      minprogress="0.0"
+      maxprogress="0.3" />
+
+</MapGenerationParameters>

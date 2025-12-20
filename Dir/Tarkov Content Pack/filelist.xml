@@ -15,10 +15,12 @@
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
-  <Factions file="%ModDir%/factions/factions.xml" />
+  <!--<Factions file="%ModDir%/factions/factions.xml" />
   <Text file="%ModDir%/factions/textsfactions.xml" />
   <NPCSets file="%ModDir%/factions/factionjobs.xml" />
+  <OutpostConfig file="%ModDir%/factions/factionoutpostparams.xml" />
+  <MapGenerationParameters file="%ModDir%/factions/factionmapparams.xml"/> -->
   <Jobs file="%ModDir%/jobs/jobs.xml" />
   <NPCSets file="%ModDir%/npc/npcjobs.xml" />
-  <OutpostConfig file="%ModDir%/factions/factionmap.xml" />
+
 </contentpackage>
