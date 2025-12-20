@@ -11,6 +11,7 @@
   <Item file="%ModDir%/items/containers.xml" />
   <Item file="%ModDir%/items/consumables.xml" />
   <Item file="%ModDir%/items/tools.xml" />
+  <Item file="%ModDir%/items/valuables.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
