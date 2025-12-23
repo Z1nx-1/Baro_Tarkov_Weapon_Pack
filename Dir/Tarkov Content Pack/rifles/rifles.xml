@@ -576,7 +576,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
-  </Item>  
+  </Item>
   <Item name="MDR" identifier="MDR" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.05" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
@@ -635,7 +635,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
-  </Item>  
+  </Item>
   <Item name="HK416A5" identifier="HK416A5" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.05" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
@@ -946,7 +946,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
-  </Item>  
+  </Item>
   <Item name="VSS" identifier="VSS" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.045" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
@@ -1434,9 +1434,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="12.7x55mm" identifier="12.7x55mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+  <Item name="12.7x55mm" identifier="12.7x55mm" maxstacksize="12" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.05">
+    <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/127x55.png" sourcerect="1373,487,288,103" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/sidearms/sidearm_textures/127x55.png" sourcerect="1373,487,288,103" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -1454,9 +1454,9 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <!--<StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
         <Remove />
-      </StatusEffect>
+      </StatusEffect> -->
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -1656,8 +1656,8 @@
       <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="1" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="steel" amount="2"/>
-      <Item identifier="titaniumaluminiumalloy" amount="4"/>
+      <Item identifier="steel" amount="2" />
+      <Item identifier="titaniumaluminiumalloy" amount="4" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/rifles/rifle_textures/M32A1.png" sourcerect="392,194,2089,645" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/rifles/rifle_textures/M32A1.png" sourcerect="392,194,2089,645" depth="0.55" origin="0.5,0.5" />
@@ -1747,7 +1747,7 @@
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>  
+  </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier Two                                    -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -1795,7 +1795,6 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-
   <Item name="40MM M576" identifier="40MM-M576" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.05" impactsoundtag="impact_metal_light">
     <!--BUCKSHOT-->
     <PreferredContainer primary="grenadelauncher" amount="6" spawnprobability="1" />
@@ -1837,7 +1836,7 @@
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>  
+  </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier Three                                  -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -1884,6 +1883,5 @@
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>  
-
+  </Item>
 </Items>
