@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Content Pack" modversion="1.2.9" corepackage="False" steamworkshopid="3507999416" gameversion="1.11.4.1">
+<contentpackage name="Tarkov Content Pack" modversion="4.0.0" corepackage="False" steamworkshopid="3507999416" gameversion="1.11.5.0">
   <Item file="%ModDir%/rifles/rifles.xml" />
   <Item file="%ModDir%/rifles/modded_rifles.xml" />
   <Item file="%ModDir%/sidearms/sidearms.xml" />
@@ -15,12 +15,6 @@
   <Afflictions file="%ModDir%/afflictions/afflictions.xml" />
   <Afflictions file="%ModDir%/afflictions/afflictions_override.xml" />
   <Particles file="%ModDir%/particles/particles.xml" />
-  <!--<Factions file="%ModDir%/factions/factions.xml" />
-  <Text file="%ModDir%/factions/textsfactions.xml" />
-  <NPCSets file="%ModDir%/factions/factionjobs.xml" />
-  <OutpostConfig file="%ModDir%/factions/factionoutpostparams.xml" />
-  <MapGenerationParameters file="%ModDir%/factions/factionmapparams.xml"/> -->
   <Jobs file="%ModDir%/jobs/jobs.xml" />
   <NPCSets file="%ModDir%/npc/npcjobs.xml" />
-
 </contentpackage>
