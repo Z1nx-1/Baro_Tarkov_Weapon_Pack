@@ -17,8 +17,8 @@
     <Deconstruct time="10">
       <Item identifier="iron" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredSkill identifier="weapons" level="30" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredSkill identifier="weapons" level="15" />
       <RequiredItem identifier="iron" amount="2" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/melee/melee_textures/6Kh5.png" sourcerect="1680,110,266,891" origin="0.5,0.5" />
@@ -86,7 +86,13 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="M-2 Tactical Sword" identifier="M-2TacticalSword" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <!-- Sword is still using the length of the diving knife, meaning that attacks have to be much closer even when the sprite clips the reciever. Once fixed, will be obtainable. -->
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/melee/melee_textures/M-2TacticalSword.png" sourcerect="984,343,1871,388" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/melee/melee_textures/M-2TacticalSword.png" sourcerect="984,343,1871,388" depth="0.55" origin="0.4,0.5" />
     <Body width="65" height="15" density="25" />
@@ -113,7 +119,14 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="Red Rebel Icepick" identifier="RedRebelIcepick" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/melee/melee_textures/RedRebalIcePick.png" sourcerect="961,122,2144,750" origin="0.46090606,0.25301436" />
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="iron" amount="2" />
+    </Fabricate>
+	<InventoryIcon texture="%ModDir%/melee/melee_textures/RedRebalIcePick.png" sourcerect="961,122,2144,750" origin="0.46090606,0.25301436" />
     <Sprite texture="%ModDir%/melee/melee_textures/RedRebalIcePick.png" sourcerect="961,122,2144,750" depth="0.55" origin="0.3,0.4" />
     <Body width="65" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="65" reload="1.5" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -121,6 +134,67 @@
         <Affliction identifier="lacerations" strength="4" />
         <Affliction identifier="bleeding" strength="3" />
         <Affliction identifier="stun" strength="0.2" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Kiba Arms Tactical Tomohawk" identifier="KibaArmsTacticalTomohawk" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.04" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="iron" amount="2" />
+    </Fabricate>
+	<InventoryIcon texture="%ModDir%/melee/melee_textures/KibaArmsTacticalTomohawk.png" sourcerect="961,122,2144,750" origin="0.46090606,0.25301436" />
+    <Sprite texture="%ModDir%/melee/melee_textures/KibaArmsTacticalTomohawk.png" sourcerect="961,122,2144,750" depth="0.55" origin="0.3,0.4" />
+    <Body width="65" height="15" density="25" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,-5" holdangle="65" reload="1.5" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="4" />
+        <Affliction identifier="bleeding" strength="3" />
+        <Affliction identifier="stun" strength="0.2" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Antique Axe" identifier="AntiqueAxe" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.05" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" canbespecial="false" />
+	<InventoryIcon texture="%ModDir%/melee/melee_textures/AntiqueAxe.png" sourcerect="103,1644,913,455" origin="0.5425893,0.33934978" />
+    <Sprite texture="%ModDir%/melee/melee_textures/AntiqueAxe.png" sourcerect="103,1644,913,455" depth="0.55" origin="0.54122424,0.32398507" />
+    <Body width="65" height="15" density="25" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="65" reload="1.25" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.5" itemdamage="6" structuredamage="4" structuresoundtype="StructureSlash">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.4" />
         <StatusEffect type="OnUse" target="UseTarget">
           <Conditional entitytype="eq Character" />
           <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
