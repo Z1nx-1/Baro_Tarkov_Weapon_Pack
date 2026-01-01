@@ -22,5 +22,4 @@
   <OutpostConfig file="%ModDir%/factions/outpostgenerationparameters.xml" />
   <Text file="%ModDir%/factions/textsfactions.xml" />
   <NPCSets file="%ModDir%/factions/factionjobs.xml" />
-  <RandomEvents file="%ModDir%/factions/outpostevents.xml" />
 </contentpackage>

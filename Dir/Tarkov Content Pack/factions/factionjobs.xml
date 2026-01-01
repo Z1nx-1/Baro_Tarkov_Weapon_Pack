@@ -6,7 +6,7 @@
 	  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 	  <npcset identifier="bosses">
-		<npc identifier="tagilla" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" faction="Scavs">
+		<npc identifier="boss" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" faction="Scavs" minamount="0" maxamount="1">
 
 		  <Character speciesname="human" gender="male" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="Crazy">
 			<job name="Securityofficer" identifier="securityofficer">
@@ -24,7 +24,21 @@
 			<Item identifier="TagillasWeldingMask" equip="true"/>
 			<Item identifier="SuperforsDB2020DeadBlowHammer" equip="true"/>
 		  </ItemSet>
-		</npc>
+		  <ItemSet commonness="0.50">
+			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+			<Item identifier="commonerclothes2" equip="true"/>
+			<Item identifier="6B13 (Killa)" equip="true"/>
+			<Item identifier="Maska-1SCh (Killa)" equip="true"/>
+			<Item identifier="Commando rig" equip="true">
+			<Item identifier="RPD Drum" amount="1"/>
+			<Item identifier="RPD Drum" amount="1"/>
+			</Item>
+			<Item identifier="RPD">
+			<Item identifier="RPD Drum" infinite="true"/>
+			</Item>			
+
+		  </ItemSet>
+		</npc>		
 	</npcset>
 
 
