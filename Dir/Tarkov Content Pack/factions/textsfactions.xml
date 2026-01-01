@@ -23,8 +23,8 @@
 <reputationhigh>Friendly</reputationhigh>
 <reputationveryhigh>Revered</reputationveryhigh>
 <reputationgainnotification>[value] [reputationname] Reputation</reputationgainnotification>
-<faction.scavs>SCAVS</faction.scavs>
-<faction.scavs.description>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.scavs.description>
-<faction.scavs.shortdescription>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.scavs.shortdescription>
+<faction.Scavs>SCAVS</faction.Scavs>
+<faction.Scavs.description>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.description>
+<faction.Scavs.shortdescription>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.shortdescription>
 
 </Override>

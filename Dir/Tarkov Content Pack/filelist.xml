@@ -17,4 +17,9 @@
   <Particles file="%ModDir%/particles/particles.xml" />
   <Jobs file="%ModDir%/jobs/jobs.xml" />
   <NPCSets file="%ModDir%/npc/npcjobs.xml" />
+  <LocationTypes file="%ModDir%/factions/locationtypes.xml"/>
+  <Factions file="%ModDir%/factions/factions.xml" />
+  <OutpostConfig file="%ModDir%/factions/outpostgenerationparameters.xml" />
+  <Text file="%ModDir%/factions/textsfactions.xml" />
+  <NPCSets file="%ModDir%/factions/factionjobs.xml" />
 </contentpackage>
