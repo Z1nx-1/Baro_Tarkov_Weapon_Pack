@@ -78,6 +78,31 @@
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
+		</npc>		
+		
+		<npc identifier="outpostmanagerscavs" job="outpostmanager" tags="outpostmanager" spawnpointtags="admin" behavior="StayInHull" preferredoutpostmoduletypes="admin,adminmodule">
+		  <ItemSet commonness="1">
+			<Item identifier="piratecaptainhat" equip="true" />
+			<Item identifier="captainscavsuniform1" equip="true" outfit="true" />
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="revolver" equip="false">
+			  <Item identifier="revolverround" amount="6"/>
+			</Item>
+			<Item identifier="divingmask">
+			  <Item identifier="oxygentank" />
+			</Item>
+		  </ItemSet>
+		  <ItemSet commonness="1">
+			<Item identifier="piratecaptainhat2" equip="true" />
+			<Item identifier="captainscavsuniform1" equip="true" outfit="true" />
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="revolver" equip="false">
+			  <Item identifier="revolverround" amount="6"/>
+			</Item>
+			<Item identifier="divingmask">
+			  <Item identifier="oxygentank" />
+			</Item>
+		  </ItemSet>
 		</npc>
 
 		<!-- for backwards compatibility (some mods that override location types still use this - if it doesn't exist, you can't get any missions)
@@ -444,61 +469,76 @@
 		</npc>		
 		<npc identifier="securitynpcscavs" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
 		  <ItemSet>
-			<Item identifier="securityseparatistsuniform1" equip="true" />
-			<Item identifier="6B13 (EMR)" equip="true" />
-			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+			<!-- LEVEL 3 -->
+	        <Item identifier="idcard" equip="true"/>
+			<Item identifier="6B13 (Killa)" equip="true"/>
+			<Item identifier="commonerclothes2" equip="true"/>
+			<Item identifier="Commando rig" equip="true">
+			  <Item identifier="23x75 Shrap-25"/>
+			  <Item identifier="23x75 Shrap-25"/>
+			  <Item identifier="23x75 Shrap-25"/>
+			  <Item identifier="23x75 Shrap-25"/>
+			  <Item identifier="23x75 Shrap-25"/>
+			  <Item identifier="23x75 Shrap-25"/>
+			</Item>
+			<Item identifier="Maska-1SCh (Killa)" equip="true"/>
+			<Item identifier="KS-23M" equip="true">
+			  <Item identifier="23x75 Shrap-25" amount="3" infinite="true"/>
+			</Item>
+			<Item identifier="handcuffs"/>
 			<Item identifier="stunbaton">
 			  <Item identifier="batterycell" infinite="true"/>
 			</Item>
-			<Item identifier="handcuffs"/>
-			<Item identifier="ASH-12">
-			  <Item identifier="ASH-12 Magazine" infinite="true"/>
-			</Item>
-			<Item identifier="divingknife" />
-			<Item identifier="Altyn" equip="true"/>
+			<Item identifier="6Kh5Bayonet" equip="false"/>
+			<Item identifier="antibleeding1" amount="6"/>
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
 		  <ItemSet>
+			<!-- LEVEL 2 -->
+			<Item identifier="idcard" equip="true"/>
 			<Item identifier="securityseparatistsuniform2" equip="true"/>
-			<Item identifier="6B13 (EMR)" equip="true" />
-			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-			<Item identifier="AKM">
-			  <Item identifier="AKM Magazine" infinite="true"/>
+			<Item identifier="MBSSPlateCarrier" equip="true">
+			  <Item identifier="AK74 Magazine" />
+			  <Item identifier="AK74 Magazine" />
 			</Item>
-			<Item identifier="stungun">
-			  <Item identifier="stungundart" infinite="true"/>
+			<Item identifier="6B47 helmet" equip="true"/>
+			<Item identifier="AK74" equip="true">
+			  <Item identifier="AK74 Magazine" infinite="true"/>
 			</Item>
+			<Item identifier="handcuffs"/>
 			<Item identifier="stunbaton">
 			  <Item identifier="batterycell" infinite="true"/>
 			</Item>
-			<Item identifier="divingknife" />
-			<Item identifier="handcuffs"/>
-			<Item identifier="antibleeding1"/>
-			<Item identifier="6B47 helmet (EMR)" equip="true" />
+			<Item identifier="6Kh5Bayonet" equip="false"/>
+			<Item identifier="antibleeding1" amount="6"/>
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
 		  <ItemSet>
-			<Item identifier="securityseparatistsuniform3" equip="true"/>
-			<Item identifier="TV-115PlateCarrier" equip="true" />
-			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-			<Item identifier="stunbaton">
-			  <Item identifier="batterycell" infinite="true"/>
-			</Item>
-			<Item identifier="handcuffs"/>
-			<Item identifier="Rhino" equip="false">
+			<!-- LEVEL 1 -->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="securityseparatistsuniform2" equip="true"/>
+			<Item identifier="Paca soft armor" equip="true"/>
+			<Item identifier="Scav rig" equip="true"/>
+			<Item identifier="RiotHelmet" equip="true"/>
+
+			<Item identifier="Rhino" equip="true">
 			  <Item identifier=".357 round" amount="6" infinite="true"/>
 			</Item>
-			<Item identifier="divingknife" />
-			<Item identifier="antibleeding1"/>
-			<Item identifier="6B47 helmet" equip="true"/>
+			<Item identifier="handcuffs"/>
+			<Item identifier="stunbaton">
+			  <Item identifier="batterycell" infinite="true"/>
+			</Item>
+			<Item identifier="6Kh5Bayonet" equip="false"/>
+			<Item identifier="antibleeding1" amount="6"/>
 			<Item identifier="divingmask">
 			  <Item identifier="oxygentank" />
 			</Item>
 		  </ItemSet>
+
 		</npc>
 
 		<npc identifier="cargomissiongiver" job="mechanic" moduleflags="none" behavior="Passive">

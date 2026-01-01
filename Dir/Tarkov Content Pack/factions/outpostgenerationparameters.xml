@@ -39,7 +39,7 @@
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>      
 	  
-	  <npc from="outpostnpcs1" identifier="outpostmanagerseparatists" faction="Scavs"/>
+	  <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       
@@ -93,7 +93,7 @@
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
 
-	  <npc from="outpostnpcs1" identifier="outpostmanagerseparatists" faction="Scavs"/>
+	  <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       
@@ -149,7 +149,7 @@
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
 
-	  <npc from="outpostnpcs1" identifier="outpostmanagerseparatists" faction="Scavs"/>
+	  <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       
@@ -208,7 +208,8 @@
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
 
-	  <npc from="outpostnpcs1" identifier="outpostmanagerseparatists" faction="Scavs"/>
+	  <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs"/>
+      <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       
@@ -273,7 +274,10 @@
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
       <npc from="outpostnpcs1" identifier="securitynpcseparatists" faction="separatists"/>
 
-	  <npc from="outpostnpcs1" identifier="outpostmanagerseparatists" faction="Scavs"/>
+	  <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs"/>
+      <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
+      <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
+      <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs"/>
       

@@ -1295,4 +1295,38 @@
       <sprite name="Strike Ballistic helmet Wearable" texture="%ModDir%/attire/attire_textures/Strike_ballistic_helm.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.035" hidewearablesoftype="Hair" sourcerect="1160,104,1022,891" origin="0.5,0.55" />
     </Wearable>
   </Item>
+  <Item name="Scav Captain uniform" identifier="captainscavsuniform1" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" />
+    <Price baseprice="150" requiredfaction="separatists">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Scav Captain uniform 1 Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Scav Captain uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Scav Captain uniform 1 Torso" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Hand" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Hand" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Lower Arm" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Lower Arm" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Upper Arm" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Upper Arm" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Waist" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Thigh" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Thigh" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Leg" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Leg" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Left Shoe" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Scav Captain uniform 1 Right Shoe" texture="%ModDir%/attire/attire_textures/captain_scavs.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
 </Items>
