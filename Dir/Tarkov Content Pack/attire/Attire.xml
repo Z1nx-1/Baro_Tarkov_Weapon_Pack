@@ -413,6 +413,21 @@
       <sprite name="6B13 (Killa)" texture="%ModDir%/attire/attire_textures/6B13 (Killa).png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.07" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="513,89,851,952" />
     </Wearable>
   </Item>
+  <Item name="Tagilla AVS" identifier="TagillaAVS" category="Equipment" tags="smallitem,clothing" scale="0.06" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.11" />
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/Tagilla_AVS.png" sourcerect="886,20,1258,1053" origin="0.5,0.5" />
+    <Sprite name="Tagilla AVS" texture="%ModDir%/attire/attire_textures/Tagilla_AVS.png" sourcerect="886,20,1258,1053" depth="0.6" origin="0.50052804,0.50038666" />
+    <Body width="85" height="90" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="WalkingSpeed" value="-0.5" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="Tagilla AVS" texture="%ModDir%/attire/attire_textures/Tagilla_AVS.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.045" inheritorigin="false" origin="0.45,0.5" inheritsourcerect="false" sourcerect="886,20,1258,1053" />
+    </Wearable>
+  </Item>
   <Item name="Slick Body Armor" identifier="Slick Body Armor" category="Equipment" tags="smallitem,clothing" scale="0.035" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.9.3.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
@@ -1338,7 +1353,7 @@
       <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
-      <sprite name="Ronin Respirator Wearable" texture="%ModDir%/attire/attire_textures/Ronin_respirator.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.035" hidewearablesoftype="Hair" sourcerect="1160,104,1022,891" origin="0.35,0.55" >
+      <sprite name="Ronin Respirator Wearable" texture="%ModDir%/attire/attire_textures/Ronin_respirator.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.035" hidewearablesoftype="Hair" sourcerect="1160,104,1022,891" origin="0.35,0.55">
         <LightComponent range="200.0" lightcolor="50,100,190,100" powerconsumption="10" IsOn="true" allowingameediting="false">
           <Upgrade gameversion="0.1300.0.3" allowingameediting="false" />
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
@@ -1346,7 +1361,34 @@
           </StatusEffect>
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
-	  </sprite>
-	</Wearable>
+      </sprite>
+    </Wearable>
+  </Item>
+  <Item name="Tagillas Trousers" identifier="TagillasTrousers" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Captain Separatist's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,392,128,120" origin="0.5,0.5" />
+    <Sprite name="Captain Separatist's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,358,117,72" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Tagillas Trousers Waist" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Right Thigh" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Left Thigh" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Right Leg" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Left Leg" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Left Shoe" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Tagillas Trousers Right Shoe" texture="%ModDir%/attire/attire_textures/Tagilla_Trousers.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Tagillas Welding Mask" identifier="TagillasWeldingMask" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.06">
+    <Sprite name="Tagillas Welding Mask" texture="%ModDir%/attire/attire_textures/Tagilla_Mask_Hat_Rotated.png" sourcerect="972,38,1200,940" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+      <sprite name="Tagillas Welding Mask" texture="%ModDir%/attire/attire_textures/Tagilla_Mask_Hat_Rotated.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.04" hidewearablesoftype="Hair" sourcerect="975,38,1345,969" origin="0.5,0.55" />
+    </Wearable>
   </Item>
 </Items>

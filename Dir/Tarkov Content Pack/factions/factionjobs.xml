@@ -2,6 +2,33 @@
 <Override>
 	<npcsets>
 	  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	  <!--                               BOSS NPCs                                -->
+	  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	  <npcset identifier="bosses">
+		<npc identifier="tagilla" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" faction="Scavs">
+
+		  <Character speciesname="human" gender="male" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="Crazy">
+			<job name="Securityofficer" identifier="securityofficer">
+			  <skill identifier="electrical" level="40" />
+			  <skill identifier="mechanical" level="40" />
+			  <skill identifier="weapons" level="90" />
+			  <skill identifier="medical" level="70" />
+			  <skill identifier="helm" level="5" />
+			</job>
+		  </Character>
+		  <ItemSet commonness="1">
+			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+			<Item identifier="TagillasTrousers" equip="true"/>
+			<Item identifier="TagillaAVS" equip="true"/>
+			<Item identifier="TagillasWeldingMask" equip="true"/>
+			<Item identifier="SuperforsDB2020DeadBlowHammer" equip="true"/>
+		  </ItemSet>
+		</npc>
+	</npcset>
+
+
+	  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	  <!--                               Outpost NPCs                                -->
 	  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

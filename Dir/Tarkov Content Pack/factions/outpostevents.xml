@@ -1,0 +1,8 @@
+
+<Randomevents>
+  <EventPrefabs>
+		<ScriptedEvent identifier="UBEY" commonness="70">
+		  <SpawnAction npcsetidentifier="bosses" npcidentifier="tagilla" targettag="tagilla" faction="Scavs" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+		</ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>
