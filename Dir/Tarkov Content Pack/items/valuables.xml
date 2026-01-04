@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <Item name="0.2 Physical Bitcoin" identifier="PhysicalBitcoin" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.01" impactsoundtag="impact_metal_heavy">
+    <Upgrade gameversion="0.9.3.1" scale="0.5" />
+    <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
+    <Price baseprice="10000" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="2 " />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Sprite texture="%ModDir%/items/valuable_textures/Physical_Bitcon.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
+    <Deconstruct time="1">
+    </Deconstruct>
+    <Body width="70" height="70" density="20" />
+    <Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="this">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>  
   <Item name="Antique Book" identifier="AntiqueBook" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
@@ -126,7 +146,7 @@
       </StatusEffect>
     </Holdable>
   </Item>  
-  <Item name="Figurine KILLA" identifier="Figurine_KILLA" category="valuable" maxstacksize="8" description="A figurine of the Interchange boss KILLA." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  <Item name="Figurine KILLA" identifier="FigurineKILLA" category="valuable" maxstacksize="8" description="A figurine of the Interchange boss KILLA." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">

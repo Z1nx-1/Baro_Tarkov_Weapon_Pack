@@ -17,14 +17,18 @@
 			  <skill identifier="helm" level="5" />
 			</job>
 		  </Character>
-		  <ItemSet commonness="1">
+		  <ItemSet commonness="0.75">
+		    <Item identifier="PhysicalBitcoin" />
+		    <Item identifier="FigurineTAGILLA" />
 			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
 			<Item identifier="TagillasTrousers" equip="true"/>
 			<Item identifier="TagillaAVS" equip="true"/>
 			<Item identifier="TagillasWeldingMask" equip="true"/>
 			<Item identifier="SuperforsDB2020DeadBlowHammer" equip="true"/>
 		  </ItemSet>
-		  <ItemSet commonness="0.50">
+		  <ItemSet commonness="0.25">
+		    <Item identifier="PhysicalBitcoin" amount="2" />
+		    <Item identifier="FigurineKILLA" />
 			<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
 			<Item identifier="commonerclothes2" equip="true"/>
 			<Item identifier="6B13 (Killa)" equip="true"/>
