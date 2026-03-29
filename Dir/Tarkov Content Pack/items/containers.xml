@@ -86,7 +86,7 @@
   </Item>
   <Item name="Magazine Case" identifier="MagazineCase" tags="crate,allowcleanup" aliases="metalcrate_event" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="0.5" />
-    <Sprite texture="%ModDir%/items/container_textures/Magazine_case.png" depth="0.54" sourcerect="542,0,2230,1064" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="269,99,112,76" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
