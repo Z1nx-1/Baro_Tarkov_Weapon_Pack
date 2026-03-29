@@ -1704,7 +1704,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier One                                    -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="40mm M406" identifier="40MM-M406" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.05" impactsoundtag="impact_metal_light">
+  <Item name="40mm M406" identifier="40MM-M406" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="grenadelauncher" amount="6" spawnprobability="1" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
@@ -1725,8 +1725,8 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1406,457,353,177" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1406,457,353,177" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1104,201,38,18" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1104,201,38,18" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
@@ -1751,7 +1751,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier Two                                    -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="40mm M381" identifier="40MM-M381" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.05" impactsoundtag="impact_metal_light">
+  <Item name="40mm M381" identifier="40MM-M381" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="grenadelauncher" amount="6" spawnprobability="1" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
@@ -1772,8 +1772,8 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="uex" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1252,123,353,177" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1406,457,353,177" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1103,155,40,19" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1103,155,40,19" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
@@ -1795,7 +1795,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="40MM M576" identifier="40MM-M576" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.05" impactsoundtag="impact_metal_light">
+  <Item name="40MM M576" identifier="40MM-M576" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
     <!--BUCKSHOT-->
     <PreferredContainer primary="grenadelauncher" amount="6" spawnprobability="1" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -1815,8 +1815,8 @@
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem identifier="iron" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1406,457,353,177" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1406,457,353,177" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1114,221,29,19" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1114,221,29,19" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="15">
@@ -1840,7 +1840,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier Three                                  -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="40MM-M441" identifier="40MM-M441" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.05" impactsoundtag="impact_metal_light">
+  <Item name="40MM-M441" identifier="40MM-M441" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="grenadelauncher" amount="6" spawnprobability="1" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
@@ -1861,8 +1861,8 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="c4block" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1253,86,44,24" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1331,194,353,177" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1103,180,39,18" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1103,180,39,18" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
