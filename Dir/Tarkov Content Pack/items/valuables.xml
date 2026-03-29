@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="0.2 Physical Bitcoin" identifier="PhysicalBitcoin" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.01" impactsoundtag="impact_metal_heavy">
+  <Item name="0.2 Physical Bitcoin" identifier="PhysicalBitcoin" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.1" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="10000" sold="false">
@@ -10,17 +10,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="2 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Physical_Bitcon.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="157,185,51,50" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Antique Book" identifier="AntiqueBook" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Antique Book" identifier="AntiqueBook" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="300" sold="false">
@@ -30,9 +29,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Antique_Book.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="10,157,54,78" origin="0.4351852,0.39358976" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
@@ -40,7 +38,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="Antique Teapot" identifier="AntiqueTeapot" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  <Item name="Antique Teapot" identifier="AntiqueTeapot" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.1" />
     <PreferredContainer primary="ruinstoragelarge" minamount="2" maxamount="4" spawnprobability="0.8" />
@@ -52,17 +50,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Antique_Teapot.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.4" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="149,61,84,93" origin="0.49909192,0.57391524" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
-    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="-400,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,0" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="Antique Vase" identifier="AntiqueVase" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  <Item name="Antique Vase" identifier="AntiqueVase" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.8" />
     <Price baseprice="400" sold="false">
@@ -72,17 +69,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Antique_Vase.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="79,154,54,130" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Bronze Lion Figurine" identifier="BronzeLionFigurine" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Bronze Lion Figurine" identifier="BronzeLionFigurine" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="1" spawnprobability="0.3" />
     <Price baseprice="400" sold="false">
@@ -92,7 +88,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Bronze_Lion_Figurine.png" depth="0.7" sourcerect="955,67,1495,940" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="3,61,146,90" origin="0.5,0.5" />
     <Deconstruct time="30">
       <Item identifier="oxygeniteshard" />
     </Deconstruct>
@@ -103,7 +99,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  <Item name="Cat Figurine" identifier="CatFigurine" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  <Item name="Cat Figurine" identifier="CatFigurine" category="valuable" maxstacksize="8" Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.7" />
     <Price baseprice="250" sold="false">
@@ -113,9 +109,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Cat_Figurine.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="236,60,43,139" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
@@ -123,10 +118,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  
-  
-  
-  <Item name="Figurine BEAR" identifier="FigurineBEAR" category="valuable" maxstacksize="8" description="A figurine of a BEAR PMC." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  <Item name="Figurine BEAR" identifier="FigurineBEAR" category="valuable" maxstacksize="8" description="A figurine of a BEAR PMC." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -136,17 +128,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Bear.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="107,6,37,50" origin="0.41662768,0.5544386" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Figurine KILLA" identifier="FigurineKILLA" category="valuable" maxstacksize="8" description="A figurine of the Interchange boss KILLA." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Figurine KILLA" identifier="FigurineKILLA" category="valuable" maxstacksize="8" description="A figurine of the Interchange boss KILLA." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -156,17 +147,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Killa.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="57,6,50,50" origin="0.338,0.536" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Figurine Reshala" identifier="FigurineReshala" category="valuable" maxstacksize="8" description="A figurine of the Customs boss Reshala." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Figurine Reshala" identifier="FigurineReshala" category="valuable" maxstacksize="8" description="A figurine of the Customs boss Reshala." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -176,17 +166,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Reshala.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="17,6,32,50" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Figurine Scav" identifier="FigurineScav" category="valuable" maxstacksize="8" description="A figurine of a local Scav." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Figurine Scav" identifier="FigurineScav" category="valuable" maxstacksize="8" description="A figurine of a local Scav." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -196,17 +185,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Scav.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="235,1,33,57" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Figurine TAGILLA" identifier="FigurineTAGILLA" category="valuable" maxstacksize="8" description="A figurine of the Factory boss TAGILLA." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Figurine TAGILLA" identifier="FigurineTAGILLA" category="valuable" maxstacksize="8" description="A figurine of the Factory boss TAGILLA." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -216,17 +204,16 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Tagilla.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="186,7,42,51" origin="0.63431495,0.5556162" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">
         <Remove />
       </StatusEffect>
     </Holdable>
-  </Item>  
-  <Item name="Figurine USEC" identifier="FigurineUSEC" category="valuable" maxstacksize="8" description="A figurine of a USEC PMC." Tags="valuable, smallitem, smallvaluable" scale="0.04" impactsoundtag="impact_metal_heavy">
+  </Item>
+  <Item name="Figurine USEC" identifier="FigurineUSEC" category="valuable" maxstacksize="8" description="A figurine of a USEC PMC." Tags="valuable, smallitem, smallvaluable" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.1" scale="0.5" />
     <PreferredContainer primary="wrecksupplycab,beaconsupplycab" minamount="0" maxamount="2" spawnprobability="0.6" />
     <Price baseprice="1000" sold="false">
@@ -236,9 +223,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1 " />
       <Price storeidentifier="merchantmine" />
     </Price>
-    <Sprite texture="%ModDir%/items/valuable_textures/Figurine_Usec.png" depth="0.7" sourcerect="1265,76,672,980" origin="0.5,0.5" />
-    <Deconstruct time="1">
-    </Deconstruct>
+    <Sprite texture="%ModDir%/items/valuable_textures/ValuableSpriteSheet.png" depth="0.7" sourcerect="148,3,35,54" origin="0.5,0.5" />
+    <Deconstruct time="1"></Deconstruct>
     <Body width="70" height="70" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="this">

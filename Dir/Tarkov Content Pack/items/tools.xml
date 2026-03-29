@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Override>
-    <Item name="" identifier="screwdriver" category="Equipment" Tags="smallitem,simpletool,tool,electricalrepairtool,screwdriveritem" cargocontaineridentifier="metalcrate" Scale="0.03" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Item name="" identifier="screwdriver" category="Equipment" Tags="smallitem,simpletool,tool,electricalrepairtool,screwdriveritem" cargocontaineridentifier="metalcrate" Scale="0.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="1" notcampaign="true" />
       <PreferredContainer primary="engcab" secondary="reactorcab" />
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.2" />
@@ -24,8 +24,8 @@
         <RequiredSkill identifier="mechanical" level="20" />
         <RequiredItem identifier="iron" amount="2" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/items/tool_textures/Screwdriver.png" sourcerect="1086,367,1021,306" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/items/tool_textures/Screwdriver.png" sourcerect="1086,367,1021,306" depth="0.55" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="49,410,158,26" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="49,410,158,26" depth="0.55" origin="0.5,0.5" />
       <Body width="60" height="12" density="25" />
       <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-10,0" holdangle="60" reload="1.0" range="50" combatpriority="7" msg="ItemMsgPickUpSelect">
         <Attack structuredamage="0" itemdamage="2" targetimpulse="2">
@@ -47,9 +47,9 @@
       <Quality>
         <QualityStat stattype="RepairSpeed" value="0.1" />
       </Quality>
-      <Upgrade gameversion="0.10.0.0" scale="0.03" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="wrench" category="Equipment" Tags="smallitem,tool,simpletool,mechanicalrepairtool,wrenchitem,mountableweapon,deattachtool" cargocontaineridentifier="metalcrate" Scale="0.03" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Item name="" identifier="wrench" category="Equipment" Tags="smallitem,tool,simpletool,mechanicalrepairtool,wrenchitem,mountableweapon,deattachtool" cargocontaineridentifier="metalcrate" Scale="0.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="1" notcampaign="true" />
       <PreferredContainer primary="engcab" />
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.2" />
@@ -71,8 +71,8 @@
         <RequiredSkill identifier="mechanical" level="20" />
         <RequiredItem identifier="iron" amount="2" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/items/tool_textures/Wrench.png" sourcerect="899,287,1408,432" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/items/tool_textures/Wrench.png" sourcerect="899,287,1408,431" depth="0.55" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="38,346,182,50" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="38,346,182,50" depth="0.55" origin="0.5,0.5" />
       <Body width="60" height="15" density="30" />
       <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-8,0" holdangle="60" reload="1.0" range="50" combatpriority="8" msg="ItemMsgPickUpSelect">
         <Attack structuredamage="0" itemdamage="2" targetimpulse="5">
@@ -89,10 +89,10 @@
       <Quality>
         <QualityStat stattype="RepairSpeed" value="0.1" />
       </Quality>
-      <Upgrade gameversion="0.10.0.0" scale="0.03" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
   </Override>
-  <Item name="Inseq Gas Pipe Wrench" identifier="InseqGasPipeWrench" category="Equipment" Tags="smallitem,tool,simpletool,mechanicalrepairtool,wrenchitem,mountableweapon,deattachtool" cargocontaineridentifier="metalcrate" Scale="0.03" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="Inseq Gas Pipe Wrench" identifier="InseqGasPipeWrench" category="Equipment" Tags="smallitem,tool,simpletool,mechanicalrepairtool,wrenchitem,mountableweapon,deattachtool" cargocontaineridentifier="metalcrate" Scale="0.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="1" notcampaign="true" />
     <PreferredContainer primary="engcab" />
     <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.2" />
@@ -116,8 +116,8 @@
       <RequiredItem identifier="iron" amount="2" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/items/tool_textures/Inseq_Gas_Pipe_Wrench.png" sourcerect="899,287,1408,432" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/tool_textures/Inseq_Gas_Pipe_Wrench.png" sourcerect="899,287,1408,431" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="44,272,194,53" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="44,272,194,53" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="15" density="30" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-8,0" holdangle="60" reload="1.0" range="50" combatpriority="8" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="0" itemdamage="6" targetimpulse="5">
@@ -136,7 +136,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.03" />
   </Item>
-  <Item name="Superfors DB2020 Dead Blow Hammer" identifier="SuperforsDB2020DeadBlowHammer" category="Equipment" Tags="smallitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.04" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="Superfors DB2020 Dead Blow Hammer" identifier="SuperforsDB2020DeadBlowHammer" category="Equipment" Tags="smallitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.3" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <Deconstruct time="10">
       <Item identifier="rubber" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -148,8 +148,8 @@
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/items/tool_textures/SuperforsDB2020DeadBlowHammer.png" sourcerect="108,145,3016,764" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/tool_textures/SuperforsDB2020DeadBlowHammer.png" sourcerect="108,145,3016,764" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="34,9,425,120" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/tool_textures/ToolSpriteSheet.png" sourcerect="34,9,425,120" depth="0.55" origin="0.5,0.5" />
     <Body width="120" height="20" density="30" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" aimpos="45,10" handle1="-30,0" handle2="0,5" holdangle="60" reload="2" range="100" combatpriority="20" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="32" itemdamage="32" targetimpulse="10">
@@ -166,6 +166,6 @@
     <Quality>
       <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
-    <Upgrade gameversion="0.10.0.0" scale="0.04" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 </Items>

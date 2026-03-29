@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -18,8 +18,8 @@
     <Deconstruct time="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SuitableTreatment type="bleeding" suitability="100" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/ZAGUSTIN.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,45,69,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,45,69,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="40" />
@@ -44,7 +44,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </zagustin>
-  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1425">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -64,8 +64,8 @@
     <SuitableTreatment type="damage" suitability="20" />
     <SuitableTreatment type="blunttrauma" suitability="20" />
     <SuitableTreatment type="gunshotwound" suitability="20" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/PROPITAL.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,81,70,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,81,70,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
@@ -106,7 +106,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </propital>
-  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2250">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -126,8 +126,8 @@
     <SuitableTreatment type="burn" suitability="50" />
     <SuitableTreatment type="blunttrauma" suitability="50" />
     <SuitableTreatment type="gunshotwound" suitability="50" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/eTg.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="9,153,68,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="9,153,68,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="80" />
@@ -171,7 +171,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="80" />
   </eTg>
-  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -188,8 +188,8 @@
     </Fabricate>
     <Deconstruct time="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/SJ6.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="9,117,70,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,63,69,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
@@ -225,8 +225,8 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
-  </SJ6>  
-  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  </SJ6>
+  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="1150">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -243,8 +243,8 @@
     </Fabricate>
     <Deconstruct time="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/SJ1.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/SJ1.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,63,69,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,63,69,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="65" />
@@ -255,7 +255,7 @@
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="2">
-		<Affliction identifier="strengthen" amount="175" />
+        <Affliction identifier="strengthen" amount="175" />
         <Affliction identifier="haste" amount="125" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="30">
@@ -264,7 +264,7 @@
         <ReduceAffliction identifier="chemwithdrawal" amount="3" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="1">
-		<Affliction identifier="strengthen" amount="175" />
+        <Affliction identifier="strengthen" amount="175" />
         <Affliction identifier="haste" amount="125" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="30">
@@ -282,9 +282,8 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
-  </SJ1>  
-  
-  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  </SJ1>
+  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2500">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -301,8 +300,8 @@
     </Fabricate>
     <Deconstruct time="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/Obdolbos.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/Obdolbos.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="9,99,68,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="9,99,68,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="75" />
@@ -313,28 +312,28 @@
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
-		<Affliction identifier="strengthen" amount="1000" />
+        <Affliction identifier="strengthen" amount="1000" />
         <Affliction identifier="haste" amount="1000" />
-      </StatusEffect>      
-	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="120">
-		<Affliction identifier="pyromania" amount="1000" />
-		<Affliction identifier="stonewall" amount="1000" />
-		<Affliction identifier="inspiringtunes" amount="1000" />
-      </StatusEffect>	  
-	  <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" delay="10" duration="120">
-		<Affliction identifier="decrepify" amount="180" />
-		<Affliction identifier="hypersensitivity" amount="180" />
-		<ReduceAffliction identifier="strengthen" amount="1000" />
-		<ReduceAffliction identifier="haste" amount="1000" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="120">
+        <Affliction identifier="pyromania" amount="1000" />
+        <Affliction identifier="stonewall" amount="1000" />
+        <Affliction identifier="inspiringtunes" amount="1000" />
+      </StatusEffect>
+      <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" delay="10" duration="120">
+        <Affliction identifier="decrepify" amount="180" />
+        <Affliction identifier="hypersensitivity" amount="180" />
+        <ReduceAffliction identifier="strengthen" amount="1000" />
+        <ReduceAffliction identifier="haste" amount="1000" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
-		<Affliction identifier="pressure" amount="1000" />
-		<Affliction identifier="bleedingnonstop" amount="1000" />
-		<Affliction identifier="morbusinepoisoning" amount="1000" />
-		<Affliction identifier="sufforinpoisoning" amount="1000" />
-		<Affliction identifier="deliriuminepoisoning" amount="1000" />
-		<Affliction identifier="cyanidepoisoning" amount="1000" />
-      </StatusEffect>      
+        <Affliction identifier="pressure" amount="1000" />
+        <Affliction identifier="bleedingnonstop" amount="1000" />
+        <Affliction identifier="morbusinepoisoning" amount="1000" />
+        <Affliction identifier="sufforinpoisoning" amount="1000" />
+        <Affliction identifier="deliriuminepoisoning" amount="1000" />
+        <Affliction identifier="cyanidepoisoning" amount="1000" />
+      </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
@@ -345,9 +344,8 @@
       </StatusEffect>
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="75" />
-  </Obdolbos>  
-  
-  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  </Obdolbos>
+  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Deconstruct time="5" />
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="medical" level="40" />
@@ -355,9 +353,9 @@
       <RequiredItem identifier="ethanol" />
       <RequiredItem identifier="antipsychosis" />
     </Fabricate>
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/Obdolbos2.png" sourcerect="1486,446,676,190" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/Obdolbos2.png" sourcerect="1486,447,675,193" depth="0.6" origin="0.5,0.5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,171,69,12" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="8,171,69,12" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="40" />
@@ -368,13 +366,13 @@
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
-		<ReduceAffliction identifier="unknowntoxin" amount="1000" />
-		<ReduceAffliction identifier="spaceherpes" amount="100" />
-      </StatusEffect>      
+        <ReduceAffliction identifier="unknowntoxin" amount="1000" />
+        <ReduceAffliction identifier="spaceherpes" amount="100" />
+      </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10">
-		<ReduceAffliction identifier="unknowntoxin" amount="1000" />
-		<ReduceAffliction identifier="spaceherpes" amount="100" />
-      </StatusEffect>      
+        <ReduceAffliction identifier="unknowntoxin" amount="1000" />
+        <ReduceAffliction identifier="spaceherpes" amount="100" />
+      </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
@@ -386,7 +384,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </antidote>
-  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.05" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -410,8 +408,8 @@
     </Fabricate>
     <Deconstruct time="2" />
     <SuitableTreatment identifier="pain" suitability="0.1" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/Painkillers.png" sourcerect="1529,409,543,259" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="7,4,73,37" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="7,4,73,37" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="15" />
@@ -431,7 +429,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </Painkiller>
-  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The AI-2 is an old soviet medkit consisting of gas damage and minor radiation treatment." scale="0.04" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The AI-2 is an old soviet medkit consisting of gas damage and minor radiation treatment." scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -456,8 +454,8 @@
     </Fabricate>
     <Deconstruct time="2" />
     <SuitableTreatment identifier="gasdamage" suitability="0.1" />
-    <InventoryIcon texture="%ModDir%/medical/medical_textures/AI-2.png" sourcerect="1594,332,426,401" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/medical/medical_textures/AI-2.png" sourcerect="1594,332,425,400" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="86,5,49,53" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/medical/medical_textures/MedicalSpriteSheet.png" sourcerect="86,5,49,53" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="10.05" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="15" />
@@ -466,11 +464,11 @@
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="15">
         <ReduceAffliction identifier="gasdamage" amount="3" />
-		<ReduceAffliction identifier="radiationsickness" amount="3.0" />
+        <ReduceAffliction identifier="radiationsickness" amount="3.0" />
       </StatusEffect>
       <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="15">
         <ReduceAffliction identifier="gasdamage" amount="3" />
-		<ReduceAffliction identifier="radiationsickness" amount="3" />
+        <ReduceAffliction identifier="radiationsickness" amount="3" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">

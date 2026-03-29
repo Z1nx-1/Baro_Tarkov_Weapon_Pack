@@ -41,11 +41,10 @@
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclown" minreputation="20" />
       <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclownveteran" minreputation="50" />
     </Faction>
-  <Faction identifier="Scavs" initialreputation="-50" minreputation="-100" maxreputation="100" menuorder="4" controlledoutpostpercentage="40" opposingfaction="coalition, separatists">
-    <Icon name="ScavIcon" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="26,111,357,390" color="215,156,85,255" origin="0.5,0.5" />
-    <IconSmall name="ScavIconSmall" texture="%ModDir%/factions/faction_textures/ScavIconSmall.png" sourcerect="58,837,50,50" />
-    <Portrait name="ScavPortrait" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="0,0,1920,768" color="215,156,85,255" />
-  </Faction>
+    <Faction identifier="Scavs" initialreputation="-50" minreputation="-100" maxreputation="100" menuorder="4" controlledoutpostpercentage="40" opposingfaction="coalition, separatists">
+      <Icon name="ScavIcon" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="26,111,357,390" color="215,156,85,255" origin="0.5,0.5" />
+      <IconSmall name="ScavIconSmall" texture="%ModDir%/factions/faction_textures/ScavIconSmall.png" sourcerect="58,837,50,50" />
+      <Portrait name="ScavPortrait" texture="%ModDir%/factions/faction_textures/ScavIconWhite.png" sourcerect="0,0,1920,768" color="215,156,85,255" />
+    </Faction>
   </Override>
-
 </Factions>

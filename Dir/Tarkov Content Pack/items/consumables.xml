@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Whiskey name="Dan Jackiels Whiskey" identifier="Whiskey" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.04" impactsoundtag="impact_metal_light">
+  <Whiskey name="Dan Jackiels Whiskey" identifier="Whiskey" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" />
@@ -12,7 +12,7 @@
       <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="180" fabricationlimitmin="2" fabricationlimitmax="6" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Dan_Jackiel_Whiskey.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="193,95,36,116" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment type="infection" suitability="30" />
     <SuitableTreatment type="burn" suitability="-3" />
     <Body width="27" height="66" density="20" />
@@ -60,7 +60,7 @@
       </StatusEffect>
     </Holdable>
   </Whiskey>
-  <Vodka name="Tarkovskaya Vodka" identifier="Vodka" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.04" impactsoundtag="impact_metal_light">
+  <Vodka name="Tarkovskaya Vodka" identifier="Vodka" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" />
@@ -72,7 +72,7 @@
       <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="200" fabricationlimitmin="2" fabricationlimitmax="6" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Tarkovskaya_Vodka.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="73,89,31,121" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment type="infection" suitability="30" />
     <SuitableTreatment type="burn" suitability="-3" />
     <Body width="27" height="66" density="20" />
@@ -120,7 +120,7 @@
       </StatusEffect>
     </Holdable>
   </Vodka>
-  <Moonshine name="Fierce Hatchling Moonshine" identifier="Moonshine" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.05" impactsoundtag="impact_metal_light">
+  <Moonshine name="Fierce Hatchling Moonshine" identifier="Moonshine" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" />
@@ -132,7 +132,7 @@
       <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="500" fabricationlimitmin="2" fabricationlimitmax="6" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Fierce_Hatchling_Moonshine.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="114,92,31,117" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment type="infection" suitability="30" />
     <SuitableTreatment type="burn" suitability="-3" />
     <Body width="27" height="66" density="20" />
@@ -180,7 +180,7 @@
       </StatusEffect>
     </Holdable>
   </Moonshine>
-  <Pevko name="Pevko Light Beer" identifier="Pevko" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.05" impactsoundtag="impact_metal_light">
+  <Pevko name="Pevko Light Beer" identifier="Pevko" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" />
@@ -192,7 +192,7 @@
       <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="30" fabricationlimitmin="2" fabricationlimitmax="6" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Pevko_Light_Beer.png" sourcerect="1348,19,641,1025" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="155,106,27,105" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment type="infection" suitability="30" />
     <SuitableTreatment type="burn" suitability="-3" />
     <Body width="27" height="66" density="20" />
@@ -240,7 +240,7 @@
       </StatusEffect>
     </Holdable>
   </Pevko>
-  <PurifiedWater name="Canister With Purified Water" identifier="CanisterWithPurifiedWater" category="Medical,Misc" maxstacksize="1" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.04" impactsoundtag="impact_metal_light">
+  <PurifiedWater name="Canister With Purified Water" identifier="CanisterWithPurifiedWater" category="Medical,Misc" maxstacksize="1" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" />
@@ -252,12 +252,12 @@
       <Price storeidentifier="merchantnightclub" minavailable="20" sold="true" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="200" fabricationlimitmin="2" fabricationlimitmax="6" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Canister_With_Purified_Water.png" sourcerect="935,-1,1068,1081" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="232,104,96,107" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment type="infection" suitability="30" />
     <SuitableTreatment type="burn" suitability="-3" />
     <Body width="27" height="66" density="20" />
     <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" characterusable="false" handle1="0,500" handle2="0,-500" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" characterusable="false" handle1="-20,40" handle2="0,-50" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-5.0" />
       <StatusEffect type="OnSecondaryUse" target="This">
         <Conditional Condition="gte 100" />
@@ -285,14 +285,14 @@
       </StatusEffect>
     </Holdable>
   </PurifiedWater>
-  <MRE name="MRE Ration Pack" identifier="MRERationPack" category="food" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.03" impactsoundtag="impact_metal_light">
+  <MRE name="MRE Ration Pack" identifier="MRERationPack" category="food" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="2" spawnprobability="0.15" />
     <PreferredContainer primary="crewcab" />
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="120" fabricationlimitmin="5" fabricationlimitmax="10" />
-    <InventoryIcon texture="%ModDir%/items/consumable_textures/MRE_Ration_Pack.png" sourcerect="1408,112,657,897" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/consumable_textures/MRE_Ration_Pack.png" sourcerect="1408,112,657,897" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="0,12,64,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="0,12,64,95" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.1" />
     <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,15" holdangle="0" aimangle="90" aimable="false" msg="ItemMsgPickUpSelect">
@@ -324,14 +324,14 @@
       </StatusEffect>
     </Holdable>
   </MRE>
-  <Iskra name="Iskra Ration Pack" identifier="IskraRationPack" category="food" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.03" impactsoundtag="impact_metal_light">
+  <Iskra name="Iskra Ration Pack" identifier="IskraRationPack" category="food" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="2" spawnprobability="0.15" />
     <PreferredContainer primary="crewcab" />
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="120" fabricationlimitmin="5" fabricationlimitmax="10" />
-    <InventoryIcon texture="%ModDir%/items/consumable_textures/Iskra_Ration_Pack.png" sourcerect="1408,112,657,897" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Iskra_Ration_Pack.png" sourcerect="1408,112,657,897" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="0,116,67,96" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="0,116,67,96" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.1" />
     <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,15" holdangle="0" aimangle="90" aimable="false" msg="ItemMsgPickUpSelect">
@@ -363,14 +363,14 @@
       </StatusEffect>
     </Holdable>
   </Iskra>
-  <Tarker name="Tarker Pack" identifier="TarkerPack" category="food" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.03" impactsoundtag="impact_metal_light">
+  <Tarker name="Tarker Pack" identifier="TarkerPack" category="food" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="2" spawnprobability="0.15" />
     <PreferredContainer primary="crewcab" />
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="60" fabricationlimitmin="5" fabricationlimitmax="10" />
-    <InventoryIcon texture="%ModDir%/items/consumable_textures/Pack_Of_Dried_Tarker_Meat.png" sourcerect="1408,112,657,897" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Pack_Of_Dried_Tarker_Meat.png" sourcerect="1408,112,657,897" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="194,8,34,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="194,8,34,66" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.1" />
     <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,15" holdangle="0" aimangle="90" aimable="false" msg="ItemMsgPickUpSelect">
@@ -402,14 +402,14 @@
       </StatusEffect>
     </Holdable>
   </Tarker>
-  <Crackers name="Army Crackers" identifier="ArmyCrackers" category="food" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.06" impactsoundtag="impact_metal_light">
+  <Crackers name="Army Crackers" identifier="ArmyCrackers" category="food" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,medical" useinhealthinterface="true" scale="0.35" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="wreckmedcab,abandonedmedcab,piratemedcab" amount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="abandonedcrewcab,piratecrewcab" minamount="1" maxamount="2" spawnprobability="0.15" />
     <PreferredContainer primary="crewcab" />
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="60" fabricationlimitmin="5" fabricationlimitmax="10" />
-    <InventoryIcon texture="%ModDir%/items/consumable_textures/Army_Crackers.png" sourcerect="1446,459,335,176" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/items/consumable_textures/Army_Crackers.png" sourcerect="1446,459,335,176" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="145,78,48,22" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/consumable_textures/ConsumableSpriteSheet.png" sourcerect="145,78,48,22" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.1" />
     <!-- characterusable="false" because the "Use" action is triggered via a status effect when the bottle is empty, can't be done just by hitting E -->
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" characterusable="false" aimpos="32,15" holdangle="0" aimangle="90" aimable="false" msg="ItemMsgPickUpSelect">

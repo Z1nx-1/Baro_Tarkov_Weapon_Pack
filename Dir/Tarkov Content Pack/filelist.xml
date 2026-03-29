@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Content Pack" modversion="4.0.0" corepackage="False" steamworkshopid="3507999416" gameversion="1.11.5.0">
-  <Item file="%ModDir%/rifles/rifles.xml" />
-  <Item file="%ModDir%/rifles/modded_rifles.xml" />
-  <Item file="%ModDir%/sidearms/sidearms.xml" />
-  <Item file="%ModDir%/melee/melee.xml" />
+<contentpackage name="Tarkov Content Pack" modversion="6.0.0" corepackage="False" gameversion="1.11.5.0">
+  <Item file="%ModDir%/weapons/primary.xml" />
+  <Item file="%ModDir%/weapons/sidearms.xml" />
+  <Item file="%ModDir%/weapons/melee.xml" />
   <Item file="%ModDir%/throwables/throwables.xml" />
-  <Item file="%ModDir%/rifles/ap_ammo.xml" />
   <Item file="%ModDir%/attire/attire.xml" />
   <Item file="%ModDir%/medical/medical.xml" />
   <Item file="%ModDir%/items/containers.xml" />
@@ -17,7 +15,7 @@
   <Particles file="%ModDir%/particles/particles.xml" />
   <Jobs file="%ModDir%/jobs/jobs.xml" />
   <NPCSets file="%ModDir%/npc/npcjobs.xml" />
-  <LocationTypes file="%ModDir%/factions/locationtypes.xml"/>
+  <LocationTypes file="%ModDir%/factions/locationtypes.xml" />
   <Factions file="%ModDir%/factions/factions.xml" />
   <OutpostConfig file="%ModDir%/factions/outpostgenerationparameters.xml" />
   <Text file="%ModDir%/factions/textsfactions.xml" />

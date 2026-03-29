@@ -1,30 +1,28 @@
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-
-<!-- Factions -->
-<factions>Factions</factions>
-<faction.coalition>USEC</faction.coalition>
-<faction.coalition.description>The autocratic de facto superpower of Europa, with a distributed bureaucracy and an iron grip on the resources, manufacturing and power within Europan society. They rule by fear, and have a reputation for shutting disobedient colonies and outposts out of the supply loop, or simply subjugating them by direct force. Their motivation is ultimately to preserve humanity, but at any cost, and preferably with the status quo left intact.</faction.coalition.description>
-<faction.coalition.shortdescription>The autocratic de facto superpower of Europa, with a distributed bureaucracy and an iron grip on the resources, manufacturing and power within Europan society.</faction.coalition.shortdescription>
-<faction.clowns>Children of the Honkmother</faction.clowns>
-<faction.clowns.description>Every once in a while, these minstrels, fools and clowns attempt to form unions, and names like "Europan Jesters' Association" pop up. In truth, the Honkmother's children are a less-than-organized lot who simply heed the call of the bikehorn.</faction.clowns.description>
-<faction.clowns.shortdescription>The Honkmother's children are an unorganized lot who simply heed the call of the bikehorn.</faction.clowns.shortdescription>
-<faction.separatists>BEAR</faction.separatists>
-<faction.separatists.description>A small, underground organization seeking a more democratic society by any means, from petty resistance to full-blown terrorism, all with the end goal of disrupting the ability of the Europa Coalition to function, and to undermine its authority.</faction.separatists.description>
-<faction.separatists.shortdescription>A small, underground organization seeking a more democratic society by any means, from petty resistance to full-blown terrorism.</faction.separatists.shortdescription>
-<faction.huskcult>The Church of Husk</faction.huskcult>
-<faction.huskcult.description>A mysterious and outlawed religious group with a transhumanist twist, they seek "communion" with the husk parasite in order to usher in a new kind of humanity, one more capable of surviving in this harsh environment, more in tune with the local ecosystem, and devoid of pride, hatred, fear, or complex thought. Hated equally by the Europa Coalition and the Jovian separatists.</faction.huskcult.description>
-<faction.huskcult.shortdescription>A religious group that seeks 'communion' with the husk parasite in order to usher in a new kind of humanity, one more capable of surviving in this harsh environment.</faction.huskcult.shortdescription>
-<reputation>Reputation</reputation>
-<reputationformat>[reputationname] ([reputationvalue])</reputationformat>
-<reputationverylow>Hostile</reputationverylow>
-<reputationlow>Unfriendly</reputationlow>
-<reputationneutral>Neutral</reputationneutral>
-<reputationhigh>Friendly</reputationhigh>
-<reputationveryhigh>Revered</reputationveryhigh>
-<reputationgainnotification>[value] [reputationname] Reputation</reputationgainnotification>
-<faction.Scavs>SCAVS</faction.Scavs>
-<faction.Scavs.description>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.description>
-<faction.Scavs.shortdescription>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.shortdescription>
-
+  <!-- Factions -->
+  <factions>Factions</factions>
+  <faction.coalition>USEC</faction.coalition>
+  <faction.coalition.description>The autocratic de facto superpower of Europa, with a distributed bureaucracy and an iron grip on the resources, manufacturing and power within Europan society. They rule by fear, and have a reputation for shutting disobedient colonies and outposts out of the supply loop, or simply subjugating them by direct force. Their motivation is ultimately to preserve humanity, but at any cost, and preferably with the status quo left intact.</faction.coalition.description>
+  <faction.coalition.shortdescription>The autocratic de facto superpower of Europa, with a distributed bureaucracy and an iron grip on the resources, manufacturing and power within Europan society.</faction.coalition.shortdescription>
+  <faction.clowns>Children of the Honkmother</faction.clowns>
+  <faction.clowns.description>Every once in a while, these minstrels, fools and clowns attempt to form unions, and names like "Europan Jesters' Association" pop up. In truth, the Honkmother's children are a less-than-organized lot who simply heed the call of the bikehorn.</faction.clowns.description>
+  <faction.clowns.shortdescription>The Honkmother's children are an unorganized lot who simply heed the call of the bikehorn.</faction.clowns.shortdescription>
+  <faction.separatists>BEAR</faction.separatists>
+  <faction.separatists.description>A small, underground organization seeking a more democratic society by any means, from petty resistance to full-blown terrorism, all with the end goal of disrupting the ability of the Europa Coalition to function, and to undermine its authority.</faction.separatists.description>
+  <faction.separatists.shortdescription>A small, underground organization seeking a more democratic society by any means, from petty resistance to full-blown terrorism.</faction.separatists.shortdescription>
+  <faction.huskcult>The Church of Husk</faction.huskcult>
+  <faction.huskcult.description>A mysterious and outlawed religious group with a transhumanist twist, they seek "communion" with the husk parasite in order to usher in a new kind of humanity, one more capable of surviving in this harsh environment, more in tune with the local ecosystem, and devoid of pride, hatred, fear, or complex thought. Hated equally by the Europa Coalition and the Jovian separatists.</faction.huskcult.description>
+  <faction.huskcult.shortdescription>A religious group that seeks 'communion' with the husk parasite in order to usher in a new kind of humanity, one more capable of surviving in this harsh environment.</faction.huskcult.shortdescription>
+  <reputation>Reputation</reputation>
+  <reputationformat>[reputationname] ([reputationvalue])</reputationformat>
+  <reputationverylow>Hostile</reputationverylow>
+  <reputationlow>Unfriendly</reputationlow>
+  <reputationneutral>Neutral</reputationneutral>
+  <reputationhigh>Friendly</reputationhigh>
+  <reputationveryhigh>Revered</reputationveryhigh>
+  <reputationgainnotification>[value] [reputationname] Reputation</reputationgainnotification>
+  <faction.Scavs>SCAVS</faction.Scavs>
+  <faction.Scavs.description>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.description>
+  <faction.Scavs.shortdescription>A small, rebelious and anarcho group of bandits that are out for blood and money.</faction.Scavs.shortdescription>
 </Override>
