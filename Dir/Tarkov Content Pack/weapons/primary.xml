@@ -735,6 +735,86 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="M4A1 60 Round Magazine" identifier="M4A1_60_round_Magazine1" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="false" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="M4A1_60_round_Magazine1" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="993,184,32,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" depth="0.54" sourcerect="993,184,32,63" origin="0.5,0.35" />
+    <Body width="14" height="40" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.56x45mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="5.56x45mm" />
+      <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-1.7" disabledeltatime="true">
+        <SpawnItem identifiers="5.56x45mm" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="M4A1 60 Round Magazine" identifier="M4A1_60_round_Magazine2" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.45" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Price baseprice="400" displaynonempty="true" minleveldifficulty="30">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="false" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="M4A1_60_round_Magazine2" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1029,184,35,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" depth="0.54" sourcerect="1029,184,35,61" origin="0.48,0.4" />
+    <Body width="14" height="40" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="5.56x45mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="5.56x45mm" />
+      <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-1.7" disabledeltatime="true">
+        <SpawnItem identifiers="5.56x45mm" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
   <Item name="5.56x45mm" identifier="5.56x45mm" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.01">
     <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1144,212,50,14" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1144,212,50,14" depth="0.55" origin="0.49832895,0.4586806" />
@@ -789,7 +869,7 @@
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="13,230,220,75" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-50,0" handle2="15,20" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.19" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="65,15" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.15" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="65,15" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -854,6 +934,46 @@
       <Containable items="7.62x39mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
+        <SpawnItem identifiers="7.62x39mm" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="AKM 75 Round Magazine" identifier="AKM_75_Round_Magazine" maxstacksize="2" maxstacksizecharacterinventory="1" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AKMAmmo,handheldammo" impactsoundtag="impact_metal_light">
+    <Price baseprice="600" displaynonempty="true" minleveldifficulty="40">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="55" requiresrecipe="false" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="AKM_75_Round_Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1065,124,36,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" depth="0.54" sourcerect="1065,124,36,55" origin="0.5,0.5" />
+    <Body width="14" height="40" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="7.62x39mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="7.62x39mm" />
+      <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-1.7" disabledeltatime="true">
         <SpawnItem identifiers="7.62x39mm" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
