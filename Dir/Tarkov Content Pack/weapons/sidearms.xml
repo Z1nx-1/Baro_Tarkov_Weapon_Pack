@@ -502,9 +502,13 @@
       <RequiredItems items="Glockammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="Glockammo" hide="false" itempos="4,-10" rotation="-30" />
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="Glockammo" hide="false" itempos="-1.5,0" rotation="0" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="pistolflashlight" hide="false" itempos="22.5,5.2" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -552,6 +556,53 @@
       <Containable items="9mm" />
       <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
       <StatusEffect type="OnUse" target="This" condition="-5.9" disabledeltatime="true">
+        <SpawnItem identifiers="9mm" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="9mm" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Glock-17 50 roundMagazine" identifier="Glock17_50RoundMagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Glockammo,handheldammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
+    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <PreferredContainer secondary="secarmcab" />
+    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true" />
+    <Price baseprice="250" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+      <RequiredItem identifier="steel" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="false" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem identifier="Glock17_50RoundMagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steel" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="213,221,44,78" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" depth="0.54" sourcerect="213,221,44,78" origin="0.4386364,0.30897436" />
+    <Body width="14" height="40" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="9mm" />
+      <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-2.6" disabledeltatime="true">
         <SpawnItem identifiers="9mm" spawnposition="ThisInventory" />
         <SpawnItem identifiers="9mm" spawnposition="ThisInventory" />
       </StatusEffect>
@@ -611,8 +662,8 @@
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="plastic" amount="3" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="0,0,91,62" origin="0.44758517,0.49178714" />
-    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="0,0,91,62" depth="0.55" origin="0.23527002,0.6191017" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="101,117,91,62" origin="0.44758517,0.49178714" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="101,117,91,62" depth="0.55" origin="0.1,0.55" />
     <Body width="72" height="40" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.3" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="64,9" spread="0.1" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="0.2" DualWieldAccuracyPenalty="8">
@@ -630,9 +681,13 @@
       <RequiredItems items="Glockammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="Glockammo" hide="false" itempos="4,-10" rotation="-30" />
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="Glockammo" hide="false" itempos="5.9,0" rotation="0" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="pistolflashlight" hide="false" itempos="22.5,5.2" setactive="true" />
+      </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
@@ -673,8 +728,8 @@
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="97,247,30,48" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" depth="0.54" sourcerect="97,247,30,48" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="168,247,25,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" depth="0.54" sourcerect="168,247,25,48" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9mm" />
@@ -687,6 +742,61 @@
     <!--Magazines can be combined to raise condition.-->
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Glock-18c" identifier="Glock_18c" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Price baseprice="150">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" minavailable="1" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="plastic" amount="3" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="101,179,91,57" origin="0.44758517,0.49178714" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="101,179,91,57" depth="0.55" origin="0.2572109,0.5659318" />
+    <Body width="72" height="40" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.09" weapondamagemodifier="1.3" penetration="0.15" holdtrigger="true" barrelpos="64,9" spread="0.1" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="0.2" DualWieldAccuracyPenalty="8">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/weapons/audio/sidearm_audio/GLOCK17_shot.ogg" type="OnUse" range="3000" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="Glockammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="Glockammo" hide="false" itempos="-1.5,0" rotation="0" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="pistolflashlight" hide="false" itempos="22.5,5.2" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="40" />
   </Item>
   <Item name="Rhino" identifier="Rhino" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
@@ -829,5 +939,100 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="40" />
+  </Item>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                               Attachments                                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <Item name="Baldr-Pro Tactical Flashlight (Black)" identifier="BaldrProTacticalFlashlight_Black" category="Equipment" Tags="smallitem,tool,provocative,pistolflashlight" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+    <Price baseprice="200" minavailable="2">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem tag="lightcomponent" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="aluminium" />
+      <Item identifier="lightcomponent" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="270,265,26,14" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="270,265,26,14" depth="0.55" origin="0.5,0.5" />
+    <Body width="48" height="15" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.2">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- the child LightComponent is only active when the Holdable is active, i.e. when the item is being held -->
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" Flicker="0.02" range="800" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Baldr-Pro Tactical Flashlight (Tan)" identifier="BaldrProTacticalFlashlight_Tan" category="Equipment" Tags="smallitem,tool,provocative,pistolflashlight" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+    <Price baseprice="200" minavailable="2">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem tag="lightcomponent" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="aluminium" />
+      <Item identifier="lightcomponent" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="270,281,26,14" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="270,281,26,14" depth="0.55" origin="0.5,0.5" />
+    <Body width="48" height="15" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.2">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <!-- the child LightComponent is only active when the Holdable is active, i.e. when the item is being held -->
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" Flicker="0.02" range="800" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 </Items>

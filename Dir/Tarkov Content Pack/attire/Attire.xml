@@ -1199,10 +1199,15 @@
   </Item>
   <Item name="Altyn" identifier="Altyn" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.3">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
-    <Deconstruct time="10">
+    <Deconstruct time="15">
       <Item identifier="ballisticfiber" />
-      <Item identifier="steel" />
     </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+    </Fabricate>
     <Sprite name="Altyn" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="2,124,107,94" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="25" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
