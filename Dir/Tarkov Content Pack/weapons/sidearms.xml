@@ -334,7 +334,7 @@
       <StatusEffect type="OnActive" targettype="This" Condition="-0.025" />
       <StatusEffect type="OnActive" targettype="This">
         <Conditional PhysicsBodyActive="eq true" />
-        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="flarered" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
         <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
@@ -373,7 +373,7 @@
       <StatusEffect type="OnActive" targettype="This" Condition="-0.025" />
       <StatusEffect type="OnActive" targettype="This">
         <Conditional PhysicsBodyActive="eq true" />
-        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="flaregreen" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
         <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
@@ -412,7 +412,7 @@
       <StatusEffect type="OnActive" targettype="This" Condition="-0.025" />
       <StatusEffect type="OnActive" targettype="This">
         <Conditional PhysicsBodyActive="eq true" />
-        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="flareyellow" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
         <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
@@ -447,11 +447,11 @@
         <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
       </StatusEffect>
     </Projectile>
-    <LightComponent LightColor="(75, 0, 130, 255" Flicker="0.5" range="600" IsOn="false">
+    <LightComponent LightColor="75, 0, 130, 255" Flicker="0.5" range="600" IsOn="false">
       <StatusEffect type="OnActive" targettype="This" Condition="-0.025" />
       <StatusEffect type="OnActive" targettype="This">
         <Conditional PhysicsBodyActive="eq true" />
-        <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+        <ParticleEmitter particle="flareblue" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
         <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
