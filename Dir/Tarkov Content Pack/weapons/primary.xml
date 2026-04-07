@@ -315,7 +315,7 @@
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="KedrAmmo" hide="false" itempos="13,-7" rotation="0" />
+      <Containable items="KedrAmmo" hide="false" itempos="9,-7" rotation="0" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
@@ -356,8 +356,8 @@
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="965,62,34,56" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" depth="0.54" sourcerect="965,63,34,55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1067,182,34,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" depth="0.54" sourcerect="1067,182,34,55" origin="0.5,0.5" />
     <Body width="14" height="40" density="25" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="9mmVB" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="9x18mm" />
@@ -2288,7 +2288,7 @@
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
         <IsActive targetcontaineditem="true" condition="gt 1.0" />
       </LightComponent>
-      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800"  IsOn="true" flicker="0.3">
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800" IsOn="true" flicker="0.3">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
       </LightComponent>
     </Holdable>
