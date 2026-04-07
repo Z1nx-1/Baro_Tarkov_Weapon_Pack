@@ -132,5 +132,5 @@ Will take down if requested.
 * Pain
 * Unknown Toxin
 
-Test commit for Discord Webhook
+Test commit for Discord Webhook.
 
