@@ -617,8 +617,8 @@
     <Body radius="30" height="30" density="15" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="RAID Backpack" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" sourcerect="895,324,131,264" inherittexturescale="false" scale="0.4" origin="1,0.7" />
-      <StatValue stattype="MovementSpeed" value="-0.55" />
-      <StatValue stattype="PropulsionSpeed" value="-0.55" />
+      <StatValue stattype="MovementSpeed" value="-0.25" />
+      <StatValue stattype="PropulsionSpeed" value="-0.25" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="20" maxstacksize="32" depth="0.5">

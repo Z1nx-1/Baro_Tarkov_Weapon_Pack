@@ -1765,12 +1765,9 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -1780,13 +1777,9 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
       <RequiredItem identifier="ASH-12 Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
@@ -1807,16 +1800,16 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="12.7x55mm" identifier="12.7x55mm" maxstacksize="12" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.05">
-    <InventoryIcon texture="%ModDir%/sidearms/sidearm_textures/127x55.png" sourcerect="1373,487,288,103" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/sidearms/sidearm_textures/127x55.png" sourcerect="1373,487,288,103" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet/127x55.png" sourcerect="1373,487,288,103" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet/127x55.png" sourcerect="1373,487,288,103" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="16" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
-        <Affliction identifier="gunshotwound" strength="40" />
-        <Affliction identifier="bleeding" strength="25" />
-        <Affliction identifier="stun" strength="0.4" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="70" />
+        <Affliction identifier="bleeding" strength="45" />
+        <Affliction identifier="stun" strength="0.6" probability="0.2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
