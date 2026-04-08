@@ -587,7 +587,7 @@ This allows players to toggle the flashlight, appears to only work someitmes.
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Glock-17 50 roundMagazine" identifier="Glock17_50RoundMagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Glockammo,handheldammo" impactsoundtag="impact_metal_light">
+  <Item name="Glock 50 round Drum Magazine" identifier="Glock_50RoundDrumMagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Glockammo,handheldammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
@@ -614,7 +614,7 @@ This allows players to toggle the flashlight, appears to only work someitmes.
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-      <RequiredItem identifier="Glock17_50RoundMagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="Glock_50RoundDrumMagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" amount="2" />
@@ -914,7 +914,7 @@ This allows players to toggle the flashlight, appears to only work someitmes.
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="RSH12" identifier="RSH12" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
+  <Item name="RSH12" identifier="RSH12" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,provocativetohumanai,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -939,15 +939,16 @@ This allows players to toggle the flashlight, appears to only work someitmes.
     <Sprite texture="%ModDir%/weapons/textures/SidearmSpriteSheet.png" sourcerect="91,0,132,62" depth="0.55" origin="0.2697217,0.5933983" />
     <Body width="72" height="40" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="60,11" spread="0.5" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3" reload="0.8" DualWieldReloadTimePenaltyMultiplier="3" DualWieldAccuracyPenalty="16">
+    <RangedWeapon  weapondamagemodifier="1.6" penetration="0.15" barrelpos="60,11" spread="0.5" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.3" reload="0.8" DualWieldReloadTimePenaltyMultiplier="3" DualWieldAccuracyPenalty="16">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="Content/Items/Weapons/Revolver2.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/Revolver3.ogg" type="OnUse" range="3000" />
-      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,7.0" colormultiplier="255,200,115,200" />
       <StatusEffect type="OnUse" target="This">
-        <Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+        <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <RequiredItems items="12.7x55mm" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />

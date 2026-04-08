@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Content Pack" modversion="7.3.0" corepackage="False" steamworkshopid="3507999416" gameversion="1.11.5.0">
+<contentpackage name="Tarkov Content Pack" modversion="7.5.1" corepackage="False" steamworkshopid="3507999416" gameversion="1.11.5.0">
   <Item file="%ModDir%/weapons/primary.xml" />
   <Item file="%ModDir%/weapons/sidearms.xml" />
   <Item file="%ModDir%/weapons/melee.xml" />

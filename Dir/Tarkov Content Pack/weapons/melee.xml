@@ -23,7 +23,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="15,106,123,27" origin="0.45161414,0.36623046" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="15,106,123,27" depth="0.55" origin="0.26061985,0.3463658" />
-    <Body width="65" height="15" density="25" />
+    <Body width="125" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,0" holdangle="75" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="10" />
@@ -61,7 +61,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="8,138,139,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="8,138,139,44" depth="0.55" origin="0.24881344,0.528533" />
-    <Body width="65" height="15" density="25" />
+    <Body width="125" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,0" holdangle="65" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="10" />
@@ -95,7 +95,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="166,15,252,40" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="166,15,252,40" depth="0.55" origin="0.35,0.52048826" />
-    <Body width="65" height="15" density="25" />
+    <Body width="250" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-10,0" handle2="-50,-25" holdangle="65" reload="1.5" range="300" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="10" />
@@ -128,7 +128,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="187,56,176,92" origin="0.46090606,0.25301436" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="187,56,176,92" depth="0.55" origin="0.22081083,0.36981246" />
-    <Body width="65" height="15" density="25" />
+    <Body width="200" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,0" holdangle="65" reload="1.5" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="4" />
@@ -161,7 +161,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="181,148,201,73" origin="0.51031095,0.34763324" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="181,148,201,73" depth="0.55" origin="0.29571664,0.2" />
-    <Body width="65" height="15" density="25" />
+    <Body width="200" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,-5" holdangle="65" reload="1.5" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="3" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="4" />
@@ -188,7 +188,7 @@
     <Price baseprice="1000" sold="false" canbespecial="false" />
     <InventoryIcon texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="15,37,106,61" origin="0.5425893,0.33934978" />
     <Sprite texture="%ModDir%/weapons/textures/MeleeSpriteSheet.png" sourcerect="15,37,106,61" depth="0.55" origin="0.54122424,0.32398507" />
-    <Body width="65" height="15" density="25" />
+    <Body width="125" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,0" holdangle="65" reload="1.25" range="155" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.5" itemdamage="6" structuredamage="4" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="8" />

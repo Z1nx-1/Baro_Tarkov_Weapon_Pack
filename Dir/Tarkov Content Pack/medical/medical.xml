@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="1250">
+  <zagustin name="Zagustin auto-injector" identifier="Zagustin auto-injector" aliases="Zagustin auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Zagustin' auto-injector rapidly heals all bleeding wounds. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="750">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
@@ -44,8 +44,8 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </zagustin>
-  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="1425">
+  <propital name="propital auto-injector" identifier="propital auto-injector" aliases="propital auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Propital' auto-injector slowly heals wounds across the user's body, at the cost of minor nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="800">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
@@ -106,8 +106,8 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </propital>
-  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="2250">
+  <eTg name="eTg auto-injector" identifier="eTg auto-injector" aliases="eTg auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'eTg' auto-injector rapidly heals wounds across the user's body, at the cost of major nausea and migraines. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="1750">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
@@ -171,8 +171,8 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="80" />
   </eTg>
-  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="1150">
+  <SJ6 name="SJ6 auto-injector" identifier="SJ6 auto-injector" aliases="SJ6 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ6' auto-injector improves the user's movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="800">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
@@ -226,8 +226,8 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </SJ6>
-  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Price baseprice="1150">
+  <SJ1 name="SJ1 auto-injector" identifier="SJ1 auto-injector" aliases="SJ1 auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'SJ1' auto-injector increases the user's strength and improves movement capabilities for a short period of time. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Price baseprice="800">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" multiplier="0.8" minavailable="2" />
@@ -283,7 +283,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="65" />
   </SJ1>
-  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <Obdolbos name="Obdolbos auto-injector" identifier="Obdolbos auto-injector" aliases="Obdolbos auto-injector" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Price baseprice="2500">
       <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
@@ -345,7 +345,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="75" />
   </Obdolbos>
-  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Deconstruct time="5" />
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="medical" level="40" />
@@ -384,7 +384,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="40" />
   </antidote>
-  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <Painkiller name="Painkillers" identifier="Painkillers" aliases="Painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -429,7 +429,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </Painkiller>
-  <VaselineBalm name="Vaseline Balm" identifier="VaselineBalm" aliases="VaselineBalmPainkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <VaselineBalm name="Vaseline Balm" identifier="VaselineBalm" aliases="VaselineBalmPainkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -469,7 +469,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </VaselineBalm>
-  <GoldenStarBalm name="Golden Star Balm" identifier="GoldenStarBalm" aliases="GoldenStarBalmPainkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <GoldenStarBalm name="Golden Star Balm" identifier="GoldenStarBalm" aliases="GoldenStarBalmPainkillers" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A packet of painkillers. (Overdoses not included)" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
@@ -509,7 +509,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="15" />
   </GoldenStarBalm>
-  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The AI-2 is an old soviet medkit consisting of gas damage and minor radiation treatment." scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <AI-2 name="AI-2 medkit" identifier="AI-2 medkit" aliases="AI-2 medkit" category="Medical" Tags="smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The AI-2 is an old soviet medkit consisting of gas damage and minor radiation treatment." scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
     <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.3" />
