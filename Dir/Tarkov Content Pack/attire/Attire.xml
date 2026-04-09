@@ -427,10 +427,29 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.13" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.38" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
-      <sprite name="Slick Body Armor" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.42" inheritorigin="false" origin="0.47,0.5" inheritsourcerect="false" sourcerect="490,772,91,140" />
+      <sprite name="Slick Body Armor" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.42" inheritorigin="false" origin="0.504814,0.49661326" inheritsourcerect="false" sourcerect="490,772,91,140" />
     </Wearable>
   </Item>
-
+  <Item name="6B34" identifier="6B34" category="Equipment" tags="smallitem,clothing" scale="0.4" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.11" />
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1230,830,110,208" origin="0.5,0.5" />
+    <Sprite name="6B34" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1230,830,110,208" depth="0.6" origin="0.50052804,0.50038666" />
+    <Body width="85" height="90" density="25" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="WalkingSpeed" value="-0.5" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="6B34" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.4" inheritorigin="false" origin="0.48,0.43" inheritsourcerect="false" sourcerect="1347,830,103,214" />
+      <sprite name="6B34 Right Upper Arm" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1460,913,51,74" origin="0.5,0.65" />
+      <sprite name="6B34 Left Upper Arm" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1460,845,51,68" origin="0.5,0.65" />
+    </Wearable>
+  </Item>
   <Item name="6h112 (EMR)" identifier="6h112 (EMR)" category="Equipment" tags="tacticalrig,mediumitem,clothing,mobilecontainer" scale="0.35" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="250">
@@ -779,7 +798,6 @@
       <sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" scale="0" sourcerect="2352,60,1536,1536" origin="0.5,0.5" />
     </Wearable>
   </Item>
-
   <Item name="Scav rig" identifier="Scav rig" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.35" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="70">
@@ -913,8 +931,6 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
     </ItemContainer>
   </Item>
-
-
   <Item name="MK3 Tactical rig" identifier="MK3TacticalRig" category="Equipment" tags="smallitem,clothing" scale="0.4" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.9.3.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
@@ -944,7 +960,6 @@
       <sprite name="MK3 Tactical rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.4" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="158,985,113,151" />
     </Wearable>
   </Item>
-
   <Item name="Scav Captain uniform" identifier="captainscavsuniform1" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" />
     <Price baseprice="150" requiredfaction="separatists">
@@ -979,7 +994,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
   <Item name="Tagillas Trousers" identifier="TagillasTrousers" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon name="Captain Separatist's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,392,128,120" origin="0.5,0.5" />
     <Sprite name="Captain Separatist's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,358,117,72" depth="0.6" origin="0.5,0.5" />
@@ -996,8 +1010,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
-
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier one - Head                             -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -1110,11 +1122,9 @@
       <sprite name="Comtac II Wearable" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.25" hideotherwearables="false" sourcerect="714,255,94,91" origin="0.39,0.55" />
     </Wearable>
   </Item>
-
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Tier Two - Head                             -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  
   <Item name="Riot Helmet" identifier="RiotHelmet" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.3">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
@@ -1180,7 +1190,7 @@
       <sprite name="6B47 helmet Wearable" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.32" hidewearablesoftype="Hair" sourcerect="3,324,85,82" origin="0.5,0.55" />
     </Wearable>
   </Item>
-    <Item name="6B47 helmet (EMR)" identifier="6B47 helmet (EMR)" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.32">
+  <Item name="6B47 helmet (EMR)" identifier="6B47 helmet (EMR)" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.32">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1244,7 +1254,7 @@
       <sprite name="Bastion helmet Wearable (Green)" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.32" hidewearablesoftype="Hair" sourcerect="3,516,91,85" origin="0.52,0.55" />
     </Wearable>
   </Item>
-    <Item name="Bastion helmet" identifier="Bastion helmet" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.32">
+  <Item name="Bastion helmet" identifier="Bastion helmet" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.32">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1365,7 +1375,6 @@
       <sprite name="Altyn" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.3" hidewearablesoftype="Hair" sourcerect="2,124,107,94" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  
   <Item name="Maska-1SCh (Killa)" identifier="Maska-1SCh (Killa)" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <Deconstruct time="10">
@@ -1460,12 +1469,215 @@
           <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" comparison="And" targetlimb="Torso">
-          <Affliction identifier="burn" amount="20.0"  />
+          <Affliction identifier="burn" amount="20.0" />
           <Conditional IsDead="false" />
           <Conditional DecreasedOxygenConsumption="lt 99" />
           <Conditional NeedsAir="true" />
         </StatusEffect>
       </Containable>
     </ItemContainer>
+  </Item>
+  <Item name="Nord Outfit" identifier="NordOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>    
+    <InventoryIcon name="Nord Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Nord Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Nord Outfit Torso" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="Torso" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="605,32,141,277" origin="0.5,0.6" />
+      <sprite name="Nord Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="RightArm" depthlimb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="795,117,84,146" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1001,138,84,123" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="RightForearm" depthlimb="RightArm" hidelimb="true" inheritlimbdepth="true" depth="1" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="806,273,71,120" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1005,266,67,133" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Waist" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.25" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="402,154,126,162" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="389,331,131,235" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="615,322,131,243" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Right Leg" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="391,586,104,204" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Left Leg" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="633,582,103,210" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Left Shoe" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="391,790,131,50" origin="0.5,0.5" />
+      <sprite name="Nord Outfit Right Shoe" texture="%ModDir%/attire/attire_textures/NORD_Outfit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="633,792,133,49" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Woodland Infiltrator" identifier="WoodlandInfiltrator" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <InventoryIcon name="Woodland Infiltrator Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Woodland Infiltrator" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Woodland Infiltrator Right Hand" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="811,429,84,98" origin="0.38471022,0.45056167" />
+      <sprite name="Woodland Infiltrator Left Hand" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1010,429,82,102" origin="0.39174986,0.4659949" />
+      <sprite name="Woodland Infiltrator Torso" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="Torso" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="605,32,141,277" origin="0.5,0.6" />
+      <sprite name="Woodland Infiltrator Right Upper Arm" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightArm" depthlimb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="796,108,87,170" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Left Upper Arm" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1001,120,85,156" origin="0.3731413,0.48461297" />
+      <sprite name="Woodland Infiltrator Right Lower Arm" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightForearm" depthlimb="RightArm" hidelimb="true" inheritlimbdepth="true" depth="1" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="806,289,71,120" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Left Lower Arm" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="997,285,67,133" origin="0.5468878,0.4892729" />
+      <sprite name="Woodland Infiltrator Waist" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="385,152,165,148" origin="0.4,0.5" />
+      <sprite name="Woodland Infiltrator Right Thigh" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="389,331,131,235" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Left Thigh" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="615,322,131,243" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Right Leg" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="391,586,102,197" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Left Leg" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="523,581,103,203" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Left Shoe" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="535,784,141,65" origin="0.5,0.5" />
+      <sprite name="Woodland Infiltrator Right Shoe" texture="%ModDir%/attire/attire_textures/Woodland_Inf.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="381,784,154,65" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Grizzly Outfit" identifier="GrizzlyOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <InventoryIcon name="Grizzly Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Grizzly Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Grizzly Outfit Right Hand" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="817,385,78,83" origin="0.35,0.4" />
+      <sprite name="Grizzly Outfit Left Hand" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1012,393,84,85" origin="0.35,0.4" />
+      <sprite name="Grizzly Outfit Torso" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="Torso" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="598,21,154,299" origin="0.5,0.55" />
+      <sprite name="Grizzly Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightArm" depthlimb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="803,109,80,151" origin="0.5,0.5" />
+      <sprite name="Grizzly Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="803,109,80,151" origin="0.49706268,0.4994424" />
+      <sprite name="Grizzly Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightForearm" depthlimb="RightArm" hidelimb="true" inheritlimbdepth="true" depth="1" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="805,265,71,120" origin="0.5,0.5" />
+      <sprite name="Grizzly Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1008,260,67,133" origin="0.5468878,0.4892729" />
+      <sprite name="Grizzly Outfit Waist" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="385,152,165,148" origin="0.4,0.5" />
+      <sprite name="Grizzly Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="383,331,131,235" origin="0.5,0.5" />
+      <sprite name="Grizzly Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="615,322,138,243" origin="0.45787793,0.51101136" />
+      <sprite name="Grizzly Outfit Right Leg" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="388,574,119,214" origin="0.4133313,0.5155788" />
+      <sprite name="Grizzly Outfit Left Leg" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="638,574,109,210" origin="0.4511736,0.5034971" />
+      <sprite name="Grizzly Outfit Left Shoe" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="637,784,141,65" origin="0.5,0.5" />
+      <sprite name="Grizzly Outfit Right Shoe" texture="%ModDir%/attire/attire_textures/Grizzly.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="391,788,133,61" origin="0.5,0.5" />
+    </Wearable>
+  </Item>
+  <Item name="ACU Outfit" identifier="ACUOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <PreferredContainer primary="crewcab" />
+    <Price baseprice="150" requiredfaction="separatists">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Grizzly Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Grizzly Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="ACU Outfit Torso" texture="%ModDir%/attire/attire_textures/ACU.png" limb="Torso" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="618,0,155,285" origin="0.5,0.55" />
+      <sprite name="ACU Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/ACU.png" limb="RightArm" depthlimb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="802,62,84,176" origin="0.5,0.5" />
+      <sprite name="ACU Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/ACU.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="999,73,91,174" origin="0.49706268,0.4994424" />
+      <sprite name="ACU Outfit Waist" texture="%ModDir%/attire/attire_textures/ACU.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="387,92,165,148" origin="0.4,0.5" />
+      <sprite name="ACU Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/ACU.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="388,279,131,240" origin="0.5,0.5" />
+      <sprite name="ACU Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/ACU.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="616,286,138,243" origin="0.45787793,0.51101136" />
+      <sprite name="ACU Outfit Right Leg" texture="%ModDir%/attire/attire_textures/ACU.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="394,527,116,232" origin="0.4133313,0.5155788" />
+      <sprite name="ACU Outfit Left Leg" texture="%ModDir%/attire/attire_textures/ACU.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="640,532,111,232" origin="0.4511736,0.5034971" />
+      <sprite name="ACU Outfit Left Shoe" texture="%ModDir%/attire/attire_textures/ACU.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="637,764,141,54" origin="0.5,0.5" />
+      <sprite name="ACU  Outfit Right Shoe" texture="%ModDir%/attire/attire_textures/ACU.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="392,759,133,61" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Usec Standard" identifier="UsecStandard" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <Item identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <InventoryIcon name="Usec Standard Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Usec Standard" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Usec Standard Right Hand" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="810,416,78,83" origin="0.41852432,0.38647047" />
+      <sprite name="Usec Standard Left Hand" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1005,409,86,109" origin="0.40477118,0.45925054" />
+      <sprite name="Usec Standard Torso" texture="%ModDir%/attire/attire_textures/USEC.png" limb="Torso" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="598,21,154,299" origin="0.5,0.5" />
+      <sprite name="Usec Standard Right Upper Arm" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightArm" depthlimb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="787,108,95,150" origin="0.5,0.5" />
+      <sprite name="Usec Standard Left Upper Arm" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="995,133,90,130" origin="0.49706268,0.4994424" />
+      <sprite name="Usec Standard Right Lower Arm" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightForearm" depthlimb="RightArm" hidelimb="true" inheritlimbdepth="true" depth="1" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="805,262,71,120" origin="0.5,0.5" />
+      <sprite name="Usec Standard Left Lower Arm" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="1000,269,67,133" origin="0.5468878,0.4892729" />
+      <sprite name="Usec Standard Waist" texture="%ModDir%/attire/attire_textures/USEC.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="385,152,165,148" origin="0.4,0.5" />
+      <sprite name="Usec Standard Right Thigh" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="383,331,131,235" origin="0.4040096,0.5060446" />
+      <sprite name="Usec Standard Left Thigh" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="615,322,138,243" origin="0.32499146,0.50935704" />
+      <sprite name="Usec Standard Right Leg" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="388,566,119,225" origin="0.29411766,0.64" />
+      <sprite name="Usec Standard Left Leg" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="634,565,109,216" origin="0.37804216,0.59" />
+      <sprite name="Usec Standard Left Shoe" texture="%ModDir%/attire/attire_textures/USEC.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="393,791,141,65" origin="0.47120064,0.44886276" />
+      <sprite name="Usec Standard Right Shoe" texture="%ModDir%/attire/attire_textures/USEC.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" scale="0.23" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="635,788,138,62" origin="0.4504553,0.4525951" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
   </Item>
 </Items>
