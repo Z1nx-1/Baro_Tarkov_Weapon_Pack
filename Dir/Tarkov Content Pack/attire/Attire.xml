@@ -1479,22 +1479,6 @@
     </Wearable>
   </Item>
   <Item name="Tagilla Outfit" identifier="TagillaOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <Deconstruct time="5">
-      <Item identifier="ballisticfiber" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="weapons" level="20" />
-      <RequiredItem identifier="ballisticfiber" amount="1" />
-      <Item identifier="organicfiber" amount="2" />
-    </Fabricate>
-    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
-    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
-      <Price storeidentifier="merchantoutpost" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantresearch" minavailable="1" />
-      <Price storeidentifier="merchantmilitary" minavailable="1" />
-      <Price storeidentifier="merchantmine" minavailable="1" />
-    </Price>
     <InventoryIcon name="Tagilla Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
     <Sprite name="Tagilla Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -1514,6 +1498,94 @@
       <sprite name="Tagilla Outfit Left Leg" texture="%ModDir%/attire/attire_textures/Tagilla.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Tagilla Outfit Right Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.65,0.6" />
       <sprite name="Tagilla Outfit Left Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.65,0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+
+  <Item name="Sanitar Outfit" identifier="SanitarOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Sanitar Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Sanitar Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Sanitar Outfit Torso" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Sanitar Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Waist" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.5" />
+      <sprite name="Sanitar Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Right Leg" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Left Leg" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Sanitar Outfit Right Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.65,0.6" />
+      <sprite name="Sanitar Outfit Left Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.65,0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Reshala Outfit" identifier="ReshalaOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Reshala Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Reshala Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Reshala Outfit Torso" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Reshala Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Waist" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.4" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.5" />
+      <sprite name="Reshala Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Right Leg" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Left Leg" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Reshala Outfit Right Shoe" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.5,0.6" />
+      <sprite name="Reshala Outfit Left Shoe" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.5,0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+
+  <Item name="Glukhar Outfit" identifier="GlukharOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Glukhar Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="Glukhar Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Glukhar Outfit Torso" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Glukhar Outfit Right Hand" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Left Hand" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Waist" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.5" />
+      <sprite name="Glukhar Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Right Leg" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Left Leg" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="Glukhar Outfit Right Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.65,0.6" />
+      <sprite name="Glukhar Outfit Left Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.65,0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Scav Guard Outfit" identifier="ScavGuardOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="ScavGuard Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
+    <Sprite name="ScavGuard Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="ScavGuard Outfit Torso" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="ScavGuard Outfit Right Hand" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Left Hand" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Waist" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.5" />
+      <sprite name="ScavGuard Outfit Right Thigh" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Left Thigh" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Right Leg" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Left Leg" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="ScavGuard Outfit Right Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.65,0.6" />
+      <sprite name="ScavGuard Outfit Left Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.65,0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
