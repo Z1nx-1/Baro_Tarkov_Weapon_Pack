@@ -26,6 +26,7 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="bosses" identifier="boss" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -67,6 +68,7 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="bosses" identifier="boss" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -110,6 +112,7 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="bosses" identifier="boss" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -211,6 +214,7 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="bosses" identifier="boss" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />

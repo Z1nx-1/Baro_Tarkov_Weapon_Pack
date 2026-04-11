@@ -746,7 +746,7 @@ This allows players to toggle the flashlight, appears to only work someitmes.
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      <RequiredItem identifier="Glock-17 Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="Glock_19x_Magazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />
