@@ -14,7 +14,7 @@ Bastion (Green) + Comatac II
 AVS
 Vector + mag
 
-
+.
 Tier three sec:
 Bastion (Black)
 Slick
