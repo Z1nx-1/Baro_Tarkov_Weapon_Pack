@@ -2,46 +2,6 @@
 <Override>
   <npcsets>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!--                               BOSS NPCs                                -->
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <npcset identifier="bosses">
-      <npc identifier="boss" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol" faction="Scavs" minamount="0" maxamount="1">
-        <Character speciesname="human" gender="male" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="Crazy">
-          <job name="Securityofficer" identifier="securityofficer">
-            <skill identifier="electrical" level="40" />
-            <skill identifier="mechanical" level="40" />
-            <skill identifier="weapons" level="90" />
-            <skill identifier="medical" level="70" />
-            <skill identifier="helm" level="5" />
-          </job>
-        </Character>
-        <ItemSet commonness="1">
-          <Item identifier="PhysicalBitcoin" amount="2" />
-          <Item identifier="FigurineKILLA" />
-          <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
-          <Item identifier="commonerclothes2" equip="true" />
-          <Item identifier="6B13 (Killa)" equip="true" />
-          <Item identifier="Maska-1SCh (Killa)" equip="true" />
-          <Item identifier="Commando rig" equip="true">
-            <Item identifier="RPD Drum" amount="1" />
-            <Item identifier="RPD Drum" amount="1" />
-          </Item>
-          <Item identifier="RPD">
-            <Item identifier="RPD Drum" infinite="true" />
-          </Item>
-        </ItemSet>
-        <ItemSet commonness="1">
-          <Item identifier="PhysicalBitcoin" />
-          <Item identifier="FigurineTAGILLA" />
-          <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
-          <Item identifier="TagillasTrousers" equip="true" hideininventory="true"/>
-          <Item identifier="TagillaAVS" equip="true" hideininventory="true"/>
-          <Item identifier="TagillasWeldingMask" equip="true" hideininventory="true"/>
-          <Item identifier="SuperforsDB2020DeadBlowHammer" equip="true" />
-        </ItemSet>
-      </npc>
-    </npcset>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               Outpost NPCs                                -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <npcset identifier="outpostnpcs1">
@@ -489,8 +449,8 @@
         <ItemSet>
           <!-- LEVEL 3 -->
           <Item identifier="idcard" equip="true" />
-          <Item identifier="6B13 (Killa)" equip="true" />
-          <Item identifier="commonerclothes2" equip="true" />
+          <Item identifier="6B34" equip="true" />
+          <Item identifier="securityseparatistsuniform1" equip="true" />
           <Item identifier="Commando rig" equip="true">
             <Item identifier="23x75 Shrap-25" />
             <Item identifier="23x75 Shrap-25" />
@@ -499,7 +459,7 @@
             <Item identifier="23x75 Shrap-25" />
             <Item identifier="23x75 Shrap-25" />
           </Item>
-          <Item identifier="Maska-1SCh (Killa)" equip="true" />
+          <Item identifier="Altyn" equip="true" />
           <Item identifier="KS-23M" equip="true">
             <Item identifier="23x75 Shrap-25" amount="3" infinite="true" />
           </Item>

@@ -26,7 +26,13 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="bosses" identifier="boss" faction="Scavs" />
+
+        <npc from="ScavBosses" identifier="Reshala" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+    
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -68,7 +74,6 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="bosses" identifier="boss" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -112,7 +117,13 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="bosses" identifier="boss" faction="Scavs" />
+
+
+        <npc from="ScavBosses" identifier="Sanitar" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -159,7 +170,15 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="bosses" identifier="boss" faction="Scavs" />
+
+        <npc from="ScavBosses" identifier="Glukhar" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
+
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />
@@ -214,7 +233,14 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="bosses" identifier="boss" faction="Scavs" />
+
+
+        <npc from="ScavBosses" identifier="Reshala" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+        <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
+
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />

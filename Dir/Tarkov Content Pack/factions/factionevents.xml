@@ -1,0 +1,29 @@
+<RandomEvents>
+  <EventPrefabs>
+    <ScriptedEvent identifier="BossDebug" commonness="0">
+      <CheckDataAction identifier="BossDebugging" condition="eq true">
+        <Success>
+          <!--Don't repeat event-->
+        </Success>
+        <Failure>
+          <TagAction criteria="player" tag="player" />
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="Reshala" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+
+          
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="Sanitar" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+
+
+          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="Glukhar" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          <!--<TriggerAction target1tag="artie" target2tag="player" applytotarget2="triggerer_player" waitforinteraction="true" /> -->
+          <SetDataAction identifier="BossDebugging" value="false"/>
+        </Failure>
+      </CheckDataAction>
+    </ScriptedEvent>
+</EventPrefabs>
+</RandomEvents>
+
+<!--This is unfinished, need to learn how events work then will implement-->

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+  <npcset identifier="ScavBosses">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 Template                                  --> <!--Add names to new NPCs.-->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->  
+      <npc identifier="TemplateGuard" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="1.5" faction="Scavs">
+      <Character speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+      <job name="Securityofficer" identifier="securityofficer">
+        <skill identifier="electrical" level="30" />
+        <skill identifier="mechanical" level="70" />
+        <skill identifier="weapons" level="45" />
+        <skill identifier="medical" level="30" />
+        <skill identifier="helm" level="5" />
+      </job>
+      </Character>
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="6B13 (EMR)" equip="true"/>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AKM" equip="true">
+            <item identifier="AKM Magazine" infinite="true" />
+        </Item>
+        <item identifier="AKM Magazine" amount="2" />
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="TV-110PlateCarrier" equip="true"/>
+        <Item identifier="6B47 helmet" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AK74" equip="true">
+            <item identifier="AK74 Magazine" infinite="true" />
+        </Item>
+        <item identifier="AK74 Magazine" amount="2" />
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="AVS plate carrier rig" equip="true">
+            <item identifier="AKM Magazine" amount="2" />
+        </Item>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AKM" equip="true">
+            <item identifier="AKM Magazine" infinite="true" />
+        </Item>
+
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+    </npc>
+    
+    
+    
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                  Reshala                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->    
+    <npc identifier="Reshala" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="2" faction="Scavs">
+      <Character name="Reshala" speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="30" />
+          <skill identifier="mechanical" level="70" />
+          <skill identifier="weapons" level="45" />
+          <skill identifier="medical" level="30" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="ReshalaOutfit" equip="true"/>
+  
+          <Item identifier="MP5" equip="true">
+              <item identifier="MP5Magazine" infinite="true" />
+          </Item>
+          <item identifier="MP5Magazine" amount="2" />
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+          <item identifier="FigurineReshala" amount="1" />
+        </ItemSet>
+      </npc>
+
+      <npc identifier="ReshalaGuard" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="1.5" faction="Scavs">
+      <Character name="Zavodskoy" speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+      <job name="Securityofficer" identifier="securityofficer">
+        <skill identifier="electrical" level="30" />
+        <skill identifier="mechanical" level="70" />
+        <skill identifier="weapons" level="45" />
+        <skill identifier="medical" level="30" />
+        <skill identifier="helm" level="5" />
+      </job>
+      </Character>
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="6B13 (EMR)" equip="true"/>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AKM" equip="true">
+            <item identifier="AKM Magazine" infinite="true" />
+        </Item>
+        <item identifier="AKM Magazine" amount="2" />
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="TV-110PlateCarrier" equip="true"/>
+        <Item identifier="6B47 helmet" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AK74" equip="true">
+            <item identifier="AK74 Magazine" infinite="true" />
+        </Item>
+        <item identifier="AK74 Magazine" amount="2" />
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+
+      <ItemSet commonness="0.25">
+        <!--Equipment-->
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="ScavGuardOutfit" equip="true"/>
+        <Item identifier="AVS plate carrier rig" equip="true">
+            <item identifier="AKM Magazine" amount="2" />
+        </Item>
+        <Item identifier="6B47 helmet (EMR)" equip="true"/>
+        <Item identifier="F1 Frag Grenade" amount="2"/>
+        
+        <Item identifier="AKM" equip="true">
+            <item identifier="AKM Magazine" infinite="true" />
+        </Item>
+
+        <!--Medical-->
+        <Item identifier="antibleeding1" amount="6" />
+        <Item identifier="propital auto-injector"  />
+        <!--Misc-->
+        <Item identifier="IskraRationPack" />
+        <Item identifier="Vodka" />
+      </ItemSet>
+    </npc>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                  Sanitar                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->  
+    <npc identifier="Sanitar" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="4" faction="Scavs">
+      <Character name="Sanitar" speciesname="human" gender="male" headspriteid="3" hairindex="0" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="200,200,200,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="15" />
+          <skill identifier="mechanical" level="15" />
+          <skill identifier="weapons" level="60" />
+          <skill identifier="medical" level="90" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="SanitarOutfit" equip="true"/>
+          <Item identifier="SanitarsHeadBandageHead" equip="true"/>
+          <Item identifier="SanitarsBackpack" equip="true">
+                <Item identifier="antibleeding1" amount="16" />
+                <Item identifier="antidama1" amount="4" />
+                <Item identifier="antibloodloss1" amount="4" />
+                <Item identifier="antibloodloss2" amount="2" />
+                <Item identifier="Zagustin auto-injector" amount="2" />
+                <Item identifier="propital auto-injector" amount="2" />
+                <Item identifier="eTg auto-injector" amount="1" />
+          </Item>
+          <Item identifier="F1 Frag Grenade" amount="2"/>
+  
+          <Item identifier="VSS" equip="true">
+              <item identifier="AS-VAL Magazine" infinite="true" />
+          </Item>
+          <item identifier="AS-VAL Magazine" amount="2" />
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+        </ItemSet>
+      </npc>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                  Sanitar                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->  
+    <npc identifier="Glukhar" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="2" faction="Scavs">
+      <Character name="Glukhar" speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="20" />
+          <skill identifier="mechanical" level="15" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="30" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="Bastion helmet" equip="true" />
+          <Item identifier="AVS plate carrier rig" equip="true">
+            <item identifier="ASH-12 Magazine" amount="2" />
+        </Item>
+          <Item identifier="GlukharOutfit" equip="true"/>
+  
+          <Item identifier="ASH-12" equip="true">
+              <item identifier="ASH-12 Magazine" infinite="true" />
+          </Item>
+          
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+        </ItemSet>
+      </npc>
+  </npcset>
+</npcsets>

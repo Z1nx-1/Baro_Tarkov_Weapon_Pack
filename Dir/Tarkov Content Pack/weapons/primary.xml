@@ -924,6 +924,59 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
+  <Item name="HK416A5 Badger" identifier="HK416A5Badger" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" description="A custom designed HK416 firing high power rounds with a slower firerate. It's marked with inscriptions saying 'For the Emperor' and 'Long Live the Europan Imperium'. Designed by Emfern.">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="ballisticfiber" />
+      <RequiredItem identifier="plastic" amount="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="steel" amount="4" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="plastic" amount="2" />
+      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="steel" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="726,714,272,72" depth="0.55" origin="0.5,0.5" scale="5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="728,786,270,71" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="60,-10" handle1="-60,-12" handle2="50,10" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.25" weapondamagemodifier="2" penetration="0.75" holdtrigger="true" barrelpos="120,10" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/HK416A5Badger.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="M4A1Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="M4A1Ammo" hide="false" itempos="-16,-4" rotation="0" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="UltrafireWF501BFlashlight" hide="false" itempos="15,-2" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="2000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
   <Item name="M4A1 Magazine" identifier="M4A1 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,M4A1Ammo,handheldammo" impactsoundtag="impact_metal_light">
     <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
@@ -1331,7 +1384,7 @@
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="13,89,220,72" depth="0.55" origin="0.48,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-10" handle2="15,10" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.4" weapondamagemodifier="1.3" penetration="0.15" barrelpos="80,0" spread="2" unskilledspread="6" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.15">
+    <RangedWeapon reload="0.4" weapondamagemodifier="2" penetration="0.50" barrelpos="80,0" spread="2" unskilledspread="6" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.15">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -2074,7 +2127,7 @@
     </Price>
     <Deconstruct time="10">
       <Item identifier="plastic" />
-      <Item identifier="titaniumaluminiumalloy"  amount="6"/>
+      <Item identifier="titaniumaluminiumalloy" amount="6" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="732,274,263,72" depth="0.55" origin="0.4302349,0.48868215" />
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="731,345,278,72" depth="0.55" origin="0.4302349,0.48868215" />
@@ -2277,7 +2330,7 @@
     </Price>
     <Deconstruct time="10">
       <Item identifier="plastic" />
-      <Item identifier="titaniumaluminiumalloy" amount="6"/>
+      <Item identifier="titaniumaluminiumalloy" amount="6" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="724,415,278,74" depth="0.55" origin="0.39556322,0.6004145" />
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="724,489,278,72" depth="0.55" origin="0.4302349,0.48868215" />

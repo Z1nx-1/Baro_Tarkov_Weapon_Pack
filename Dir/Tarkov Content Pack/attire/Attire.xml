@@ -28,7 +28,7 @@
     <Sprite name="Paca soft armor" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="365,782,89,121" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.1" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.95" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -68,7 +68,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.3" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -105,7 +105,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -137,7 +137,7 @@
     <Sprite name="Trooper" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="328,1174,107,131" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -173,7 +173,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -209,7 +209,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -245,7 +245,7 @@
     <Sprite name="6B13 (EMR)" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="118,772,104,179" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.15" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -278,7 +278,7 @@
     <Sprite name="Gen4" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="245,776,101,214" depth="0.6" origin="0.5,0.5" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.15" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -316,7 +316,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -353,7 +353,7 @@
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
       </ItemContainer>
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.97" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.48" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.63" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -373,7 +373,7 @@
     <Sprite name="6B13 (Killa)" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="7,772,111,188" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.5" />
+      <StatValue stattype="WalkingSpeed" value="-0.095" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -388,7 +388,7 @@
     <Sprite name="Tagilla AVS" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="437,991,131,124" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.5" />
+      <StatValue stattype="WalkingSpeed" value="-0.25" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -422,7 +422,7 @@
     <Sprite name="Slick Body Armor" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="490,772,91,140" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.15" />
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.88" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.13" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.38" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -478,7 +478,7 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="ballisticfiber" amount="2" />
       <RequiredItem identifier="plastic" />
@@ -512,7 +512,7 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="ballisticfiber" amount="2" />
       <RequiredItem identifier="plastic" />
@@ -581,7 +581,7 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="15" />
       <RequiredItem identifier="ballisticfiber" />
       <RequiredItem identifier="organicfiber" />
@@ -690,7 +690,6 @@
     <Sprite name="MK3 Tactical rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="158,985,113,151" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,Bag" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="WalkingSpeed" value="-0.2" />
       <sprite name="MK3 Tactical rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.4" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="158,985,113,151" />
     </Wearable>
   </Item>
@@ -1502,13 +1501,12 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
   <Item name="Sanitar Outfit" identifier="SanitarOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon name="Sanitar Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
     <Sprite name="Sanitar Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Sanitar Outfit Torso" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Sanitar Outfit Torso" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
       <sprite name="Sanitar Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Sanitar Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Sanitar Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Sanitar.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
@@ -1522,6 +1520,7 @@
       <sprite name="Sanitar Outfit Left Shoe" texture="Content/Items/Jobgear/Captain/captain_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.65,0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+      <SkillModifier skillidentifier="medical" skillvalue="15" />
     </Wearable>
   </Item>
   <Item name="Reshala Outfit" identifier="ReshalaOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -1529,7 +1528,7 @@
     <Sprite name="Reshala Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Reshala Outfit Torso" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Reshala Outfit Torso" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
       <sprite name="Reshala Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Reshala Outfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Reshala Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Reshala.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
@@ -1545,13 +1544,12 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
   <Item name="Glukhar Outfit" identifier="GlukharOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon name="Glukhar Outfit Icon" texture="%ModDir%/attire/attire_textures/captain_scavs_Icon.png" sourcerect="0,0,129,119" origin="0.4797383,0.637767" />
     <Sprite name="Glukhar Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Glukhar Outfit Torso" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="Glukhar Outfit Torso" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
       <sprite name="Glukhar Outfit Right Hand" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Glukhar Outfit Left Hand" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="Glukhar Outfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/Glukhar.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
@@ -1572,7 +1570,7 @@
     <Sprite name="ScavGuard Outfit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="124,284,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="ScavGuard Outfit Torso" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" /> 
+      <sprite name="ScavGuard Outfit Torso" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
       <sprite name="ScavGuard Outfit Right Hand" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="ScavGuard Outfit Left Hand" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="ScavGuard Outfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/ScavGuard.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
@@ -1878,5 +1876,29 @@
       <sprite limb="LeftLeg" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" scale="0" sourcerect="2268,57,1536,1536" origin="0.5,0.5" />
       <sprite limb="RightLeg" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" scale="0" sourcerect="2352,60,1536,1536" origin="0.5,0.5" />
     </Wearable>
+  </Item>
+  <Item name="Sanitar's Head Bandage" identifier="SanitarsHeadBandageHead" aliases="SanitarBandage" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.3">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <Sprite name="SanitarsHeadBandage" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="9,719,84,30" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="SanitarsHeadBandage" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.31" hidewearablesoftype="Hair" sourcerect="9,719,84,30" origin="0.49,1.2" />
+      <SkillModifier skillidentifier="medical" skillvalue="5" />
+    </Wearable>
+  </Item>
+  <Item name="Sanitar's Backpack" identifier="SanitarsBackpack" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.32" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1402,302,90,144" origin="0.49590665,0.4975322" />
+    <Sprite texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1402,302,90,144" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="SanitarsBackpack" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" sourcerect="1402,302,90,144" inherittexturescale="false" scale="0.32" origin="1.2,0.4" />
+      <StatValue stattype="MovementSpeed" value="-0.12" />
+      <StatValue stattype="PropulsionSpeed" value="-0.12" />
+      <SkillModifier skillidentifier="medical" skillvalue="10" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="8" maxstacksize="32" depth="0.5">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+    </ItemContainer>
   </Item>
 </Items>
