@@ -928,7 +928,7 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="ballisticfiber" />
-      <RequiredItem identifier="plastic" amount="2"/>
+      <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
       <RequiredItem identifier="steel" amount="4" />
     </Fabricate>
@@ -1801,6 +1801,65 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
+  <Item name="ASH-12 (Podrosod Customs)" identifier="ASH-12Podrosod" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.55" impactsoundtag="impact_metal_light">
+    <Price baseprice="2000" minleveldifficulty="70">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="plastic" amount="6" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="8" />
+      <RequiredItem identifier="steel" amount="4" />
+    </Fabricate>
+    <Deconstruct time="30">
+      <Item identifier="plastic" />
+      <Item identifier="titaniumaluminiumalloy" amount="3" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1003,695,196,73" depth="0.55" origin="0.5,0.5" scale="5" />
+    <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1003,770,196,74" depth="0.55" origin="0.65,0.5" />
+    <Body width="140" height="60" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-35,-10" handle2="50,0" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.21" weapondamagemodifier="1.5" penetration="0.25" holdtrigger="true" barrelpos="50,5" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12 2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12 3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12 4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12 5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/weapons/audio/primary_audio/ASH-12 6.ogg" type="OnUse" range="3000" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,7.0" colormultiplier="255,200,115,200" />
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="casingfirearm" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="ASH-12Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="ASH-12Ammo" hide="false" itempos="-38,-7" rotation="0" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="UltrafireWF501BFlashlight" hide="false" itempos="19,-5" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="6000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
   <Item name="ASH-12 Magazine" identifier="ASH-12 Magazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,ASH-12Ammo,handheldammo" impactsoundtag="impact_metal_light">
     <Price baseprice="150" displaynonempty="true" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
@@ -1850,6 +1909,20 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="12.7x55mm" identifier="12.7x55mm" maxstacksize="12" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Price baseprice="75">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false" amount="12">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
     <InventoryIcon texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1155,245,40,12" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/weapons/textures/PrimarySpriteSheet.png" sourcerect="1155,245,40,12" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
