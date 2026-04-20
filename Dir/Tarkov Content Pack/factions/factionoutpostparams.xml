@@ -32,6 +32,7 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="scavs" />
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs" />
         <npc from="outpostnpcs1" identifier="hrmanager" />
         <npc from="outpostnpcs1" identifier="subupgradenpc" />
         <npc from="outpostnpcs1" identifier="subsalesnpc" />

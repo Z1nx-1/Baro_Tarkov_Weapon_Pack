@@ -33,19 +33,50 @@
         <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
         <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
     
-        <npc from="outpostnpcs1" identifier="hrmanager" />
-        <npc from="outpostnpcs1" identifier="subupgradenpc" />
-        <npc from="outpostnpcs1" identifier="subsalesnpc" />
-        <npc from="outpostnpcs1" identifier="reactoroperator" />
-        <npc from="outpostnpcs1" identifier="merchantoutpost" />
-        <npc from="outpostnpcs1" identifier="merchantmedical" />
-        <npc from="outpostnpcs1" identifier="merchantengineering" />
+  
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubupgradenpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubsalesnpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantoutpost" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavmerchantengineering" faction="scavs"/>
         <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
-        <npc from="outpostnpcs1" identifier="merchantnightclub" />
-        <npc from="outpostnpcs1" identifier="outpostdoctor" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="scavs"/>
+
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantoutpost" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="separatists"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantoutpost" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="coalition"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="merchantclown" faction="clowns" />
@@ -74,19 +105,49 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-        <npc from="outpostnpcs1" identifier="hrmanager" />
-        <npc from="outpostnpcs1" identifier="subupgradenpc" />
-        <npc from="outpostnpcs1" identifier="subsalesnpc" />
-        <npc from="outpostnpcs1" identifier="reactoroperator" />
-        <npc from="outpostnpcs1" identifier="merchantmine" />
-        <npc from="outpostnpcs1" identifier="merchantmedical" />
-        <npc from="outpostnpcs1" identifier="merchantengineering" />
+        
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubupgradenpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubsalesnpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmine" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavmerchantengineering" faction="scavs"/>
         <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
-        <npc from="outpostnpcs1" identifier="merchantnightclub" />
-        <npc from="outpostnpcs1" identifier="outpostdoctor" />
-        <npc from="outpostnpcs1" identifier="miner" />
-        <npc from="outpostnpcs1" identifier="miner" />
-        <npc from="outpostnpcs1" identifier="miner" />
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="scavs"/>
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmine" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="separatists"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="separatists"/>
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmine" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="coalition"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="miner" faction="coalition"/>
+  
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
@@ -117,26 +178,55 @@
         <npc from="outpostnpcs1" identifier="outpostmanagerscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
-
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs" />
 
         <npc from="ScavBosses" identifier="Sanitar" faction="Scavs" />
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
 
-        <npc from="outpostnpcs1" identifier="hrmanager" />
-        <npc from="outpostnpcs1" identifier="subupgradenpc" />
-        <npc from="outpostnpcs1" identifier="subsalesnpc" />
-        <npc from="outpostnpcs1" identifier="reactoroperator" />
-        <npc from="outpostnpcs1" identifier="merchantresearch" />
-        <npc from="outpostnpcs1" identifier="merchantmedical" />
-        <npc from="outpostnpcs1" identifier="merchantengineering" />
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubupgradenpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubsalesnpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantresearch" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavmerchantengineering" faction="scavs"/>
         <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
-        <npc from="outpostnpcs1" identifier="merchantnightclub" />
-        <npc from="outpostnpcs1" identifier="outpostdoctor" />
-        <npc from="outpostnpcs1" identifier="researcher" />
-        <npc from="outpostnpcs1" identifier="researcher" />
-        <npc from="outpostnpcs1" identifier="researcher" />
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="scavs"/>
+      
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantresearch" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="separatists"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="separatists"/>
+      
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantresearch" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="coalition"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="coalition"/>
+
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
@@ -170,6 +260,7 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs" />
 
         <npc from="ScavBosses" identifier="Glukhar" faction="Scavs" />
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
@@ -179,20 +270,51 @@
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
         <npc from="ScavBosses" identifier="TemplateGuard" faction="Scavs" />
 
-        <npc from="outpostnpcs1" identifier="hrmanager" />
-        <npc from="outpostnpcs1" identifier="subupgradenpc" />
-        <npc from="outpostnpcs1" identifier="subsalesnpc" />
-        <npc from="outpostnpcs1" identifier="reactoroperator" />
-        <npc from="outpostnpcs1" identifier="merchantmilitary" />
-        <npc from="outpostnpcs1" identifier="merchantengineering" />
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubupgradenpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubsalesnpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmilitary" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavmerchantengineering" faction="Scavs"/>
         <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
-        <npc from="outpostnpcs1" identifier="merchantnightclub" />
-        <npc from="outpostnpcs1" identifier="merchantarmory" />
-        <npc from="outpostnpcs1" identifier="merchantmedical" />
-        <npc from="outpostnpcs1" identifier="outpostdoctor" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmilitary" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="separatists"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmilitary" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="coalition"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
@@ -233,6 +355,7 @@
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
         <npc from="outpostnpcs1" identifier="securitynpcscavs" faction="Scavs" />
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="scavs" />
 
 
         <npc from="ScavBosses" identifier="Reshala" faction="Scavs" />
@@ -241,22 +364,58 @@
         <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
         <npc from="ScavBosses" identifier="ReshalaGuard" faction="Scavs" />
 
-        <npc from="outpostnpcs1" identifier="hrmanager" />
-        <npc from="outpostnpcs1" identifier="subupgradenpc" />
-        <npc from="outpostnpcs1" identifier="subsalesnpc" />
-        <npc from="outpostnpcs1" identifier="reactoroperator" />
-        <npc from="outpostnpcs1" identifier="merchantcity" />
-        <npc from="outpostnpcs1" identifier="merchantarmory" />
-        <npc from="outpostnpcs1" identifier="merchantmedical" />
-        <npc from="outpostnpcs1" identifier="merchantengineering" />
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubupgradenpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavsubsalesnpc" faction="scavs"/>
+        <npc from="outpostnpcs1" identifier="scavreactoroperator" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantcity" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavmerchantengineering" faction="Scavs"/>
         <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
-        <npc from="outpostnpcs1" identifier="merchantnightclub" />
-        <npc from="outpostnpcs1" identifier="outpostdoctor" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="commoner" />
-        <npc from="outpostnpcs1" identifier="researcher" />
-        <npc from="outpostnpcs1" identifier="researcher" />
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="scavcommoner" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="Scavs"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="Scavs" />
+
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantcity" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="coalition"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="coalition"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="coalition" />
+
+        <npc from="outpostnpcs1" identifier="hrmanager" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subupgradenpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="subsalesnpc" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="reactoroperator" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantcity" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantarmory" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantmedical" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="merchantengineering" faction="separatists"/>
+        <!-- night club merchant is configured to only spawn if there's appropriate spawn points in the outpost -->
+        <npc from="outpostnpcs1" identifier="merchantnightclub" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="outpostdoctor" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="separatists"/>
+        <npc from="outpostnpcs1" identifier="researcher" faction="separatists"/>
+
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />
         <npc from="outpostnpcs1" identifier="clown" faction="clowns" />

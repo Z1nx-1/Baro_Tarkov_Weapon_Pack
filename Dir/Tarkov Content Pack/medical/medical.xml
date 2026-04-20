@@ -350,7 +350,7 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="75" />
   </Obdolbos>
-  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="The 'Obdolbos' auto-injector increases the user's strength and improves movement capabilities and buffs the user's motor skills for a short period of time, but beware of it's nasty side effects which may include death. Created by Ludwig laboratories." scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+  <antidote name="Uknown toxin antidote" identifier="uknowntoxinantidote" aliases="Uknown toxin antidote" category="Medical" Tags="stimulant, smallitem,medical" maxstacksize="8" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="A strange Auto-Injector" scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
     <Deconstruct time="5" />
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="medical" level="40" />

@@ -450,7 +450,7 @@
           <!-- LEVEL 3 -->
           <Item identifier="idcard" equip="true" />
           <Item identifier="6B34" equip="true" />
-          <Item identifier="securityseparatistsuniform1" equip="true" />
+          <Item identifier="ScavOutfit3" equip="true" />
           <Item identifier="Commando rig" equip="true">
             <Item identifier="23x75 Shrap-25" />
             <Item identifier="23x75 Shrap-25" />
@@ -476,7 +476,7 @@
         <ItemSet>
           <!-- LEVEL 2 -->
           <Item identifier="idcard" equip="true" />
-          <Item identifier="securityseparatistsuniform2" equip="true" />
+          <Item identifier="ScavOutfit2" equip="true" />
           <Item identifier="MBSSPlateCarrier" equip="true">
             <Item identifier="AK74 Magazine" />
             <Item identifier="AK74 Magazine" />
@@ -498,7 +498,7 @@
         <ItemSet>
           <!-- LEVEL 1 -->
           <Item identifier="idcard" equip="true" />
-          <Item identifier="securityseparatistsuniform2" equip="true" />
+          <Item identifier="ScavOutfit4" equip="true" />
           <Item identifier="Paca soft armor" equip="true" />
           <Item identifier="Scav rig" equip="true" />
           <Item identifier="RiotHelmet" equip="true" />
@@ -511,6 +511,132 @@
           </Item>
           <Item identifier="6Kh5Bayonet" equip="false" />
           <Item identifier="antibleeding1" amount="6" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+      </npc>
+      <npc identifier="scavreactoroperator" job="engineer" commonness="1" spawnpointtags="engineeringreactor" healthmultiplier="1.1" behavior="Passive" moduleflags="EngineeringModule" preferredoutpostmoduletypes="engineeringmodule">
+        <ItemSet commonness="1">
+          <Item identifier="ScavEngineerOutfit" equip="true" />
+          <Item identifier="baseballcap" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="wrench" />
+          <Item identifier="screwdriver" />
+          <Item identifier="crowbar" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+      </npc>
+      <npc identifier="scavsubupgradenpc" job="mechanic" commonness="1" spawnpointtags="engineeringsubupgrades" healthmultiplier="1.1" campaigninteractiontype="Upgrade" behavior="StayInHull" moduleflags="EngineeringModule" preferredoutpostmoduletypes="engineeringmodule">
+        <ItemSet commonness="1">
+          <Item identifier="toolbelt" equip="true">
+            <Item identifier="weldingfueltank" />
+            <Item identifier="aluminium" />
+            <Item identifier="weldingtool">
+              <Item identifier="weldingfueltank" />
+            </Item>
+          </Item>
+          <Item identifier="ScavMechanicOutfit" equip="true" />
+          <Item identifier="headset" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="wrench" />
+          <Item identifier="screwdriver" />
+          <Item identifier="revolver" equip="false">
+            <Item identifier="revolverround" amount="6" />
+          </Item>
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+      </npc>
+      <npc identifier="scavsubsalesnpc" job="mechanic" commonness="1" spawnpointtags="engineeringsubsales" healthmultiplier="1.1" campaigninteractiontype="PurchaseSub" behavior="StayInHull" moduleflags="EngineeringModule" preferredoutpostmoduletypes="engineeringmodule">
+        <ItemSet commonness="1">
+          <Item identifier="toolbelt" equip="true">
+            <Item identifier="weldingfueltank" />
+            <Item identifier="aluminium" />
+            <Item identifier="weldingtool">
+              <Item identifier="weldingfueltank" />
+            </Item>
+          </Item>
+          <Item identifier="wrench" />
+          <Item identifier="screwdriver" />
+          <Item identifier="ScavMechanicOutfit" equip="true" />
+          <Item identifier="headset" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+      </npc>
+      <npc identifier="scavmerchantengineering" job="watchman" spawnpointtags="engineeringstore" healthmultiplier="1.1" campaigninteractiontype="Store" behavior="StayInHull" moduleflags="EngineeringModule">
+        <ItemSet commonness="1">
+          <Item identifier="ScavEngineerOutfit" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="wrench" />
+          <Item identifier="screwdriver" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+      </npc>
+      <npc identifier="scavcommoner" commonness="0" moduleflags="none" job="mechanic" behavior="Passive" healthmultiplier="0.75" preferredoutpostmoduletypes="crewmodule,seccrewmodule">
+        <ItemSet commonness="1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="ScavOutfit" equip="true" />
+          <Item identifier="screwdriver" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="ScavOutfit2" equip="true" />
+          <Item identifier="baseballcap" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="wrench" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="ScavOutfit" equip="true" />
+          <Item identifier="crowbar" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="ScavOutfit3" equip="true" />
+          <Item identifier="divingknife" equip="false" />
+          <Item identifier="wrench" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="ScavOutfit2" equip="true" />
+          <Item identifier="crowbar" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="ScavOutfit4" equip="true" />
+          <Item identifier="baseballcap" equip="true" />
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="screwdriver" />
+          <Item identifier="divingmask">
+            <Item identifier="oxygentank" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="ScavOutfit4" equip="true" />
+          <Item identifier="divingknife" equip="false" />
           <Item identifier="divingmask">
             <Item identifier="oxygentank" />
           </Item>

@@ -967,7 +967,7 @@
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="UltrafireWF501BFlashlight" hide="false" itempos="15,-2" setactive="true" />
+        <Containable items="TarkovAttachmentPrimary" hide="false" itempos="15,-2" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="2000" fadeouttime="5" />
@@ -2693,7 +2693,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Attachments                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="Ultrafire WF-501B Flashlight" identifier="UltrafireWF501BFlashlight" category="Equipment" Tags="smallitem,tool,provocative" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="Ultrafire WF-501B Flashlight" identifier="UltrafireWF501BFlashlight" category="Equipment" Tags="TarkovAttachmentPrimary,smallitem,tool,provocative" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />

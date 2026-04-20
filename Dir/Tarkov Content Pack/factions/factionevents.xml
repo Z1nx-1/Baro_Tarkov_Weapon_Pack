@@ -9,9 +9,7 @@
           <TagAction criteria="player" tag="player" />
           <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="Reshala" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
           <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
-          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
-          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
-          <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="ReshalaGuard" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+          
 
           
           <SpawnAction npcsetidentifier="ScavBosses" npcidentifier="Sanitar" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
