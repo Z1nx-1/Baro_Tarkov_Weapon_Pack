@@ -584,7 +584,7 @@
       <npc identifier="scavcommoner" commonness="0" moduleflags="none" job="mechanic" behavior="Passive" healthmultiplier="0.75" preferredoutpostmoduletypes="crewmodule,seccrewmodule">
         <ItemSet commonness="1">
           <Item identifier="idcard" equip="true" />
-          <Item identifier="ScavOutfit" equip="true" />
+          <Item identifier="ScavOutfit1" equip="true" />
           <Item identifier="screwdriver" />
           <Item identifier="divingmask">
             <Item identifier="oxygentank" />
@@ -601,7 +601,7 @@
         </ItemSet>
         <ItemSet commonness="1">
           <Item identifier="idcard" equip="true" />
-          <Item identifier="ScavOutfit" equip="true" />
+          <Item identifier="ScavOutfit1" equip="true" />
           <Item identifier="crowbar" />
           <Item identifier="divingmask">
             <Item identifier="oxygentank" />
