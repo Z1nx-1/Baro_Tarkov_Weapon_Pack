@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Tarkov Content Pack" modversion="9.3.3" corepackage="False" steamworkshopid="3507999416" gameversion="1.12.7.0">
+<contentpackage name="Tarkov Content Pack" modversion="9.3.4" corepackage="False" steamworkshopid="3507999416" gameversion="1.12.7.0">
   <Item file="%ModDir%/weapons/primary.xml" />
   <Item file="%ModDir%/weapons/sidearms.xml" />
   <Item file="%ModDir%/weapons/melee.xml" />
   <Item file="%ModDir%/throwables/throwables.xml" />
   <Item file="%ModDir%/attire/attire.xml" />
+  <Item file="%ModDir%/attire/attireoverride.xml" />
   <Item file="%ModDir%/medical/medical.xml" />
   <Item file="%ModDir%/items/containers.xml" />
   <Item file="%ModDir%/items/consumables.xml" />
