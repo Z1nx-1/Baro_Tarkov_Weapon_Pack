@@ -291,7 +291,7 @@
     <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="armcab" />
-    <Price baseprice="480">
+    <Price baseprice="480" requiredfaction="coalition">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
       <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
       <Price storeidentifier="merchantresearch" sold="false" />
@@ -322,6 +322,82 @@
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="ARSS plate carrier rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.35" inheritorigin="false" origin="0.48,0.6" inheritsourcerect="false" sourcerect="586,1127,165,223" />
+    </Wearable>
+  </Item>
+  <Item name="DeathKnight's plate carrier rig" identifier="DeathKnightsPlateCarrier" category="Equipment" tags="smallitem,clothing" scale="0.4" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.1" />
+    <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="480" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1213,642,115,171" origin="0.5,0.5" />
+    <Sprite name="DeathKnightsPlateCarrier" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1347,643,117,172" depth="0.6" origin="0.44094437,0.54042286" />
+    <Body width="85" height="90" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <ItemContainer capacity="4" maxstacksize="1">
+        <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+        <Containable items="handheldammo,grenade,handgrenade" />
+      </ItemContainer>
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="DeathKnightsPlateCarrier" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.4" inheritorigin="false" origin="0.48,0.72" inheritsourcerect="false" sourcerect="1347,643,117,172" />
+    </Wearable>
+  </Item>
+  <Item name="Bird Eye's Tactical Rig (Slick)" identifier="BirdEyesTacticalRigSlick" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.1" />
+    <PreferredContainer primary="secarmcab" amount="3" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="480">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1094,693,98,153" origin="0.5,0.5" />
+    <Sprite name="BirdEyesTacticalRigSlick" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1094,693,98,153" depth="0.6" origin="0.43431586,0.3084577" />
+    <Body width="85" height="90" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <ItemContainer capacity="4" maxstacksize="1">
+        <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+        <Containable items="handheldammo,grenade,handgrenade" />
+      </ItemContainer>
+      <StatValue stattype="WalkingSpeed" value="-0.05" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="BirdEyesTacticalRigSlick" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" inheritscale="false" scale="0.35" inheritorigin="false" origin="0.48,0.6" inheritsourcerect="false" sourcerect="1094,693,98,153" />
     </Wearable>
   </Item>
   <Item name="TV-110 Plate Carrier" identifier="TV-110PlateCarrier" category="Equipment" tags="smallitem,clothing" scale="0.45" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
@@ -798,6 +874,31 @@
       <sprite name="Boss cap" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.32" hidewearablesoftype="Hair" sourcerect="520,513,94,62" origin="0.66,0.6" />
     </Wearable>
   </Item>
+  <Item name="Big Pipe's Bandana/Pipe" identifier="BigPipesBandanaPipe" aliases="BigPipesBandanaPipe" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.35">
+    <Upgrade gameversion="0.9.6.0" scale="0.11" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="200" requiredfaction="coalition">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="2">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Sprite name="BigPipesBandanaPipe" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1332,529,80,91" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite name="BigPipesBandanaPipe" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.35" hidewearablesoftype="Hair" sourcerect="1332,529,80,91" origin="0.5947052,0.425" />
+    </Wearable>
+  </Item>
   <Item name="Beanie" identifier="Beanie" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.3">
     <Upgrade gameversion="0.9.6.0" scale="0.11" />
     <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
@@ -853,6 +954,38 @@
     </Upgrade>
     <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Comtac II Wearable" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.25" hideotherwearables="false" sourcerect="714,255,94,91" origin="0.39,0.55" />
+    </Wearable>
+  </Item>
+  <Item name="Comtac IV" identifier="Comtac IV" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab" />
+    <Price baseprice="40">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantresearch" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" minavailable="6" />
+      <Price storeidentifier="merchantmine" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1203,518,109,106" origin="0.4673697,0.53876936" />
+    <Sprite name="Comtac IV" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" depth="0.6" sourcerect="1203,518,109,106" origin="0.4673697,0.53876936" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5"></Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Comtac IV Wearable" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.25" hideotherwearables="false" sourcerect="1203,518,109,106" origin="0.39,0.55" />
     </Wearable>
   </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -1699,7 +1832,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
   <Item name="Scav Mechanic Outfit" identifier="ScavMechanicOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon name="ScavMechanicOutfit Icon" texture="%ModDir%/attire/attire_textures/ScavMechanic.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
     <Sprite name="ScavMechanicOutfit" texture="%ModDir%/attire/attire_textures/ScavMechanic.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
@@ -1723,7 +1855,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
   </Item>
-
   <Item name="Scav Engineer Outfit" identifier="ScavEngineerOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon name="ScavEngineerOutfit Icon" texture="%ModDir%/attire/attire_textures/ScavEngineer.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
     <Sprite name="ScavEngineerOutfit" texture="%ModDir%/attire/attire_textures/ScavEngineer.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
@@ -1743,6 +1874,71 @@
       <sprite name="ScavEngineerOutfit Left Leg" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <sprite name="ScavEngineerOutfit Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.5,0.5" />
       <sprite name="ScavEngineerOutfit Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Bird Eye's Outfit" identifier="BirdEyesOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="BirdEyesOutfit Icon" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" sourcerect="171,22,110,170" origin="0.37272727,0.42352942" />
+    <Sprite name="BirdEyesOutfit" texture="%ModDir%/attire/attire_textures/ScavEngineer.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="BirdEyesOutfit Torso" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Waist" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.4" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.4" />
+      <sprite name="BirdEyesOutfit Right Thigh" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Left Thigh" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Right Leg" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Left Leg" texture="%ModDir%/attire/attire_textures/GoonsBirdEye.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.5,0.5" />
+      <sprite name="BirdEyesOutfit Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Death Knight's Outfit" identifier="DeathKnightsOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="DeathKnightsOutfit Icon" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
+    <Sprite name="DeathKnightsOutfit" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="DeathKnightsOutfit Torso" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Waist" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.4" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.4" />
+      <sprite name="DeathKnightsOutfit Right Thigh" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Left Thigh" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Right Leg" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Left Leg" texture="%ModDir%/attire/attire_textures/GoonsKnight.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.5,0.5" />
+      <sprite name="DeathKnightsOutfit Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Big Pipe's Outfit" identifier="BigPipesOutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="BigPipesOutfit Icon" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
+    <Sprite name="BigPipesOutfit" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" sourcerect="171,22,91,143" origin="0.5015735,0.50602597" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="BigpipesOutfit Torso" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Right Hand" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Hand" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Right Lower Arm" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="RightForearm" hidelimb="false  " inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Right Upper Arm" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Waist" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.4" inheritorigin="false" inheritsourcerect="false" sourcerect="183,194,72,62" origin="0.4,0.4" />
+      <sprite name="BigpipesOutfit Right Thigh" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Thigh" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Right Leg" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Leg" texture="%ModDir%/attire/attire_textures/GoonsBigPipe.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Right Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="274,208,58,45" origin="0.5,0.5" />
+      <sprite name="BigpipesOutfit Left Shoe" texture="Content/Items/Jobgear/Engineer/engineer_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="335,208,62,45" origin="0.5,0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
     </Wearable>
@@ -1772,6 +1968,24 @@
     <Body radius="30" height="30" density="15" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Berkut Backpack" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" sourcerect="922,108,79,178" inherittexturescale="false" scale="0.3" origin="1.3,0.55" />
+      <StatValue stattype="MovementSpeed" value="-0.10" />
+      <StatValue stattype="PropulsionSpeed" value="-0.10" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <ItemContainer capacity="8" maxstacksize="32" depth="0.5">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+  <Item name="Bird Eye's Backpack" identifier="BirdEyesBackpack" category="Equipment" tags="mediumitem,clothing,mobilecontainer" scale="0.4" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Deconstruct time="30">
+      <Item identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1442,1169,78,349" origin="0.49590665,0.4975322" />
+    <Sprite texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1442,1169,78,349" depth="0.6" origin="0.54661614,0.6059422" />
+    <Body radius="30" height="30" density="15" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="BirdEyesBackpack" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" limb="Torso" hidelimb="false" sourcerect="1442,1169,78,349" inherittexturescale="false" scale="0.3" origin="1.3,0.7" />
       <StatValue stattype="MovementSpeed" value="-0.10" />
       <StatValue stattype="PropulsionSpeed" value="-0.10" />
     </Wearable>

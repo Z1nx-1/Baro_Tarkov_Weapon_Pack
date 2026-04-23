@@ -300,6 +300,10 @@
         <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
         <npc from="outpostnpcs1" identifier="commoner" faction="separatists"/>
 
+        <npc from="Goons" identifier="DeathKnight" faction="coalition"/>
+        <npc from="Goons" identifier="BirdEye" faction="coalition"/>
+        <npc from="Goons" identifier="BigPipe" faction="coalition"/>
+
         <npc from="outpostnpcs1" identifier="hrmanager" faction="coalition"/>
         <npc from="outpostnpcs1" identifier="subupgradenpc" faction="coalition"/>
         <npc from="outpostnpcs1" identifier="subsalesnpc" faction="coalition"/>

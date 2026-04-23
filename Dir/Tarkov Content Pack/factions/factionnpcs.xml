@@ -258,5 +258,112 @@
           <item identifier="PhysicalBitcoin" amount="1" />
         </ItemSet>
       </npc>
+    </npcset>
+  <npcset identifier="Goons">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                   GOONS                                   -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->    
+    <npc identifier="DeathKnight" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="2" faction="Coalition">
+      <Character name="Death Knight" speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="30" />
+          <skill identifier="mechanical" level="30" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="30" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="DeathKnightMask" equip="true"/>
+          <Item identifier="DeathKnightsPlateCarrier" equip="true">
+            <item identifier="M4A1 Magazine" amount="2" />
+            <item identifier="Glock_19x_Magazine" amount="2" />
+          </Item>
+          <Item identifier="DeathKnightsOutfit" equip="true"/>
+  
+          <Item identifier="HK416A5Badger" equip="true">
+              <item identifier="M4A1 Magazine" infinite="true" />
+          </Item>
+  
+          <Item identifier="Glock_19x" >
+              <item identifier="Glock_19x_Magazine" />
+          </Item>
+          <item identifier="M4A1 Magazine" amount="2" />
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+          <item identifier="FigurineUSEC" amount="1" />
+        </ItemSet>
+      </npc>
+    <npc identifier="BirdEye" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="2" faction="Coalition">
+      <Character name="Bird Eye" speciesname="human" gender="male" headspriteid="7" hairindex="8" beardindex="1" moustacheindex="1" faceattachmentindex="0" skincolor="175,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="30" />
+          <skill identifier="mechanical" level="20" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="30" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="piratebandana" equip="true"/>
+          <Item identifier="BirdEyesTacticalRigSlick" equip="true">
+            <item identifier="SakoTRGM10_Magazine" amount="2" />
+            <item identifier="Glock_19x_Magazine" amount="2" />
+          </Item>
+          <Item identifier="BirdEyesBackpack" equip="true"/>
+          <Item identifier="BirdEyesOutfit" equip="true"/>
+  
+          <Item identifier="SakoTRGM10" equip="true">
+              <item identifier="SakoTRGM10_Magazine" infinite="true" />
+          </Item>
+          <Item identifier="Glock_19x" >
+              <item identifier="Glock_19x_Magazine" />
+          </Item>
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+          <item identifier="FigurineUSEC" amount="1" />
+        </ItemSet>
+      </npc>
+    <npc identifier="BigPipe" job="securityofficer" moduleflags="none" behavior="Patrol" healthmultiplier="2" faction="Coalition">
+      <Character name="Big Pipe" speciesname="human" gender="male" headspriteid="8" hairindex="2" beardindex="10" moustacheindex="0" faceattachmentindex="0" skincolor="200,150,150,255" haircolor="100,100,100,255" facialhaircolor="100,100,100,255" personality="Crazy">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="30" />
+          <skill identifier="mechanical" level="30" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="30" />
+          <skill identifier="helm" level="5" />
+        </job>
+        </Character>
+        <ItemSet commonness="1">
+          <!--Equipment-->
+          <Item identifier="idcard" equip="true"/>
+          <Item identifier="headset" equip="true" showpreview="false"/>
+          <Item identifier="BigPipesBandanaPipe" equip="true"/>
+          <Item identifier="ARSS plate carrier rig" equip="true">
+            <item identifier="Glock_19x_Magazine" amount="2" />
+          </Item>
+          <Item identifier="BigPipesOutfit" equip="true"/>
+          <item identifier="40MM-M441" amount="2" />
+          <Item identifier="M32A1GL" equip="true">
+              <item identifier="40MM-M441" amount="6" infinite="true" />
+          </Item>
+          <Item identifier="Glock_19x" >
+              <item identifier="Glock_19x_Magazine" />
+          </Item>
+          <!--Valuables-->
+          <item identifier="PhysicalBitcoin" amount="1" />
+          <item identifier="FigurineUSEC" amount="1" />
+        </ItemSet>
+      </npc>
+
+
+
   </npcset>
+  
 </npcsets>
