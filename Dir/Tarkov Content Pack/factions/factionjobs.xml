@@ -311,7 +311,7 @@
       </npc>
       <npc identifier="securitynpccoalition" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
         <ItemSet>
-          <Item identifier="securitypatrolclothes" equip="true" />
+          <Item identifier="UsecStandard" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="stunbaton">
             <Item identifier="batterycell" infinite="true" />
@@ -329,7 +329,7 @@
           </Item>
         </ItemSet>
         <ItemSet>
-          <Item identifier="securitypatrolclothes" equip="true" />
+          <Item identifier="UsecStandard" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="stungun">
             <Item identifier="stungundart" infinite="true" />
@@ -350,7 +350,7 @@
           </Item>
         </ItemSet>
         <ItemSet>
-          <Item identifier="securitypatrolclothes" equip="true" />
+          <Item identifier="UsecStandard" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="stunbaton">
             <Item identifier="batterycell" infinite="true" />
@@ -389,7 +389,7 @@
       </npc>
       <npc identifier="securitynpcseparatists" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="1.2" behavior="Patrol">
         <ItemSet>
-          <Item identifier="securityseparatistsuniform1" equip="true" />
+          <Item identifier="GrizzlyOutfit" equip="true" />
           <Item identifier="6B13 (EMR)" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="stunbaton">
@@ -406,7 +406,7 @@
           </Item>
         </ItemSet>
         <ItemSet>
-          <Item identifier="securityseparatistsuniform2" equip="true" />
+          <Item identifier="GrizzlyOutfit" equip="true" />
           <Item identifier="6B13 (EMR)" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="AKM">
@@ -427,7 +427,7 @@
           </Item>
         </ItemSet>
         <ItemSet>
-          <Item identifier="securityseparatistsuniform3" equip="true" />
+          <Item identifier="GrizzlyOutfit" equip="true" />
           <Item identifier="TV-115PlateCarrier" equip="true" />
           <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
           <Item identifier="stunbaton">
