@@ -10,7 +10,7 @@
     <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="53,271,105,89" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+    <ItemContainer capacity="25" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
     </ItemContainer>
   </Item>
@@ -24,7 +24,7 @@
     <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="53,384,117,80" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="25" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+    <ItemContainer capacity="30" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
     </ItemContainer>
   </Item>
@@ -38,7 +38,7 @@
     <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="13,16,206,73" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="63" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+    <ItemContainer capacity="60" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
     </ItemContainer>
   </Item>
@@ -66,7 +66,7 @@
     <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="266,17,150,72" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+    <ItemContainer capacity="40" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="medical" />
     </ItemContainer>
   </Item>
@@ -79,8 +79,8 @@
     <Deconstruct time="0.5" />
     <Sprite texture="%ModDir%/items/container_textures/ContainerSpriteSheet.png" depth="0.54" sourcerect="18,172,187,79" origin="0.5,0.5" />
     <Body width="150" height="75" density="25" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="12" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-80" handle1="0,40"  aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="16" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="Weapon" />
     </ItemContainer>
   </Item>

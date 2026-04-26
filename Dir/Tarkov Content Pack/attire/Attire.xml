@@ -62,8 +62,8 @@
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="459,1173,115,187" origin="0.5,0.5" />
     <Sprite name="AVS plate carrier rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="459,1173,115,187" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
-    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Holdable slots="Any,OuterClothes" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <ItemContainer capacity="4" maxstacksize="1">
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         <Containable items="handheldammo,grenade,handgrenade" />
@@ -99,7 +99,7 @@
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="770,1185,124,151" origin="0.5,0.5" />
     <Sprite name="MMAC plate carrier rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="770,1185,124,151" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Holdable slots="Any,OuterClothes" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <ItemContainer capacity="2" maxstacksize="1">
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
@@ -310,7 +310,7 @@
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="586,1127,165,223" origin="0.5,0.5" />
     <Sprite name="ARSS plate carrier rig" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="586,1127,166,223" depth="0.6" origin="0.50052804,0.50038666" />
     <Body width="85" height="90" density="25" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Holdable slots="Any,OuterClothes" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <ItemContainer capacity="4" maxstacksize="1">
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
@@ -348,7 +348,7 @@
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1213,642,115,171" origin="0.5,0.5" />
     <Sprite name="DeathKnightsPlateCarrier" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1347,643,117,172" depth="0.6" origin="0.44094437,0.54042286" />
     <Body width="85" height="90" density="25" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Holdable slots="Any,OuterClothes" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <ItemContainer capacity="4" maxstacksize="1">
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
@@ -386,7 +386,7 @@
     <InventoryIcon texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1094,693,98,153" origin="0.5,0.5" />
     <Sprite name="BirdEyesTacticalRigSlick" texture="%ModDir%/attire/attire_textures/AttireSpriteSheet.png" sourcerect="1094,693,98,153" depth="0.6" origin="0.43431586,0.3084577" />
     <Body width="85" height="90" density="25" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Holdable slots="Any,OuterClothes" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <ItemContainer capacity="4" maxstacksize="1">
         <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
@@ -568,7 +568,7 @@
       <StatValue stattype="TurretAttackSpeed" value="0.1" />
       <StatValue stattype="TurretChargeSpeed" value="0.1" />
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <Holdable slots="Any,OuterClothes" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="6" maxstacksize="16">
       <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="handheldammo,grenade,handgrenade" />
@@ -602,7 +602,7 @@
       <StatValue stattype="TurretAttackSpeed" value="0.1" />
       <StatValue stattype="TurretChargeSpeed" value="0.1" />
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <Holdable slots="Any,OuterClothes" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="6" maxstacksize="16">
       <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="handheldammo,grenade,handgrenade" />
@@ -637,7 +637,7 @@
       <StatValue stattype="TurretAttackSpeed" value="0.1" />
       <StatValue stattype="TurretChargeSpeed" value="0.1" />
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <Holdable slots="Any,OuterClothes" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="2" maxstacksize="16">
       <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="handheldammo,grenade,handgrenade" />
@@ -672,7 +672,7 @@
       <StatValue stattype="TurretAttackSpeed" value="0.1" />
       <StatValue stattype="TurretChargeSpeed" value="0.1" />
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <Holdable slots="Any,OuterClothes" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="2" maxstacksize="16">
       <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="handheldammo,grenade,handgrenade" />
@@ -705,7 +705,7 @@
       <StatValue stattype="TurretAttackSpeed" value="0.1" />
       <StatValue stattype="TurretChargeSpeed" value="0.1" />
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+    <Holdable slots="Any,OuterClothes" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="2" maxstacksize="16">
       <SlotIcon texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="handheldammo,grenade,handgrenade" />
